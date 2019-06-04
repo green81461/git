@@ -1,0 +1,211 @@
+﻿a{
+    text-decoration:none;
+
+}
+
+
+/*관심상품 리스트 페이지*/
+
+    .top-bts {
+        position:relative;
+        height:25px;
+        text-align:right;
+        margin:30px 0 20px 0;
+    }
+
+/* 드랍다운리스트 박스 */
+    .top-bts-drop{
+    height: 31px;
+    width:200px;
+    vertical-align:middle;
+    /*position:relative;*/
+    margin-right: 5px;
+    /*border: 1px solid red;*/
+}
+
+.top-bts-bt {
+    margin-right: 5px;
+}
+
+    .tabHeaderWrap{
+        border:none;
+    }
+   
+    /*관심상품리스트 테이블*/
+
+    #tblWishList{
+        margin-top:30px;
+        /*border:1px solid #a2a2a2;*/
+        width:100%;
+    }
+
+      
+
+
+    /*관심리스트 팝업창*/
+
+      .divpopup-layer{
+          border:none;
+      }
+
+
+      .bt{
+          text-align:right;
+          margin-top:15px;
+        
+      }
+
+    table.scroll {
+    border:1px solid #a2a2a2;
+    
+    }
+
+   
+
+        table.scroll th {
+            width: 100%;
+            height: 30px;
+            border: 1px solid #a2a2a2;
+            background-color:#ececec;
+           
+        }
+
+        table.scroll tbody tr td {
+            width: 100%;
+            height: 30px;
+            border: 1px solid #a2a2a2;
+            
+        }
+
+    table.scroll tbody {
+        height: 200px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        width:100%;
+    }
+
+    /* 관심상품 보관함 팝업*/
+
+
+    .wishbox-pop{
+        border:1px solid #a2a2a2;
+        width:100%;
+
+    }
+
+    .wishbox-pop td{
+        border:1px solid #a2a2a2;
+        height:30px;
+      
+    }
+
+    .wishbox-pop th{
+        text-align:center;
+        background-color:#ececec;
+    }
+
+
+     .text-box{
+         border:1px solid #a2a2a2;
+         height:28px;
+         width:100%;
+         text-align:center;
+     }
+
+     .bt-pop{
+         text-align:right;
+         margin-top:50px;
+     }
+
+
+
+     .board-table{
+        border:1px solid #a2a2a2;
+        margin-top:30px;
+
+     }
+
+
+   .board-table td{
+    border: 1px solid #a2a2a2;
+    }
+
+
+    .board-table th{
+    border:1px solid #a2a2a2;
+    height:30px;
+    
+    }
+
+    .board-table td:nth-child(1){
+        width:10%;
+    }
+
+     .board-table td:nth-child(2) {
+        width: 25%;
+      }
+
+      .board-table td:nth-child(3) {
+            width: 50%;
+     }
+
+        .board-table td:nth-child(4) {
+            width: 20%;
+        }
+
+        .board-table td:nth-child(5) {
+            width: 15%;
+        }
+
+
+    /*검색어 입력 텍스트박스 감싸는 div*/
+.wish-search-div {
+    height: 70px;
+
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+        .wish-search-div table {
+        margin:auto;
+        }
+
+
+    /* 검색어 입력 텍스트박스*/
+    .text-box1{
+        height:30px;
+        padding-left:5px;
+        position:relative;
+        top:-1px;
+    }
+
+
+    /*보관함추가 버튼 */
+    .img-bt{
+        text-align:right;
+        margin-top:20px;
+    }
+
+    .on{
+        border:none;
+        width:180px;
+        outline:none;
+    }
+
+.addList-bt {
+    background: url("../Images/Wish/add-bt-off.jpg");
+}
+
+
+#divpopup-layer-contents{overflow-y:scroll; height:400px; padding:0;}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:1)  
+{
+    
+ #divpopup-layer-contents{overflow-y:scroll; height:400px; padding:0;}
+  
+     
+}
+
+

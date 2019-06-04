@@ -1,0 +1,116 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+table {
+    border-spacing: 0px;
+    border-bottom-style: none;
+    padding: 0px;
+    
+    margin-left: 223px;
+    width: 818px;
+    height: 418px;
+    border: 1px solid #a2a2a2;
+    margin-top: 30px;
+    
+}
+
+td {
+    border-spacing: 0px;
+    border-bottom-style: none;
+    padding: 0px;
+}
+
+.blank1-td {
+    height:47px;
+}
+
+.blank2-td {
+    width:112px; 
+}
+
+.loginImg-td {
+    height: 50px;
+    padding-left: 54px;
+    padding-bottom: 18px;
+}
+
+.signupImg-td {
+    height: 50px;
+    padding-right: 54px;
+    padding-bottom: 18px;
+}
+
+.text1-div {
+    padding-left: 54px;
+    font-size:12px;
+}
+
+.text2-div {
+    padding-right: 54px;
+    font-size: 12px;
+}
+
+.loginText-td {
+    padding-left: 54px;
+    height: 25px;
+    padding-top: 38px;
+    padding-bottom: 9px;
+}
+.pwdText-td {
+    padding-left: 54px;
+    height: 25px;
+    padding-bottom: 0;
+    
+}
+
+.login-td {
+    padding-left: 10px;
+    padding-top: 38px;
+    padding-bottom: 0px;
+}
+
+.join-td {
+    height: 59px;
+    width: 264px;
+    padding-right: 54px;
+    padding-top: 38px; 
+}
+
+.join-img{
+    width:264px;
+}
+
+.search-img {
+    width: 264px;
+    height: 35px;
+    margin-top: 0px;
+    
+}
+
+.blank3-td {
+    height: 28px;
+    
+}
+
+.blank4-td {
+    height: 33px;
+}
+
+.blank-td {
+    padding-left: 54px;
+    padding-top: 0px;
+    
+}
+
+.text3-td {
+    font-size:12px;
+}
+
+.last-td {
+    padding-bottom: 39px;
+}
+

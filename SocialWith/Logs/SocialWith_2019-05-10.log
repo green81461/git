@@ -1,0 +1,146 @@
+2019-05-10 17:28:05.7287 | 1784 | iisexpress | ERROR | SocialWith.Data.Dao.DAO | SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor : 193 | ErrorMessage | Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04063: package body "C##SOCIALW.PKG_TYPE"에 오류가 있습니다
+ORA-06508: PL/SQL: 호출 중인 프로그램 단위를 찾을 수 없습니다(: "C##SOCIALW.PKG_TYPE").
+ORA-06512:  1행
+   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 187   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 187
+2019-05-10 17:28:05.8384 | 1784 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : 'System.Web.HttpUnhandledException' 형식의 예외가 Throw되었습니다.
+ Stack Trace    :    위치: System.Web.UI.Page.HandleError(Exception e)
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest()
+   위치: System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   위치: System.Web.UI.Page.ProcessRequest(HttpContext context)
+   위치: ASP.admin_member_platformmanagement_aspx.ProcessRequest(HttpContext context) 파일 c:\Users\user\AppData\Local\Temp\Temporary ASP.NET Files\vs\2e97ac09\d872c0e4\App_Web_w5qhsacj.22.cs:줄 0
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04063: package body "C##SOCIALW.PKG_TYPE"에 오류가 있습니다
+ORA-06508: PL/SQL: 호출 중인 프로그램 단위를 찾을 수 없습니다(: "C##SOCIALW.PKG_TYPE").
+ORA-06512:  1행
+   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 195
+   위치: SocialWith.Biz.Platform.PlatformService.PlatformList(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Platform\PlatformService.cs:줄 43
+   위치: Admin_Member_PlatformManagement.PlatformDataBind(Int32 page) 파일 d:\Svn\SocialWith\Admin\Member\PlatformManagement.aspx.cs:줄 45
+   위치: Admin_Member_PlatformManagement.DefaultDataBind() 파일 d:\Svn\SocialWith\Admin\Member\PlatformManagement.aspx.cs:줄 32
+   위치: Admin_Member_PlatformManagement.Page_Load(Object sender, EventArgs e) 파일 d:\Svn\SocialWith\Admin\Member\PlatformManagement.aspx.cs:줄 18
+   위치: System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   위치: System.EventHandler.Invoke(Object sender, EventArgs e)
+   위치: System.Web.UI.Control.OnLoad(EventArgs e)
+   위치: System.Web.UI.Control.LoadRecursive()
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) | 
+2019-05-10 17:28:19.2432 | 1784 | iisexpress | ERROR | SocialWith.Data.Dao.DAO | SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor : 193 | ErrorMessage | Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04063: package body "C##SOCIALW.PKG_TYPE"에 오류가 있습니다
+ORA-06508: PL/SQL: 호출 중인 프로그램 단위를 찾을 수 없습니다(: "C##SOCIALW.PKG_TYPE").
+ORA-06512:  1행
+   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 187   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 187
+2019-05-10 17:28:19.2432 | 1784 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : 'System.Web.HttpUnhandledException' 형식의 예외가 Throw되었습니다.
+ Stack Trace    :    위치: System.Web.UI.Page.HandleError(Exception e)
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest()
+   위치: System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   위치: System.Web.UI.Page.ProcessRequest(HttpContext context)
+   위치: ASP.admin_member_platformmanagement_aspx.ProcessRequest(HttpContext context) 파일 c:\Users\user\AppData\Local\Temp\Temporary ASP.NET Files\vs\2e97ac09\d872c0e4\App_Web_w5qhsacj.22.cs:줄 0
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04063: package body "C##SOCIALW.PKG_TYPE"에 오류가 있습니다
+ORA-06508: PL/SQL: 호출 중인 프로그램 단위를 찾을 수 없습니다(: "C##SOCIALW.PKG_TYPE").
+ORA-06512:  1행
+   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 195
+   위치: SocialWith.Biz.Platform.PlatformService.PlatformList(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Platform\PlatformService.cs:줄 43
+   위치: Admin_Member_PlatformManagement.PlatformDataBind(Int32 page) 파일 d:\Svn\SocialWith\Admin\Member\PlatformManagement.aspx.cs:줄 45
+   위치: Admin_Member_PlatformManagement.DefaultDataBind() 파일 d:\Svn\SocialWith\Admin\Member\PlatformManagement.aspx.cs:줄 32
+   위치: Admin_Member_PlatformManagement.Page_Load(Object sender, EventArgs e) 파일 d:\Svn\SocialWith\Admin\Member\PlatformManagement.aspx.cs:줄 18
+   위치: System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   위치: System.EventHandler.Invoke(Object sender, EventArgs e)
+   위치: System.Web.UI.Control.OnLoad(EventArgs e)
+   위치: System.Web.UI.Control.LoadRecursive()
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) | 
+2019-05-10 17:28:21.1640 | 1784 | iisexpress | ERROR | SocialWith.Data.Dao.DAO | SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor : 193 | ErrorMessage | Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04063: package body "C##SOCIALW.PKG_TYPE"에 오류가 있습니다
+ORA-06508: PL/SQL: 호출 중인 프로그램 단위를 찾을 수 없습니다(: "C##SOCIALW.PKG_TYPE").
+ORA-06512:  1행
+   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 187   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 187
+2019-05-10 17:28:21.1680 | 1784 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : 'System.Web.HttpUnhandledException' 형식의 예외가 Throw되었습니다.
+ Stack Trace    :    위치: System.Web.UI.Page.HandleError(Exception e)
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest()
+   위치: System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   위치: System.Web.UI.Page.ProcessRequest(HttpContext context)
+   위치: ASP.admin_company_bordertypemain_aspx.ProcessRequest(HttpContext context) 파일 c:\Users\user\AppData\Local\Temp\Temporary ASP.NET Files\vs\2e97ac09\d872c0e4\App_Web_s5uimikj.16.cs:줄 0
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04063: package body "C##SOCIALW.PKG_TYPE"에 오류가 있습니다
+ORA-06508: PL/SQL: 호출 중인 프로그램 단위를 찾을 수 없습니다(: "C##SOCIALW.PKG_TYPE").
+ORA-06512:  1행
+   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 195
+   위치: SocialWith.Biz.Comapny.CompanyService.GetBorderTypeList(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Company\CompanyService.cs:줄 696
+   위치: Admin_Company_BorderTypeMain.BorderTypeDataBind(Int32 page) 파일 d:\Svn\SocialWith\Admin\Company\BorderTypeMain.aspx.cs:줄 55
+   위치: Admin_Company_BorderTypeMain.DefaultDataBind() 파일 d:\Svn\SocialWith\Admin\Company\BorderTypeMain.aspx.cs:줄 41
+   위치: Admin_Company_BorderTypeMain.Page_Load(Object sender, EventArgs e) 파일 d:\Svn\SocialWith\Admin\Company\BorderTypeMain.aspx.cs:줄 24
+   위치: System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   위치: System.EventHandler.Invoke(Object sender, EventArgs e)
+   위치: System.Web.UI.Control.OnLoad(EventArgs e)
+   위치: System.Web.UI.Control.LoadRecursive()
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) | 
+2019-05-10 17:31:24.9762 | 1784 | iisexpress | DEBUG | OrderHandler | OrderHandler.GetOrderDtlInfo_AllUser : 1257 | odrCodeNo : ON-190430-2 | 
+2019-05-10 17:31:24.9802 | 1784 | iisexpress | DEBUG | OrderHandler | OrderHandler.GetOrderDtlInfo_AllUser : 1258 | odrStat : 101 | 

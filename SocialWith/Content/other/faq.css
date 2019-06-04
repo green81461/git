@@ -1,0 +1,306 @@
+﻿/* Faq.aspx , CompanyAbout.aspx 랑 스타일시트 같이씁니다.**********/
+
+
+
+
+ /** {
+    font-family: 굴림;
+    font-size: 12px;
+}*/
+
+
+ /*Faq 컨텐츠 전체 div*/
+.sub-contents-div1 {
+    width: 1240px; /*1218px*/
+    min-height: 900px; /* 900px*/
+    /*  margin-top: 21.6796875%;    222px*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-20px;
+    border:1px solid #fff;
+    
+   
+}
+
+
+
+/*탭메뉴 */
+#tabmenu {
+    position: relative;
+}
+
+    #tabmenu .su_ca {
+        display: block;
+        font-size: 14px;
+        width:135px;
+        height: 45px;
+        line-height: 45px;
+        background: #f4f4f1;
+        color: #333;
+        text-align: center;
+        border-radius:5px;
+        font-weight:normal;
+    }
+        #tabmenu .su_ca:hover {
+            text-decoration:underline;
+        }
+
+        #tabmenu .on .su_ca {
+            background: #3e3e46;
+            color: #fff;
+        }
+   .accordion {
+        display:none;
+    }
+   .accordion.on {
+        display:block;
+    }
+    /*탭메뉴 버튼 위치조정*/
+    #tabmenu .tab_btn1 {
+        margin-bottom: 8px;
+    }
+
+    #tabmenu .tab_btn2 {
+       position:absolute;
+       top:0;
+       left:140px;
+  }
+
+    #tabmenu .tab_btn3 {
+        position: absolute;
+        top: 0;
+        left:280px;
+    }
+    #tabmenu .tab_btn4 {
+        position: absolute;
+        top: 0;
+        left:420px;
+    }
+
+    #tabmenu .tab_btn5 {
+        position: absolute;
+        top: 0;
+        left:560px;
+    }
+    #tabmenu .tab_btn6 {
+        position: absolute;
+        top: 0;
+        left:700px;
+    }
+    #tabmenu .tab_btn7 {
+        position: absolute;
+        top: 0;
+        left:840px;
+    }
+    #tabmenu .tab_btn8 {
+        position: absolute;
+        top: 0;
+        left:980px;
+    }
+    #tabmenu .tab_btn9 {
+        position: absolute;
+        top: 0;
+        left:1120px;
+    }
+    #tabmenu .tab_btn10 {
+        position: absolute;
+        top: 0;
+        left:1260px;
+    }
+
+  
+
+
+
+
+
+/*아코디언*/
+    ul li {
+    text-decoration:none;
+    list-style:none;
+
+}
+
+/*아코디언*/
+.accordion {
+    overflow: auto;
+    font-size: 14pt;
+    cursor: pointer;
+    /*border:1px solid #a2a2a2;*/
+}
+        .accordion > ul {
+        padding:0;
+        margin:0;
+        
+        }
+            .accordion > ul > li {
+                position:relative;
+                 margin:10px 0 0 0;            
+            }
+
+            .accordion > ul > li:first-child {
+                margin-top: 50px;
+            }
+
+                
+
+
+                /* li에 포함된 a태그에 block 속성을 지정해 한줄차지 */
+                .accordion > ul > li > a {
+                    display: block;
+                    width: 100%;
+                    background: #f4f6f9;
+                    padding: 20px 30px;
+                }
+                    .accordion > ul > li > a:after {
+                        display: block;
+                        content: '';
+                        position: absolute;
+                        top: 30px;
+                        right: 30px;
+                        width: 14px;
+                        height: 7px;
+                        background: url("../../Images/faq/qa_open.png") 0 0 no-repeat;
+                        transition: all .3s;
+                    }
+                .accordion > ul > li.open > a:after {
+                    transform: rotate(-180deg);
+                }
+
+                    .accordion > ul > li > a:before {
+                        display: block;
+                        content: 'Q';
+                        position: absolute;
+                        top: 15px;
+                        left: 30px;
+                        box-sizing: border-box;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 100%;
+                        background: #7e899a;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 34px;
+                        color: #ffffff;
+                        text-align: center;
+                    }
+
+
+               
+                    /* 1레벨 메뉴의 텍스트 색상/여백/테두리/배경색 지정 */
+                    .accordion > ul > li > a > span {
+                        display: block;
+                        color: #333;
+                        font-size: 18px;
+                        text-decoration: none;
+                        text-indent:60px;
+                    }
+
+
+/* 2레벨 메뉴의 여백/테두리/배경색 지정 */
+        .accordion ul ul li {
+            position:relative;
+            padding:30px 45px;
+            width: 100%;
+        }
+
+            .accordion ul ul li:before {
+                display: block;
+                content: 'A';
+                position: absolute;
+                top: 31px;
+                left:-11px;
+                box-sizing: border-box;
+                width: 35px;
+                height: 35px;
+                border-radius: 100%;
+                background: #ed1840;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 34px;
+                color: #ffffff;
+                text-align: center;
+                transition: all .3s;
+            }
+
+            .accordion ul ul li span, .accordion ul ul li p {
+                font-size: 14px;
+            }
+            /***********회사소개***********/
+            /*tab메뉴 인사말 div*/
+            .tab-content {
+                width: 1256px;
+                height: auto;
+                border: 1px solid #a2a2a2;
+                text-align: center;
+                padding-top: 00px;
+                overflow: auto;
+                margin-bottom: 10px;
+            }
+
+
+
+/*탭메뉴 ci소개 컨텐츠 div*/
+.tab-ci-content {
+       width: 1220px;
+       height: 640px;
+       border: 1px solid #a2a2a2;
+       padding-top: 60px;
+       padding-left:37px;
+       
+}
+
+/*탭메뉴 ci소개 안 div*/
+.color, .download {
+    float:left;
+    width:580px;
+    height:200px;
+    margin-top:64px;
+    
+}
+/* 소주제 이미지 */
+    .title {
+    margin-bottom:30px;
+}
+
+ /*ci소개 안 다운로드 div*/
+.download {
+    padding-left: 70px;
+}
+
+
+/*사업소개 div*/
+.tab-business-content {
+    width: 1220px;
+    height: auto;
+    border: 1px solid #a2a2a2;
+    padding-top: 0px;
+    padding-left:0px; 
+}
+
+
+/*탭메뉴 버튼 위치 조정*/
+#tabmenu dt.tab_btn11 {
+ 
+}
+
+#tabmenu dt.tab_btn22 {
+    position: absolute;
+    top: 0;
+    left: 152px;
+}
+
+#tabmenu dt.tab_btn33 {
+    position: absolute;
+    top: 0;
+    left: 304px;
+}
+
+#tabmenu dt.tab_btn44 {
+    position: absolute;
+    top: 0;
+    left: 456px;
+}
+
+
+

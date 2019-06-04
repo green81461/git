@@ -1,0 +1,125 @@
+/***************************구매사 관리자 화면***********************************/
+
+.admin_wrap {
+    width: 100%;
+    margin: 30px 0 0 0;
+    float: left;
+    background: #fafafa;
+    border-radius:5px;
+    min-height:280px;
+}
+
+    .admin_wrap .title {
+        margin-top: 0;
+        font-size: 18px;
+        color: #094fa3;
+        font-weight: bold;
+        background: #f2f2f2;
+        padding: 10px 20px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .admin_wrap .titleinfo {
+        display: inline-block;
+        text-indent:7px;
+        color: #094fa3;
+    }
+
+    .admin_wrap .admin-wrap-left {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 48%;
+    padding:20px 30px;
+}
+
+    .admin_wrap .admin-wrap-wide {
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 100%;
+        padding: 20px 30px;
+    }
+    .admin_wrap .admin-wrap-wide ul {
+        padding-left: 0;
+        overflow:hidden;
+    }
+
+        .admin_wrap .admin-wrap-wide ul > li {
+            line-height: 38px;
+            padding: 10px 10px;
+            background: #fff;
+            width: 24.3%;
+            display: inline-block;
+            float: left;
+            border: 1px solid #e3e3e3;
+            border-radius: 5px;
+            margin: 0 10px 10px 0;
+        }
+
+            .admin_wrap .admin-wrap-wide ul > li:nth-child(4n) {
+                margin-right:0;
+            }
+
+
+            .admin_wrap .admin-wrap-wide ul > li .list_name {
+                font-size: 14px;
+                color: #3e70a3;
+                font-weight:bold;
+            }
+
+            .admin_wrap .admin-wrap-wide ul > li .price {
+                font-size: 14px;
+                color: #56918b;
+                font-weight:bold;
+                float:right;
+            }
+
+    .admin_wrap .admin-wrap-right {
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 48%;
+    }
+
+        .tbl_admin {
+            width:100%;
+        }
+
+            .tbl_admin tr {
+                height:38px;
+                border-bottom: 1px #7bc7e6 solid;
+                background:#fff;
+            }
+            .tbl_admin td {
+                text-align: center;
+                font-size: 14px;
+
+            }
+
+                .tbl_admin td:first-child {
+                    border-right: 1px #7bc7e6 solid;
+                }
+
+                .tbl_admin th {
+                    text-align: center;
+                    font-size: 14px;
+                    color: #fff;
+                    background-color: #7bc7e6;
+                }
+
+                .tbl_admin th:first-child {
+                    background-color: #078ec8;
+                }
+
+            .tbl_admin .tfoot {
+                background: #ffb840;
+            }
+
+.admin-chartwrap {
+    width:100%;
+}
+
+    .admin-chartwrap .admin-chart {
+        width: 100%;
+    }

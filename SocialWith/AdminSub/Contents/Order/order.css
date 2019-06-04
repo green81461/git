@@ -1,0 +1,833 @@
+﻿
+/*조회하기,엑셀저장 버튼*/
+.bt-align-div {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*달력*/
+.calendar {
+    border: 1px solid #a2a2a2;
+    height: 25px;
+    padding-left: 5px;
+    margin-right: 5px;
+    ftblOrder width:180px;
+}
+
+.buyer-text{
+    border:1px solid #a2a2a2;
+    height:90%;
+}
+/*드랍다운리스트*/
+.input-drop {
+    width: 99%;
+    height: 90%;
+    border: 1px solid #a2a2a2;
+}
+
+
+/*상단 영역 */
+.search-div {
+    margin-top: 30px;
+    width: 100%;
+}
+
+#tblSearchList{
+    border:1px solid #a2a2a2;
+    width:100%;
+}
+
+#tblSearchList th{
+    border:1px solid #a2a2a2;
+    background-color:#ececec;
+    text-align:center;
+    height:30px;
+    width:200px;
+}
+#tblSearchList td{
+    border:1px solid #a2a2a2;
+    height:30px;
+    padding-left:5px;
+    min-width:170px;
+}
+#tblSearchList thead{
+    height:30px;
+}
+
+
+/*하단영역*/
+.list-div {
+    margin-top: 30px;
+    width: 100%;
+    min-height: 500px;
+    /*overflow: auto;*/
+    /*border:1px solid red;*/
+}
+
+#tblDeliveryOrderList{
+    border:1px solid #a2a2a2;
+    width:100%;
+}
+
+#tblDeliveryOrderList th{
+    border:1px solid #a2a2a2;
+    text-align:center;
+    height:30px;
+    background-color:#ececec;
+
+}
+.tblDelivery {
+    border:1px solid #a2a2a2;
+    width:100%;
+}
+    .tblDelivery th{
+        border:1px solid #a2a2a2;
+        height:30px;
+        background-color:#ececec;
+        text-align:center;
+    }
+
+    .tblDelivery td {
+        border-top: 1px solid #a2a2a2;
+        /*border:1px solid red;*/
+        width:300px;
+       
+    }
+
+.moneyInput{
+    float:right;
+    /*border:1px solid red;*/
+    text-align:right;
+    padding-right:5px;
+    height:20px;
+}
+
+
+
+
+
+#tblDeliveryOrderList td {
+    height: 30px;
+}
+
+ #tblDeliveryOrderList td:nth-child(3) {
+    text-align:left;
+ }
+
+ #tblDeliveryOrderList td:nth-child(7) {
+     text-align: left;
+ }
+
+ #tblDeliveryOrderList td:nth-child(10) {
+        text-align: right;
+        padding-right:5px;
+ }
+
+ #tblDeliveryOrderList td:nth-child(12) {
+        text-align: right;
+        padding-right: 5px;
+ }
+
+
+
+#tblHistoryList {
+    border: 1px solid #a2a2a2;
+    width: 100%;
+   
+
+}
+
+#tblHistoryList th {
+        border: 1px solid #a2a2a2;
+        background-color: #ececec;
+        text-align: center;
+        height: 30px;
+        width: 250px;
+        width:150px;
+}
+
+ #tblHistoryList td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        padding-left: 5px;
+ }
+
+ #tblHistoryList thead{
+     height:40px;
+ }
+
+
+
+#tblSearch {
+    border: 1px solid #a2a2a2;
+    width: 100%;
+    margin-bottom:20px;
+}
+
+ #tblSearch th{
+     border:1px solid #a2a2a2;
+     height:30px;
+     background-color:#ececec;
+     text-align:center;
+ }
+
+ #tblSearch td{
+     border:1px solid #a2a2a2;
+     height:30px;
+     text-align:center;
+ }
+
+#list-table {
+    border: 1px solid #a2a2a2;
+    width: 100%;
+}
+
+
+/*하단 리스트 영역*/
+.list-div {
+    margin-top: 30px;
+    width: 100%;
+}
+
+#tblDeliveryOrderList {
+    border: 1px solid #a2a2a2;
+    width: 100%;
+}
+
+    #tblDeliveryOrderList th {
+        border: 1px solid #a2a2a2;
+        background-color: #ececec;
+        text-align: center;
+        height: 40px;
+        width: 250px;
+        width: 150px;
+    }
+
+    #tblDeliveryOrderList td {
+        border: 1px solid #a2a2a2;
+        height: 40px;
+        padding-left: 5px;
+    }
+
+
+table#tblGoodsInfo, 
+table#tblGoodsInfo td {
+    border: none !important;
+}
+
+/*탭메뉴*/
+.sub-tab-div {
+    width: 100%;
+    height: 36px;
+    border-bottom: 1px solid #ec2028;
+    margin-top: 30px;
+}
+
+    .sub-tab-div a:nth-child(1) {
+        margin-left:0;
+    }
+
+    .sub-tab-div a:nth-child(2) {
+        margin-left: -3px;
+    }
+
+    .sub-tab-div a:nth-child(3) {
+        margin-left: -2px;
+    }
+
+
+    .sub-tab-div a:nth-child(4) {
+        margin-left: -2px;
+    }
+    .sub-tab-div a:nth-child(5) {
+        margin-left: -3px;
+    }
+
+
+#tblProfitList th {
+    background-color: #ececec;
+    border: 1px solid #a2a2a2;
+    height: 30PX;
+}
+
+#tblProfitList td {
+    border: 1px solid #a2a2a2; height:30px;
+    
+}
+
+
+.input-txt{
+    width:50%;
+    height:90%;
+    border:1px solid #a2a2a2;
+}
+
+
+
+/*팝업창 보더*/
+.divpopup-layer {
+    border: none;
+}
+
+.close-div {
+    width: 50px;
+    height: 30px;
+    float: right;
+}
+
+
+.tblPopup {
+    border: 1px solid #a2a2a2;
+    width: 100%;
+}
+
+    .tblPopup th {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        background-color: #ececec;
+        text-align: center;
+        width: 100px;
+    }
+
+    .tblPopup td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        width: 100px;
+    }
+
+.popup-div-top {
+    margin-top: 20px;
+}
+
+.popup-div-bottom {
+    margin-top: 20px;
+    max-height: 302px;
+    overflow: auto;
+}
+
+.bt-align-div{
+    text-align:right;
+}
+
+
+
+/******주문상풍 팝업창**********/
+#divPopup {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 100;
+    widows: 50%;
+}
+
+
+.divPopupWrapper {
+    width: 1200px;
+    height: auto;
+    margin: 50px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+#divPopup_check {
+    background-color: #ffffff;
+    height: 800px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+#tblOrder {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+    margin-bottom: 0;
+    margin-top:0;
+}
+
+    #tblOrder th {
+        border: 1px solid #a2a2a2;
+        background-color: #ececec;
+        height: 30px;
+        text-align: center;
+    }
+
+    #tblOrder td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        text-align: center;
+    }
+
+        #tblOrder td:nth-child(3) {
+            text-align: left;
+            padding-left: 5px;
+        }
+
+
+#tblPopup {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+    #tblPopup th {
+        border: 1px solid #a2a2a2;
+        background-color: #ececec;
+        height: 30px;
+        text-align: center;
+    }
+
+    #tblPopup td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        text-align: center;
+    }
+
+/******주문상품팝업**********/
+#productDiv {
+    /*margin: 10px 0 0 0;*/
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 100;
+    widows: 50%;
+}
+
+
+.productWrapper {
+    width: 1050px;
+    height: auto;
+    margin: 10px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.productContent {
+    background-color: #ffffff;
+    height: 700px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+
+
+/******회사코드팝업**********/
+#companyCodeDiv {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 100;
+    widows: 50%;
+}
+
+
+.companyCodeWrapper {
+    width: 650px;
+    height: auto;
+    margin: 100px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.companyCodeContent {
+    background-color: #ffffff;
+    height: 520px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+/******(관리자) 전자세금계산서 팝업**********/
+#divBillDetail {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 100;
+    widows: 50%;
+}
+
+
+.billDetailWrapper {
+    width: 1050px;
+    height: auto;
+    margin: 10px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.billDetailContent {
+    background-color: #ffffff;
+    height: 700px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+#divDtlPop_1{
+    
+}
+
+#tbl_dtlPop_pay{
+    border:1px solid #a2a2a2;
+    width:60%
+}
+
+#tbl_dtlPop_pay th{
+    background-color:#ececec;
+    border:1px solid #a2a2a2;
+    text-align:center;
+}
+
+ .tblOrder-div{
+      /*border:1px solid red;*/
+      min-height:230px;
+      margin-bottom:20px;
+  }
+
+.tblBillDetail-div {
+    /*border:1px solid red;*/
+    margin-bottom: 20px;
+}
+
+
+
+#tbl_dtlPop_pay td {
+    border: 1px solid #a2a2a2;
+    height: 30px;
+    padding-left: 10px;
+}
+
+
+.balDiv{
+    margin-top:20px;
+}
+
+
+.balTbl{
+    border:1px solid #a2a2a2;
+    width:100%;
+}
+
+.balTbl th{
+    background-color:#ececec;
+    border:1px solid #a2a2a2;
+    height:30px;
+    text-align:center;
+}
+
+.balTbl td{
+    border:1px solid #a2a2a2;
+    height:30px;
+    text-align:right;
+    padding-right:5px;
+    width:120px;
+}
+
+.balTbl td:nth-child(1){
+    text-align:center;
+    width:140px;
+}
+
+    .balTbl td:nth-child(2) {
+        text-align: center;
+        width:100px;
+    }
+    .balTbl td:nth-child(3) {
+        text-align: center;
+        width:150px;
+    }
+
+    .balTbl td:nth-child(7) {
+   
+        width: 150px;
+    }
+
+    .balTbl td:nth-child(8) {
+        width: 150px;
+    }
+
+
+/******정산내용상세팝업**********/
+#balDiv {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 100;
+    widows: 50%;
+}
+
+
+.balWrapper {
+    width: 1050px;
+    height: auto;
+    margin: 30px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.balContent {
+    background-color: #ffffff;
+    height: 750px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+
+
+.balPopTbl{
+    border:1px solid #a2a2a2;
+    width:100%;
+    margin-top:30px;
+}
+
+.balPopTbl th{
+    border:1px solid #a2a2a2;
+    height:30px;
+    text-align:center;
+    background-color:#ececec;
+}
+
+.balPopTbl td{
+    border:1px solid #a2a2a2;
+    height:30px;
+    text-align:center;
+}
+
+    .balPopTbl td:nth-child(3) {
+        text-align:right;
+        padding-right:20px;
+    }
+
+
+
+
+        .btPop-div{
+    text-align:right;
+    margin-top:20px;
+}
+
+.tblOrederSearch {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#tblSearch_A th {
+    border: 1px solid #a2a2a2;
+    height: 30px;
+    background-color: #ececec;
+    text-align: center;
+}
+
+#tblSearch_A td {
+    border: 1px solid #a2a2a2;
+    height: 30px;
+    background-color: #ececec;
+    text-align: center;
+}
+
+
+.tblOrederSearch tr {
+    background-color: #ececec;
+}
+
+.dropA1 {
+    width: 150px;
+    height: 26px;
+    vertical-align: middle;
+    margin:1px
+}
+
+.dropA2 {
+    width: 150px;
+    height: 26px;
+    vertical-align: middle;
+    float: left;
+    margin-left: 10px;
+}
+
+.tblMainA {
+    width: 100%;
+}
+
+.tblMainA th {
+    background-color: #ececec;
+    text-align: center;
+    height: 30px;
+    border: 1px solid #a2a2a2;
+}
+
+.tblMainA td {
+    border: 1px solid #a2a2a2;
+    height: 30px;
+}
+
+.tblMainB {
+    width: 100%;
+}
+
+ .tblMainB th {
+    background-color: #ececec;
+    text-align: center;
+    height: 30px;
+    border: 1px solid #a2a2a2;
+}
+
+.tblMainB td {
+    border: 1px solid #a2a2a2;
+    height: 30px;
+}
+
+.tblMainC {
+    width: 100%;
+}
+
+.tblMainC th {
+    background-color: #ececec;
+    text-align: center;
+    height: 30px;
+    border: 1px solid #a2a2a2;
+    width: 230px;
+}
+
+.tblMainC td {
+   border: 1px solid #a2a2a2;
+   height: 30px;
+   width: 400px;
+   text-align: center;
+}
+
+.text-code {
+    width: 290px;
+    border: 1px solid #a2a2a2;
+    height: 25px;
+    padding-left: 5px;
+}
+
+.orderBelongCodeContents {
+    background-color: #ffffff;
+    height: 520px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+}
+
+/* [관리자] 주문지역등록 팝업창*/
+#orderBelongCodediv {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 100;
+    widows: 50;
+}
+
+.orderBelongCodeWrapper {
+    width: 650px;
+    height: auto;
+    margin: 100px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.orderBelongCodeContents {
+    background-color: #ffffff;
+    height: 520px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+
+/* [관리자] 주문업체등록 팝업창*/
+.popupdiv {
+   
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 100;
+    widows: 50;
+}
+
+.popupdivWrapper {
+    width: 650px;
+    height: auto;
+    margin: 60px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.popupdivContents {
+    background-color: #ffffff;
+    height: 520px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+.pop-title {
+    font-size: 30px;
+    font-family: HYShortSamul;
+    color: #ec2029;
+}

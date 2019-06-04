@@ -1,0 +1,75 @@
+﻿/**************** 서브페이지 컨텐츠 영역 시작 *****************/
+
+
+/*서브 페이지 전체 DIV*/
+.all{
+      width:100%;
+      min-height:900px;
+}
+
+
+/*
+table {
+ margin-bottom:50px;
+ margin-top:3%;
+
+}*/
+
+.lbCheckText {
+
+background-color:red;
+}
+/*서브 페이지 타이틀 DIV*/
+.sub-title-div {
+    margin-top: 21px;
+    margin-bottom: 15px;
+    
+}
+
+
+
+
+
+
+/*서브 페이지 소제목 DIV*/
+.mini-title{
+    margin-bottom:20px;
+
+}
+
+
+.padding-left-ten {
+    padding-left: 10px;
+}
+
+
+/**********************/
+.sub-contents-div1 {
+    width:1263px;
+    margin-left:auto;
+    margin-right:auto;
+    min-height:900px;
+    display:block;
+}
+
+.sub-contents-div3 {
+    width: 1214px;
+    height:1300px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 900px;
+    display: block;
+   
+}
+
+
+
+
+
+
+.sub-title-div1 {
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+    /**************** 서브페이지 컨텐츠 영역 끝 *****************/

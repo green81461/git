@@ -1,0 +1,14 @@
+2019-05-29 16:21:03.9045 | 8120 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Goods/Order/FileDownload.aspx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   위치: System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   위치: System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.PageHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 

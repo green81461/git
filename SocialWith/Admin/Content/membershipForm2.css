@@ -1,0 +1,65 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+.title-div {
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.square-span {
+    margin-left: 27px;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #ed212a;
+    font-family: 돋움;
+}
+
+.border-table {
+    width: 188px;
+    height: 280px;
+    border: 1px solid #adadad;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+#firstAgree {
+    margin-left: 37px;
+    margin-bottom: 37px;
+}
+
+#secondAgree {
+    margin-left: 37px;
+    margin-bottom: 25px;
+}
+
+#allAgree {
+    margin-left: 37px;
+    margin-bottom: 25px;
+}
+
+.bottomBtn-div {
+    height: 30px;
+    margin-bottom: 60px;
+}
+
+.margin-div {
+    float: right;
+}
+
+#ContentPlaceHolder1_btnAgree {
+    width:95px;
+    
+}
+
+#ContentPlaceHolder1_btnNotAgree {
+    width: 95px;
+}
+
+.blank-span {
+  margin-left:10px;
+}

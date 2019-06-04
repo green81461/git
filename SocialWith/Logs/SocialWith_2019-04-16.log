@@ -1,0 +1,337 @@
+2019-04-16 11:05:21.0710 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2313 | In | 
+2019-04-16 11:05:21.0990 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2325 | Out | 
+2019-04-16 13:50:53.1701 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2313 | In | 
+2019-04-16 13:50:53.1941 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2325 | Out | 
+2019-04-16 14:16:27.8022 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2214 | In | 
+2019-04-16 14:16:27.8232 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2230 | Out | 
+2019-04-16 14:16:39.2830 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2214 | In | 
+2019-04-16 14:16:39.2830 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2230 | Out | 
+2019-04-16 14:16:40.2774 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2214 | In | 
+2019-04-16 14:16:40.2784 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2230 | Out | 
+2019-04-16 14:16:40.6145 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2214 | In | 
+2019-04-16 14:16:40.6145 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2230 | Out | 
+2019-04-16 14:16:40.8738 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2214 | In | 
+2019-04-16 14:16:40.8738 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2230 | Out | 
+2019-04-16 14:17:15.9354 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2214 | In | 
+2019-04-16 14:17:15.9354 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2230 | Out | 
+2019-04-16 14:17:18.8261 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2214 | In | 
+2019-04-16 14:17:18.8261 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2230 | Out | 
+2019-04-16 14:17:20.5785 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2214 | In | 
+2019-04-16 14:17:20.5785 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2230 | Out | 
+2019-04-16 14:17:23.9988 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2214 | In | 
+2019-04-16 14:17:23.9988 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2230 | Out | 
+2019-04-16 14:17:27.8372 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2214 | In | 
+2019-04-16 14:17:27.8372 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2230 | Out | 
+2019-04-16 14:17:31.4388 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2214 | In | 
+2019-04-16 14:17:31.4388 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2230 | Out | 
+2019-04-16 14:17:31.7756 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2214 | In | 
+2019-04-16 14:17:31.7756 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGroupCodeListByCategory : 2230 | Out | 
+2019-04-16 14:17:42.8833 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGoodsCodeListByCategory : 2264 | In | 
+2019-04-16 14:17:42.8833 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGoodsCodeListByCategory : 2278 | Out | 
+2019-04-16 14:17:47.2723 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGoodsCodeListByCategory : 2264 | In | 
+2019-04-16 14:17:47.2723 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGoodsCodeListByCategory : 2278 | Out | 
+2019-04-16 14:17:51.8418 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGoodsCodeListByCategory : 2264 | In | 
+2019-04-16 14:17:51.8418 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetGoodsCodeListByCategory : 2278 | Out | 
+2019-04-16 15:01:51.7007 | 12464 | iisexpress | ERROR | SocialWith.Data.Dao.DAO | SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor : 193 | ErrorMessage | Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-06550: 줄 1, 열7:PLS-00306: 'PROC_BRAND_LIST_ADMIN' 호출 시 인수의 갯수나 유형이 잘못되었습니다
+ORA-06550: 줄 1, 열7:PL/SQL: Statement ignored
+   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 187   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 187
+2019-04-16 15:01:51.7809 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : Oracle Data Provider for .NET, Managed Driver
+ 에러 메시지    : ORA-06550: 줄 1, 열7:PLS-00306: 'PROC_BRAND_LIST_ADMIN' 호출 시 인수의 갯수나 유형이 잘못되었습니다
+ORA-06550: 줄 1, 열7:PL/SQL: Statement ignored
+ Stack Trace    :    위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 195
+   위치: SocialWith.Biz.Brand.BrandService.GetBrandList_Admin(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Brand\BrandService.cs:줄 166
+   위치: BrandHandler.GetSearchBrandPagingList_Admin(HttpContext context) 파일 d:\Svn\SocialWith\Handler\Common\BrandHandler.ashx:줄 129
+   위치: BrandHandler.ProcessRequest(HttpContext context) 파일 d:\Svn\SocialWith\Handler\Common\BrandHandler.ashx:줄 29
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 15:39:26.3917 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2313 | In | 
+2019-04-16 15:39:26.4156 | 12464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2325 | Out | 
+2019-04-16 17:01:10.3147 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : d:\Svn\SocialWith\Admin\Goods\BrandMain.aspx.cs(100): error CS0103: 'ucListPager' 이름이 현재 컨텍스트에 없습니다.
+ Stack Trace    :    위치: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   위치: Microsoft.AspNet.FriendlyUrls.Abstractions.BuildManagerWrapper.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)
+   위치: Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.GetWebObjectFactory(HttpContextBase httpContext, String modifiedVirtualPath)
+   위치: Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.Resolve(HttpContextBase httpContext, IList`1 extensions, String virtualPathOverride, IFriendlyUrlRouteSupportFunctions supportFunctions)
+   위치: Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.Microsoft.AspNet.FriendlyUrls.Abstractions.IFriendlyUrlRouteSupportFunctions.Resolve(HttpContextBase httpContext, IList`1 extensions, String virtualPathOverride)
+   위치: Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.GetRouteData(HttpContextBase httpContext, String pathOverride, IFriendlyUrlRouteSupportFunctions supportFunctions)
+   위치: Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.GetRouteData(HttpContextBase httpContext)
+   위치: System.Web.Routing.RouteCollection.GetRouteData(HttpContextBase httpContext)
+   위치: System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(HttpContextBase context)
+   위치: System.Web.Routing.UrlRoutingModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   위치: System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:02:17.1641 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : d:\Svn\SocialWith\Admin\Goods\BrandMain.aspx(216): error CS1061: 'ASP.admin_goods_brandmain_aspx'에 'btnSearch_Click'에 대한 정의가 없고 'ASP.admin_goods_brandmain_aspx' 형식의 첫 번째 인수를 허용하는 확장 메서드 'btnSearch_Click'이(가) 없습니다. using 지시문 또는 어셈블리 참조가 있는지 확인하십시오.
+ Stack Trace    :    위치: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   위치: Microsoft.AspNet.FriendlyUrls.Abstractions.BuildManagerWrapper.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)
+   위치: Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.GetWebObjectFactory(HttpContextBase httpContext, String modifiedVirtualPath)
+   위치: Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.Resolve(HttpContextBase httpContext, IList`1 extensions, String virtualPathOverride, IFriendlyUrlRouteSupportFunctions supportFunctions)
+   위치: Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.Microsoft.AspNet.FriendlyUrls.Abstractions.IFriendlyUrlRouteSupportFunctions.Resolve(HttpContextBase httpContext, IList`1 extensions, String virtualPathOverride)
+   위치: Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.GetRouteData(HttpContextBase httpContext, String pathOverride, IFriendlyUrlRouteSupportFunctions supportFunctions)
+   위치: Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.GetRouteData(HttpContextBase httpContext)
+   위치: System.Web.Routing.RouteCollection.GetRouteData(HttpContextBase httpContext)
+   위치: System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(HttpContextBase context)
+   위치: System.Web.Routing.UrlRoutingModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   위치: System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:02:35.7983 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : d:\Svn\SocialWith\Admin\Goods\BrandMain.aspx(216): error CS1061: 'ASP.admin_goods_brandmain_aspx'에 'btnSearch_Click'에 대한 정의가 없고 'ASP.admin_goods_brandmain_aspx' 형식의 첫 번째 인수를 허용하는 확장 메서드 'btnSearch_Click'이(가) 없습니다. using 지시문 또는 어셈블리 참조가 있는지 확인하십시오.
+ Stack Trace    :    위치: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   위치: Microsoft.AspNet.FriendlyUrls.Abstractions.BuildManagerWrapper.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)
+   위치: Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.GetWebObjectFactory(HttpContextBase httpContext, String modifiedVirtualPath)
+   위치: Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.Resolve(HttpContextBase httpContext, IList`1 extensions, String virtualPathOverride, IFriendlyUrlRouteSupportFunctions supportFunctions)
+   위치: Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.Microsoft.AspNet.FriendlyUrls.Abstractions.IFriendlyUrlRouteSupportFunctions.Resolve(HttpContextBase httpContext, IList`1 extensions, String virtualPathOverride)
+   위치: Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.GetRouteData(HttpContextBase httpContext, String pathOverride, IFriendlyUrlRouteSupportFunctions supportFunctions)
+   위치: Microsoft.AspNet.FriendlyUrls.FriendlyUrlRoute.GetRouteData(HttpContextBase httpContext)
+   위치: System.Web.Routing.RouteCollection.GetRouteData(HttpContextBase httpContext)
+   위치: System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(HttpContextBase context)
+   위치: System.Web.Routing.UrlRoutingModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   위치: System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:09:03.7702 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:13:53.8867 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:14:16.9750 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:14:41.8500 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:16:10.7010 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:16:26.2921 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:20:17.7211 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:21:30.0564 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:21:40.0010 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:26:22.6046 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:26:54.5046 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:27:43.8455 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:28:41.9700 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:30:10.9668 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:30:43.0650 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-04-16 17:30:50.8979 | 12464 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Handler/BrandHandler.ashx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 

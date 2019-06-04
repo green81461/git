@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>가스공사</title>
+    <script type="text/javascript" src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../Scripts/common.js"></script>
+    <script language="JavaScript">
+        var qs = fnGetQueryStrings();
+        var filePath = qs["FilePath"];
+        var popupName = qs["PopName"];
+        $(function () {
+            $('#imgPopup').prop('src', '/UploadFile/' + filePath);
+        })
+        
+        function closeWin() {
+             if (document.forms[0].Notice.checked)
+                 fnSetCookie(popupName, "done", 1,'/', '');
+             self.close();
+        }
+
+         window.addEventListener("beforeunload", function (e) {
+             closeWin();
+         });
+    </script>
+</head>
+<body>
+    <div>
+        <div style="text-align:center; float:initial">
+           <img id="imgPopup" style=""/>
+        </div>
+    </div>
+    <form style="text-align:right; padding-top:7px">
+        <div>
+            <div style="display:inline-block; float:left">
+                <input type="CHECKBOX" name="Notice" value="">
+                오늘 하루 팝업 띄우지 않기
+            </div>
+
+            <div style="display:inline-block; float:right">
+                <a onclick="closeWin()" style="vertical-align:middle; padding-top:5px; cursor:pointer">닫기</a>
+                <!--<img src="../Images/Wish/icon-delete.jpg" onclick="closeWin()" style="vertical-align:middle; padding-top:5px; cursor:pointer" />-->
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,1206 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+}
+
+
+
+/**************** 헤더 영역 시작 *****************/
+
+/*상위 고정 헤더*/
+.fixed-div {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+}
+
+/** 퀵메뉴 영역 시작 **/
+.topmenu-div {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+
+/*ul 태그 가로 정렬*/
+.menu-ul {
+    height: 100%;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+    .menu-ul li {
+        float: left;
+    }
+
+        .menu-ul li a {
+            display: block;
+        }
+
+/** 퀵메뉴 영역 끝 **/
+
+/** 상단 검색 영역 시작 **/
+.topSearch-div {
+    width: 1262px;
+    height: 80px;
+    margin: 0 auto;
+    display: table;
+}
+
+    .topSearch-div div {
+        height: 80px;
+        /*margin: 0;*/
+        padding: 0;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        /*border:0.5px solid blue;*/
+    }
+
+        .topSearch-div div:nth-child(1) {
+            /*height: 80px;*/
+            width: 197px;
+        }
+
+        /*검색어 입력 div*/
+        .topSearch-div div:nth-child(2) {
+            /*height: 80px;*/
+            /*height: 100%;
+width: 197px;*/
+            /*padding-bottom: 5px;*/
+            text-align: right;
+        }
+
+            /*검색어 입력창*/
+            .topSearch-div div:nth-child(2) input {
+                height: 37px;
+                line-height: 31px;
+                width: 643px;
+                border: 2px solid rgb(236, 32, 41);
+            }
+
+        /*검색 버튼 div*/
+        .topSearch-div div:nth-child(3) {
+            /*height: 80px;*/
+            height: 100%;
+            width: 52px;
+            text-align: left;
+        }
+
+/*검색 버튼*/
+.main-srh-btn {
+    width: 52px;
+    height: 37px;
+}
+
+/*상세 검색 버튼 div*/
+.topSearch-div div:nth-child(4) {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*상세 검색 버튼*/
+.main-dtlsrh-btn {
+    width: 95px;
+    height: 38px;
+    padding: 0;
+}
+
+/*bar 이미지 div*/
+.topSearch-div div:nth-child(5) {
+    width: 2px;
+}
+
+/*로그인, 회원가입 버튼 div*/
+.topSearch-div div:nth-child(6) {
+    width: 234px;
+    display: block;
+    position: static;
+    padding-left: 20px;
+}
+
+/*로그인, 회원가입 버튼 div 의 자식 div*/
+.main-welcome-div {
+    width: 100%;
+    display: block;
+}
+
+    .main-welcome-div span {
+        line-height: 22px;
+        font-size: 12px;
+        font-family: Dotum, DotumChe, sans-serif;
+    }
+
+/*헤더 부분 로그인, 회원가입 버튼*/
+/*.main-welcome-div button 
+{
+    width: 77px;
+    height: 22px;
+}*/
+
+/** 상단 검색 영역 끝 **/
+
+/** 메뉴 영역 시작 **/
+
+
+   nav {width: 100%; height:40px; padding: 0; margin: 0; border: 0; background-color:#ececec;}
+
+
+
+.navi-div {
+    width: 1270px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+    .navi-div a:hover {
+        background-color: #ec2029;
+        color: white;
+        height: 40px;
+    }
+
+#navi-ul .all_menu {
+    width: 90px;
+    height: 40px;
+}
+
+    #navi-ul .all_menu a:hover {
+        width: 90px;
+        height: 40px;
+   
+    }
+
+.adminsub-tab-btn {
+    height: 40px;
+    width: 145px;
+    background-color: #ececec;
+    margin-left: 1px;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+
+#submenu .slide-sub-div li {
+    width: 145px;
+    height: 24px;
+    margin-left: -37px;
+}
+
+#submenu li {
+    line-height:24px;
+}
+
+
+.navi-div li a {
+    text-align: center;
+    color: #69686d;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+
+#submenu {
+    display: none;
+    border-bottom: 3px solid #ec2029;
+    background-color: #fff;
+    width: 100%;
+    height: 273px;
+    cursor: pointer;
+
+}
+
+
+    #submenu .slide-sub-div {
+        width: 145px;
+        height: 24px;
+        float: left;
+        margin-left: 1px;
+
+    }
+
+        #submenu .slide-sub-div a:hover {
+            width: 146px;
+            height: 24px;
+            float: left;
+        
+            line-height:24px;
+        }
+        #submenu .slide-sub-div a {
+            width: 146px;
+            height: 24px;
+            float: left;
+            margin-left: 0px;
+            line-height: 24px;
+        }
+
+
+    #submenu li {
+        line-height: 24px;
+       
+        position:relative;
+        left:-3px;
+       
+    }
+#submenu li a{
+    height:24px;
+}
+.navi-div #submenu .slide-sub-div {
+    height: 263px;
+    margin-left: 1px;
+    border-left: 1px dotted #69686d;
+}
+
+
+
+/** 메뉴 영역 끝 **/
+
+/**************** 헤더 영역 끝 *****************/
+
+
+/* 컨텐츠 영역 전체를 감싸는 div*/
+.container-div {
+    width: 100%;
+    height: auto;
+}
+
+/**************** Footer 영역 시작 *****************/
+.footer-div{position:relative; bottom:00px; left:00px; width:100%; height:32px; float:left; background-color: rgb(105, 104, 109); margin-top:20px;}
+
+.footer-menu-div 
+{
+	height:32px;
+    width:1262px;
+    margin-top: 1px;
+	position:relative; left:50%; margin-left:-960px;
+}
+
+.footer-menu-div ul{width:1264px; height:31px;  ;position:relative; left:50%; margin-left:-303px;} 
+
+.footer-menu-div ul li { /*position:relative; left:50%; top:0; margin-left:-47px;*/  width:717px; margin:0 auto}
+
+.copyright{ width:1262px; height:110px; margin:0 auto;}
+
+.copyright li{float:left}
+/**************** Footer 영역 끝 *****************/
+
+/**************** div Layer Popup 영역 시작 *****************/
+.divpopup-layer-package {
+    display: none;
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+    .divpopup-layer-package .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: .5;
+        filter: alpha(opacity=50);
+    }
+
+.divpopup-layer {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    border: 3px solid black;
+    z-index: 10;
+}
+
+    .divpopup-layer .divpopup-layer-container {
+        padding: 20px 25px;
+    }
+
+.divpopup-layer-package .divpopup-layer {
+    display: block;
+}
+
+/**************** div Layer Popup 영역 끝 *****************/
+
+/**************** Tab Control 영역 시작 *****************/
+
+.tabHeaderWrap {
+    border-bottom: 2px solid #272D66;
+    height: 30px;
+    margin-bottom: 10px;
+    min-width: 300px;
+}
+
+    .tabHeaderWrap a {
+        float: left;
+        display: block;
+        margin-right: 1px;
+        background: #ccc;
+        color: #666;
+        margin-top: 2px;
+        height: 28px;
+        line-height: 30px;
+        padding: 0 10px;
+        border-radius: 5px 5px 0 0;
+        text-decoration: none
+    }
+
+        .tabHeaderWrap a:hover {
+            background: #eee;
+            text-decoration: none
+        }
+
+        .tabHeaderWrap a.on {
+            border: 2px solid #272D66;
+            border-bottom: none;
+            background: #fff;
+            color: #000;
+            font-weight: bold;
+            height: 30px;
+            margin-top: 0;
+            text-decoration: none
+        }
+
+/**************** Tab Control 영역 끝 *****************/
+
+
+/****************************AdminSub 고객사A*****************************************/
+
+
+
+
+.topmenu-div1 {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+
+
+
+/**************** Footer 영역 시작 *****************/
+.footer-div1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(105, 104, 109);
+    margin: auto;
+}
+
+.footer-menu-div1 {
+    width: 1262px;
+    height: 31px;
+    margin: 0 auto;
+}
+
+.footer-bottom-div1 {
+    width: 1270px;
+    height: 111px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+    .footer-bottom-div1 span:nth-child(1) {
+        width: 196px;
+    }
+
+    .footer-bottom-div1 span:nth-child(2) {
+        width: 862px;
+    }
+
+    .footer-bottom-div1 span:nth-child(3) {
+        width: 204px;
+    }
+
+/**************** Footer 영역 끝 *****************/
+
+
+
+
+/* */
+/*조회하기,엑셀저장 버튼*/
+.bt-align-div {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/**/
+
+
+/* 탭버튼 css 시작*/
+.tabOff {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0px;
+    background-color: #ececec;
+    color: #69696b;
+    font-weight: 600;
+}
+
+    .tabOff:hover {
+        text-decoration: none;
+        color: #69696b;
+    }
+
+.tabOn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0px;
+    background-color: #ec2029;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+    .tabOn:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+.div-main-tab a:nth-child(1) {
+    /*margin-left: -40px;*/
+}
+
+
+.subTabOff {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 35px;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #69696c;
+    font-weight: 600;
+    border: 2px solid #ececec;
+}
+
+
+.subTabOn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 35px;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #016dad;
+    font-weight: 600;
+    border: 2px solid #016dad;
+}
+
+
+/* 탭버튼 css 끝*/
+/* 페이지 타이틀 css시작 */
+.img-title {
+    margin-right: 5px;
+}
+
+.p-title-mainsentence {
+    color: #69696c;
+    font-size:26px;
+    font-weight:bold;
+}
+
+.span-title-subsentence {
+    font-family: Dotum;
+    color: #626363;
+    font-size: 12px;
+    font-weight: normal;
+}
+/* 페이지 타이틀 css끝 */
+
+/*------------------------  Button Style ---------------------------------------*/
+.commonBtn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ffffff;
+    padding: 0px;
+    background-color: #727272;
+    font-weight: 600;
+    border: none;
+    border-radius:5px;
+}
+
+    .commonBtn:hover {
+        background-color: #fc223b !important;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+.commonBtn_msize {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ffffff;
+    padding: 0px;
+    background-color: #69696b;
+    font-weight: 600;
+    border: none;
+}
+
+    .commonBtn_msize:hover {
+        background-color: #ec2029;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+.subBtn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0px;
+    background-color: #ffffff;
+    color: #69696b;
+    font-weight: 600;
+    border: 1px solid #69696b;
+}
+
+    .subBtn:active {
+        /*position: relative;
+        top: 3px*/
+    }
+
+    .subBtn:hover {
+        background-color: #69696b;
+        color: #ffffff;
+        text-decoration: none;
+        border: 1px solid #69696b;
+    }
+
+.listBtn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ffffff;
+    padding: 0px;
+    background-color: #69696b;
+    font-weight: 600;
+    border: none;
+}
+
+    .listBtn:active {
+        position: relative;
+        top: 3px
+    }
+
+    .listBtn:hover {
+        background-color: #ffffff;
+        color: #69696b;
+        text-decoration: none;
+        border: 1px solid #69696b;
+    }
+
+    .listBtn.type2 {
+        text-decoration: none;
+        font-family: Dotum;
+        line-height: 20px;
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+        color: #69696b;
+        padding: 0px;
+        background-color: #ffffff;
+        font-weight: 600;
+        border: 1px solid #69696b;
+    }
+
+        .listBtn.type2:active {
+            position: relative;
+            top: 3px
+        }
+
+        .listBtn.type2:hover {
+            background-color: #69696b;
+            color: #ffffff;
+            text-decoration: none;
+            border: none;
+        }
+/*------------------------  Button Style ---------------------------------------*/
+
+.search-div {
+    margin:20px 0;
+    width: 100%;
+}
+
+    .search-div select {
+        height:30px;
+    }
+    .search-div input[type=text] {
+        height:30px;
+    }
+
+    /* input  css 시작 */
+    .input-qty {
+        border: 1px solid #adafb4;
+        float: left;
+        position: relative;
+        width: 57px;
+        text-align: center;
+        height: 30px;
+        display: block;
+    }
+
+    .input-qty input[type=number], .input-qty input[type=text] {
+        position: absolute;
+        left: 1px;
+        top: 0;
+        width: 43px;
+        height: 28px;
+        padding: 0 0 1px 3px;
+        text-align: center;
+        border: none;
+        border-right: 1px solid #adafb4;
+        z-index: 10;
+        box-sizing: border-box;
+    }
+
+        .input-qty input[type=number]::-webkit-inner-spin-button,
+        .input-qty input[type=number] ::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+    .input-qty .input-arrow-up {
+        position: absolute;
+        right: 1px;
+        top: -4px;
+        display: block;
+        height: 18px;
+        text-align: center;
+        border-bottom: 1px solid #adafb4;
+    }
+
+    .input-qty .input-arrow-down {
+        position: absolute;
+        bottom: 0px;
+        right: 1px;
+        display: block;
+        height: 13px;
+    }
+
+    .input-qty .imgarrowup {
+        margin-bottom: 3px;
+        cursor: pointer;
+    }
+
+    .input-qty .imgarrowdown {
+        margin-top: -9px;
+        cursor: pointer;
+    }
+/* input  css 끝 */
+
+
+/*인증상품 관련 시작*/
+
+.spanCert {
+    cursor: default;
+    font-weight: bold;
+    color: green;
+    font-size:12px;
+}
+/*인증상품 관련 끝*/
+
+
+.mainbtn {
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    display: inline-block;
+    background-color: white;
+    font-weight: bold;
+}
+
+    .mainbtn.type1 {
+        color: #fff;
+        background-color: #49afcd;
+        border: none;
+        box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+        height: 35px !important;
+        padding:0 10px;
+        line-height:35px;
+        font-size:12px;
+        text-align:center;
+    }
+        .mainbtn.type1:hover {
+
+            background-color: #3c97b2;
+        }
+
+        .mainbtn.type2 {
+            color: #fff;
+            background-color: #ed5650;
+            border: none;
+            box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+            height: 35px !important;
+            padding: 0 10px;
+            line-height: 35px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+
+    .mainbtn.type3 {
+        color: #fff;
+        background-color: #2dbf64;
+        border: none;
+        box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+        height: 35px !important;
+        padding: 0 10px;
+        line-height: 35px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+
+/**************탭 시작*************************/
+
+/* 탭버튼 css 시작*/
+
+.tabOff {
+    background: #e9ebef;
+    margin: 0 0 -1px -1px;
+    border-bottom: 0 none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+.tabOn {
+    position: relative;
+    background-color: #016dad;
+    border-bottom: 0 none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.div-main-tab {
+    width: 990px;
+    height: 56px;
+    margin: 30px auto 0;
+}
+
+    .div-main-tab > ul {
+        margin-bottom: -2px;
+        padding-left: 0;
+        height: 46px;
+        border-bottom:2px solid #e9ebef;
+    }
+
+        .div-main-tab > ul > li {
+            float: left;
+            text-align: center;
+            vertical-align: middle;
+            height: 42px;
+            margin-right: 3px;
+            margin-top: 4px;
+            border-top-left-radius:15px;
+            border-top-right-radius:15px;
+        }
+
+            .div-main-tab > ul > li.tabOn > a {
+                font-size: 14px;
+                color: #fff;
+                font-family: "Malgun Gothic";
+                display: block;
+                height: 100%;
+                padding-top: 3px;
+            }
+
+            .div-main-tab > ul > li.tabOff > a {
+                font-size: 14px;
+                color: #555;
+                font-family: "Malgun Gothic";
+                display: block;
+                height: 100%;
+                padding-top: 3px;
+            }
+
+/**************탭 끝*************************/
+
+
+/*class이름으로 테이블 */
+.tbl_main { /****************메인 테이블 *****************/
+    width: 100%;
+    border-top: 1px solid #d3dae3;
+    border-bottom: 1px solid #d3dae3;
+}
+
+    .tbl_main th {
+        border-left: 1px solid #d3dae3;
+        border-right: 1px solid #d3dae3;
+        border-bottom: 1px solid #d3dae3;
+        background-color: #e6edf5;
+        text-align: center;
+        height:40px;
+        color: #000;
+        text-shadow: 1px 1px 2px #fff;
+    }
+
+
+    .tbl_main td {
+        height:40px;
+        padding-left: 5px;
+        border-left: 1px solid #d3dae3;
+        border-right: 1px solid #d3dae3;
+        border-bottom: 1px solid #d3dae3;
+    }
+
+    .tbl_main thead {
+        height: 40px;
+
+    }
+
+.tbl_file { /****************엑셀파일등록 테이블 *****************/
+    width: 100%;
+    border-top: 1px solid #d3dae3;
+    border-bottom: 1px solid #d3dae3;
+}
+
+    .tbl_file th {
+        border-left: 1px solid #d3dae3;
+        border-right: 1px solid #d3dae3;
+        border-bottom: 1px solid #d3dae3;
+        background-color: #e6edf5;
+        text-align: center;
+        width:200px;
+        height: 40px;
+        color: #000;
+        text-shadow: 1px 1px 2px #fff;
+    }
+
+    .tbl_file td {
+        height: 40px;
+        padding-left: 5px;
+        border-left: 1px solid #d3dae3;
+        border-right: 1px solid #d3dae3;
+        border-bottom: 1px solid #d3dae3;
+    }
+
+.excelfileupload {
+    width: 100%;
+    cursor: pointer;
+    line-height:30px;
+}
+
+.tbl_main.tbl_pop th, .tbl_main.tbl_pop td {
+    height: 30px;
+} 
+
+.tbl_search { /****************검색 테이블 *****************/
+    width: 100%;
+    border-top: 1px solid #d3dae3;
+    border-bottom: 1px solid #d3dae3;
+    background-color: #e6edf5;
+}
+
+    .tbl_search td {
+        height:50px;
+        text-align:left;
+    }
+    d
+    .tbl_search td:first-child {
+        width: 200px;
+        text-align:right;
+    }
+
+
+.tbl_main input[type="text"], .tbl_search input[type="text"] {
+    border-radius: 3px;
+    border: 1px solid #a2a2a2;
+    height: 30px;
+}
+
+.tbl_main select, .tbl_search select {
+    border-radius: 3px;
+    border: 1px solid #a2a2a2;
+    height: 30px;
+ }
+
+/***********input, select box 크기별 사이즈*****************/
+.small-size {
+    width: 100px;
+}
+
+.medium-size {
+    width:200px;
+}
+
+.large-size {
+    width:300px;
+}
+
+.bottom-search-div {
+    margin: 30px 0 30px 0;
+}
+
+input[type="file"] {
+    border:0;
+}
+
+input[type="button"] {
+    border: 0;
+}
+
+.btnDelete { /***********테이블 속에 있는 버튼 스타일**********/
+    background-color: #69696b;
+    color: #fff;
+    padding:0 10px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size:12px;
+    height:25px;
+    line-height:25px;
+}
+
+
+.btnDelete:hover {
+    background-color: #000;
+}
+
+.btnBuyCompCode { /***********테이블 속에 있는 버튼 스타일2**********/
+    border: 1px solid #091994;
+    color: #091994;
+    font-weight: bold;
+    padding: 2px 10px;
+    display: inline-block;
+}
+.btnBuyCompCode:hover {
+    background-color: #eee;
+ }
+
+
+.btnStyle { /***********테이블 밖에 있는 버튼 스타일**********/
+    background-color: #e5e7e6;
+    color: #000;
+    border-radius: 3px;
+    padding: 3px 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+    .btnStyle:hover {
+        background-color: #d2d2d2;
+    }
+
+    /*달력*/
+    .calendar {
+        border: 1px solid #a2a2a2;
+        text-align: center;
+        margin-right: 5px;
+        width: 140px !important;
+        height: 30px;
+        border-radius: 3px;
+    }
+
+
+.txt-center {
+ text-align:center;
+}
+
+.btn_center {
+    margin:25px 0;
+    text-align:center;
+}
+/*로딩패널*/
+.wrap-loading-wrap {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255,.65);
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+    .wrap-loading-wrap .wrap-loading {
+        text-align: center;
+        top: 35%;
+        position: relative;
+    }
+
+        .wrap-loading-wrap .wrap-loading img {
+            width:80px;
+            height:80px
+        }
+.divpopup-layer-conts {
+    /*margin-top:30px;*/
+}
+
+#tblGoodsInfo td {
+    border:0;
+}
+
+/*****스크롤 테이블*******/
+.sc_table_wrap {
+    position:relative;
+    widht:100px;
+    border-width:2px 0;
+}
+
+    .sc_table_wrap .scr {
+        overflow-y:auto;
+    }
+
+.table_style {
+    width: 100%;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    table-layout: fixed;
+}
+
+    .table_style.b_bot_none {
+        border-bottom: 0;
+    }
+
+    .table_style th {
+        height: 36px;
+        background: #f7f7f5;
+        padding: 5px 0;
+        box-sizing: border-box;
+    }
+
+        .table_style th span {
+            color: #000;
+            font-size: 13px;
+        }
+
+    .table_style td {
+        height: 36px;
+        text-align: center;
+        color: #000;
+    }
+
+    .table_style tr {
+        border-bottom: 1px solid #dcdcdc;
+        background: #fff;
+    }
+
+.sc_table_wrap {
+    position: relative;
+    width: 100%;
+    border-width: 2px 0;
+    padding-top: 62px;
+    background-color: #e6edf5;
+}
+
+    .sc_table_wrap.inline {
+        display: inline-block;
+    }
+
+    .sc_table_wrap .scr {
+        overflow-y: auto;
+        background: #fff;
+    }
+
+    .sc_table_wrap .table_style {
+        border: 0;
+    }
+
+        .sc_table_wrap .table_style th {
+            height: 0;
+            line-height: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+            .sc_table_wrap .table_style th div {
+                position: absolute;
+                display: table;
+                background: transparent;
+                top: 0px;
+                text-align: center;
+                height: 62px;
+                color: #000;
+            }
+
+                .sc_table_wrap .table_style th div.border_r {
+                    border-right: 1px solid #dcdcdc;
+                }
+
+            .sc_table_wrap .table_style th span {
+                display: table-cell;
+                vertical-align: middle;
+                line-height: 1.2;
+                color: #000;
+            }
+
+            .sc_table_wrap .table_style th .th1 {
+                top:-7px;
+                text-align: center;
+            }
+
+            .sc_table_wrap .table_style th .th2 {
+                top: 13px;
+                text-align: center;
+            }
+
+.td-bgColorRed {
+    background-color: #ffe6e6 !important;
+}
+
+.td-bgColorGreen {
+    background-color: #ccffe2 !important;
+}
+
+.td-bgColorYellow {
+    background-color: #faffb2 !important;
+}
+/***************페이징 처리**************************/
+.page_wrap {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.tab-display1 {
+    margin-top:40px;
+}
+
+.site_images img {
+    width:100%;
+}

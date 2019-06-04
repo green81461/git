@@ -1,0 +1,353 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs" Inherits="Master_Default" %>
+<%@ Import Namespace="Urian.Core" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <asp:Literal runat="server" ID="metaDescription" EnableViewState="false"></asp:Literal>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="No-Cache" />
+    <meta property="og:type" content="website" />
+    <asp:Literal runat="server" ID="metaOgTitle" EnableViewState="false"></asp:Literal>
+    <asp:Literal runat="server" ID="metaOgDescription" EnableViewState="false"></asp:Literal>
+    <asp:Literal runat="server" ID="shortcut" EnableViewState="false"></asp:Literal>
+    <title><%= Title %></title>
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/Content/board.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/listPager.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/pagination.css">
+    <link rel="stylesheet" type="text/css" href="/Content/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/popup.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Content/main.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/sub.css" />
+     <asp:Literal runat="server" ID="mainCss" EnableViewState="false"></asp:Literal>
+    <asp:Literal runat="server" ID="commonCss" EnableViewState="false"></asp:Literal>
+    <asp:Literal runat="server" ID="siteCss" EnableViewState="false"></asp:Literal>
+    <asp:Literal runat="server" ID="goodsCss" EnableViewState="false"></asp:Literal>
+     <asp:Literal runat="server" ID="subCss" EnableViewState="false"></asp:Literal>
+    <!-- Script파일-->
+
+    <script type="text/javascript" src="/Scripts/jquery-1.10.2.min.js"></script>
+    
+    <script type="text/javascript" src="/Scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="/Scripts/common.js"></script>
+    <script type="text/javascript" src="/Scripts/pagination.js"></script>
+    <script type="text/javascript" src="/Scripts/slick.js"></script>
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+	<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.inputmask.bundle.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery-ui.js"></script>
+    
+    <script type="text/javascript">
+
+        var qs = fnGetQueryStrings();
+        var GoodsName = qs["GoodsName"];
+
+        var sviduser = '<%= SvidUser%>';
+        var priceCompcode = '<%= PriceCompCode%>';
+        var saleCompcdoe = '<%= saleCompCode%>';
+        var dsCheck = '<%= BmroCheck%>';
+        var freeCompYN = '<%= FreeCompanyYN%>';
+        var freeCompanyVatYN = '<%= FreeCompanyVatYN%>';
+        var svidRole = '<%= SvidRole%>';
+        var pgFlag = '<%= PGEvaluation%>';
+        var upload = '<%= ConfigurationManager.AppSettings["UpLoadFolder"].AsText()%>';
+        var compCode = '<%= buyCompCode%>';
+        var userId = '<%= UserId%>';
+        var distCode = '<%= DistCode%>';
+        var daumMapCode = '<%= daumCode%>';
+        var custTelNo = '<%= custTelNo%>';
+        var miniLogo = '<%= miniLogo%>';
+        var saleCompAdress = '<%= saleCompAddress%>';
+        var compName = '<%= companyName%>';
+        var distCompName = '<%= distCompanyName%>';
+        var domainURL = '<%= enterDomainUrl%>';
+        var siteName = '<%= SiteName%>';
+        var searchTag = '<%= SearchTag%>';
+        var googleCode = '<%= googleCode%>';
+        var buyCompName = '<%= buyCompName%>';
+        var useAdminRoleType ='<%= UseAdminRoleType%>';
+    </script>
+    <asp:Literal runat="server" ID="masterjs" EnableViewState="false"></asp:Literal>
+    <asp:Literal runat="server" ID="mastercss" EnableViewState="false"></asp:Literal>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container-div">
+        <form id="form1" runat="server">
+            <!-- 헤더 영역 시작 -->
+
+            <div class="fixed-div" id="fixedDiv">
+                
+                <input type="hidden" id="hdMasterDistCssCode"/>
+                <input type="hidden" id="hdDaumCode"/>
+                <input type="hidden" id="hdSaleCompAddress"/>
+                <input type="hidden" id="hdMasterMiniLogo"/>
+                <input type="hidden" id="hdMasterCustTelNo"/>
+                <input type="hidden" id="hdMasterCompanyName">
+                <input type="hidden" id="hdMasterDistCompanyName">
+                <input type="hidden" id="hdMasterDns">
+                <input type="hidden" id="hdMasterSiteName">
+                <header>
+                    <div class="topbanner-wrap" id="divTopmenu" runat="server">
+                        <asp:Image runat="server" ID="imgTB" />
+                        <a href="#none" id="btnTopMenuCls"><img src="/Images/icon_close_24x24.png" alt="닫기"/></a>
+                    </div>
+                    <div style="background-color:#f9f9f9;" class="top_stickymenu_wrap">
+                    <div class="top_stickymenu">
+                        <div class="leftinfo">
+                            <ul class="leftinfo-list">
+                                <li><a class="top_stickymenu_a" onclick="javascript:return fnAddFavorite();">즐겨찾기</a><span class="tx_bar"></span></li>
+                                <li><a class="top_stickymenu_a" href="/Board/BoardList">질문게시판</a><span class="tx_bar"></span></li>
+                                <li><a class="top_stickymenu_a" href="/Other/Faq.aspx">FAQ</a><span class="tx_bar"></span></li>
+                                <li><a class="top_stickymenu_a" href="/Order/OrderBillIssue.aspx">세금계산서 조회</a><span class="tx_bar"></span></li>
+                                <li id="liStickyCart"  style="display:none" runat="server"><a class="top_stickymenu_a" href="/Cart/CartList.aspx">장바구니 <span class="top_info_num"><asp:Label runat="server" ID="lblCartCnt"></asp:Label></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="rightinfo" >
+                            <ul class="rightinfo-list" id="ulRightInfo" runat="server">
+                                 <li id="liStatisticsMenu" style="display:none" runat="server">
+                                    <a href="/Statistics/Statistics.aspx">관리자</a><span class="tx_bar"></span>
+                                </li>
+                                <li>
+                                    <a style="cursor:unset !important"><asp:Label runat="server" ID="lblUser" style="cursor:unset !important"></asp:Label></a><span class="tx_bar"></span></li>
+                                <li>
+                                    <a style="cursor:unset !important"><asp:Label runat="server" ID="lblDeptName" style="cursor:unset !important"></asp:Label></a><span class="tx_bar"></span></li>
+                                <li class="mypage" style="width:106px; display:none">
+                                    <a class="top_stickymenu_mypage" href="/Order/OrderHistoryList.aspx" style="width: 86px">
+                                        <span><img src="/images/mypage_small.png" /></span>마이페이지
+                                        <span class="downarrow"></span>
+                                    </a>
+                                    
+                                    <span class="tx_bar"></span>
+                                    <ul  class="mypage_sub_menu">
+                                        <li><a href="/Order/OrderHistoryList.aspx">주문조회</a></li>
+                                        <li><a href="/Delivery/DeliveryOrderList.aspx">배송조회</a></li>
+                                        <li><a href="/Order/OrderBillIssue.aspx">세금계산서 조회</a></li>
+                                        <li><a href="/Member/MemberEditCheck.aspx">마이정보변경</a></li>
+                                        <li><a href="/Delivery/DeliveryList.aspx">배송지관리</a></li>
+                                    </ul>
+                                </li>
+                                <li style="float: left">
+                                     <a onclick="fnLogout(); return false;">로그아웃</a><span><img src="/images/logout_small.png" /></span>
+                                    <%--<asp:LinkButton CssClass="top_stickymenu_a" ID="lbtnLogout" runat="server" OnClick="lbtnLogout_Click"><span>로그아웃</span><span style="margin-left:4px;"><img src="./images/logout_small.png" /></span></asp:LinkButton>--%>
+                                </li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+                    
+                    <div class="top_header" >
+                        <div  class="top_header_left">
+                            <div class="toplogodiv" >
+                                 <a href="../Default.aspx">
+                                     <asp:Image runat="server" ID="imgTopLogo" CssClass="toplogo"/>
+                                   </a>
+                            </div>
+                            <div class="searchdiv">
+                            <fieldset class="powersearch-sitecss">
+                                <input class="powersearch" type="text" id="txtPowerSearch" onkeypress="return fnPowerSearchEnter('Main');" />
+                                <input type="button" class="searchIcon" onclick="fnPowerSearch('Main'); return false;"/>
+                            </fieldset>
+                        </div>
+                            
+                        </div>
+                       
+                    </div>
+                     <div class="navi-div navi-sitecss">
+                        <div class= "navi-div-wrap" >
+                            <!--마이카테고리-->
+                            <div class="my-category">
+                                <a alt="카테고리" class="btn-my on">
+                                    <img src="/Images/Button/my-category_select.png" alt="카테고리" />
+                                </a>
+                                <div class="btn-my-box">
+                                    <p class="recent-category">최근 선택한 카테고리</p>
+                                    <ul id="ulCategorySearchLog">
+                                    </ul>
+                                    <p class="delete-category"  id="pDeleteCategorySearchLog">카테고리 기록 삭제</p>
+                                </div>
+                            </div>
+                             <!--마이카테고리 끝-->
+                            <div id="navi-liAll">
+                                <a   class='categoryAllBtn ctgrall-sitecss' id="btnNaviAll">
+                                    <img src="/Images/Button/categorybtn_all.png" alt="전체버튼" />카테고리</a>
+                                    <a alt="카테고리" class="btn-my">
+                                        <img src="/Images/Button/my-category.png" alt="카테고리" />
+                                    </a>
+                                <div id="navi-allCategorySub" class="navi-AllCategoryList" style="display:none">
+                                    <ul class="site-category" id="ulSubMenu1Depth" style="padding-left: 0px"></ul>
+                                </div>
+                            </div>
+                            <ul id="categories" class="stickymenu">
+                                <li><a href="/Order/OrderHistoryList.aspx">주문조회</a></li>
+                                <li><a href="/Delivery/DeliveryOrderList.aspx">배송조회</a></li>
+                                <li id="liCategoryWish" style="display:none" runat="server"><a href="/Wish/WishList.aspx">위시상품 리스트</a></li>
+                                <li><a href="/Goods/GoodsRecommListSearch.aspx">견적상품게시판</a></li>
+                                <li id="liCategoryNewGood" style="display:none" runat="server"><a href="/Goods/NewGoodsRequestMain.aspx">신규견적요청</a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </header>
+               
+            </div>
+
+            <div class="fixed-div-sub" id="fixedDiv-sub">
+                <div class="fixed-div-subwrap">
+                    <div class="fixed-div-sub-logoarea">
+                        <!--마이카테고리-->
+                            <div class="my-category2">
+                                <a alt="카테고리" class="btn-my2 on">
+                                    <img src="/Images/Button/my-category_select.png" alt="카테고리" />
+                                </a>
+                                <div class="btn-my-box">
+                                    <p class="recent-category">최근 선택한 카테고리</p>
+                                    <ul id="ulFixCategorySearchLog">
+                                    </ul>
+                                    <p class="delete-category"  id="pFixDeleteCategorySearchLog">카테고리 기록 삭제</p>
+                                </div>
+                            </div>
+                             <!--마이카테고리 끝-->
+                        <div id="hiddenNavi-liAll">
+                            <a  class='categoryAllBtn ctgrall-sitecss' id="btnHiddenNaviAll">
+                                <img src="/Images/Button/categorybtn_all.png" alt="전체버튼" />카테고리</a>
+                                <a  alt="카테고리" class="btn-my2">
+                                    <img src="/Images/Button/my-category.png" alt="카테고리" />
+                                </a>
+                            <div id="hiddenNavi-allCategorySub" class="navi-AllCategoryList" style="display: none">
+                                <ul class="site-category" id="ulHiddenSubMenu1Depth" style="padding-left: 0px"></ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="fixed-div-sub-searchdiv">
+                       <input type="text" class="fixed-div-sub-searchtxt hiddensearch-sitecss" id="txtPowerSearch-Sub" onkeypress="return fnPowerSearchEnter('Sub');" />
+                       <input type="button" class="searchIcon" onclick="fnPowerSearch('Sub'); return false;" id="txtPowerSearch-Sub-icon"/>
+                    </div>
+                    <div class="fixed-div-sub-btnarea">
+                        <ul>
+                           
+                            <li>
+                                <a class="hiddenheaderbtnlink" href="/Goods/GoodsRecommListSearch.aspx">견적상품게시판</a>
+                            </li>
+                            <li>
+                                <a class="hiddenheaderbtnlink" href="/Goods/NewGoodsRequestMain.aspx">신규견적요청</a>
+                            </li>
+                             <li>
+                                 <a class="hiddenheaderbtnlink" onclick="fnLogout(); return false;">로그아웃</a>&nbsp;<img src="/images/logout_small.png" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 헤더 영역 끝 -->
+
+            <!-- 컨텐츠 영역 시작 -->
+            <div class="contents-div" runat="server" id="divContent">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- 컨텐츠 영역 끝 -->
+            <!-- Footer 영역 시작 -->
+            <div class="footer-div">
+
+                <div class="footer-menu-div">
+                    <ul id="ulBottomMenu">
+                        <li><a href="/Other/CompanyAbout.aspx?MenuUpCode=MEBT001000000000&amp;Tab=1">회사소개</a></li>
+                        <li><a href="/Other/Agreement.aspx">이용약관</a></li>
+                        <li><a href="/Other/Privacy.aspx">개인정보취급방침</a></li>
+                    </ul>
+                </div>
+                <div class="copyright" style="padding-top:10px">
+                    <div style="display:inline; padding-right:20px;">
+                         <asp:Image runat="server" id="imgBottomLogo"/>
+                    </div>
+                    <div style="display:inline; ">
+                        <asp:Image runat="server" id="imgCopy"/>
+                             <a id="aFTC" href="<%= ftcUrl%>" target="_blank">
+                       <img src="/Images/SiteImage/ftcImage.png" />
+
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer 영역 끝 -->
+        </form>
+    </div>
+    <div class="floatbar">
+        <div class="btmbar">
+            <ul class="btmBtns">
+                <li><a href="/Default.aspx" class="btmico01"><p><img src="/images/b_home.png" /></p><p>홈</p></a></li>
+                <li>
+                    <a href="javascript: ;" class="btmico02"><p><img src="/images/b_serch.png" /></p><p>검색</p></a>
+                  
+                    <a href="javascript: ;" class="btmico02 close" style="display: none;"><p style="font-size:18px; padding-bottom:2px;"><img src="/images/close-bottom.png" /></p><p>닫기</p></a>
+                    <div class="searchBar" style="display: none;">
+                        <div>
+                            <input type="text" placeholder="검색어를 입력해주세요." id="txtFooterSearch"  onkeypress="return fnFooterPowerSearchEnter();">
+                            <input type="button" class="footersearchicon" onclick="fnFooterPowerSearch(); return false;"  id="mainSearchBtn"/>
+                        </div>
+                    </div>
+                    
+                </li>
+                <li id="libottomCart" style="display:none" runat="server"><a href="/Cart/CartList.aspx" class="btmico03"><p><img src="/images/b_baguni.png" /></p><p>장바구니</p></a></li>
+                <li><a href="/Order/OrderHistoryList.aspx" class="btmico04"><p><img src="/images/b_myshopping.png" /></p><p>나의쇼핑</p></a></li>
+                <li><a href="/Other/Faq.aspx" class="btmico05"><p><img src="/images/b_call.png" /></p><p>고객센터</p></a></li>
+            </ul>
+            <div class="recentGoods">
+                <div>
+                    <strong>오늘 본 상품</strong>
+                    <p class="nolist" style="display: none;">오늘 본 상품이 없습니다.</p>
+                    <div class="recentArea">
+                        <ul class="recentList">
+                            
+                        </ul>
+                        <a href="javascript: ;" class="btn_moreGoods"><p style="font-size:20px; padding-top:5px;font-weight:bold;">+</p><p>더보기</p></a>
+                        <a href="javascript: ;" class="btn_moreClose" style="display: none;"><p>닫기</p><p style="font-size:18px; font-weight:bold;">X</p></a>
+                        <div class="moreGoods" style="display: none;">
+                            <p style="float:left;padding-right:23px;"><img src="/images/b_st.png" /></p><p style="float:left;">오늘 본 상품</p><p style="padding-left:284px;"><img src="
+                                /images/b_st.png" /></p>
+                            <div class="moreListWrap">
+                                <ul class="moreList">
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="btnBtmWrap2">
+                <a href="javascript:footSlide('top');" class="btn_BtmTop"><p>∧</p><p>TOP</p></a>
+                <a href="javascript:footSlide('bottom');" class="btn_BtmBtm"><P>DOWN</P><p>∨</p></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="btnBtmWrap">
+        <a href="javascript: ;" class="btn_BtmDown"><p style="font-size:18px; padding-bottom:5px;font-weight:bold;">▼</p><p>접기</p></a>
+        <a href="javascript: ;" class="btn_BtmUp"><p style="font-size:18px; padding-bottom:5px;font-weight:bold;">△</p><p>펴기</p></a>
+    </div>
+    <div id="divSuggestGoods" class="ui-autocomplete-suggest" style="background-color: white; height: 443px; width: 442px; display: none; float: left; z-index: 1000"></div>
+    <%--로딩패널 시작--%>
+        <div class="wrap-loading-wrap" style="display:none;" id="divLoading">
+           <div class="wrap-loading">
+               <img src="/Images/loading.gif" />
+           </div>
+        </div>
+        <%--로딩패널 끝--%>
+</body>
+</html>

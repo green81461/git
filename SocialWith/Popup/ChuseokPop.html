@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script language="JavaScript">
+
+        function setCookie(name, value, expiredays) {
+            var todayDate = new Date();
+            todayDate.setDate(todayDate.getDate() + expiredays);
+            document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+        }
+
+        function closeWin() {
+            if (document.forms[0].Notice.checked)
+             
+                setCookie("Notice", "done", 1);
+            self.close();
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <div style="text-align:center; float:initial">
+            <img src="img_popup_chuseok.jpg" width="580" height="730" />
+        </div>
+    </div>
+    <form style="text-align:right; padding-top:7px">
+        <div>
+            <div style="display:inline-block; float:left">
+                <input type="CHECKBOX" name="Notice" value="">
+                오늘 하루 팝업 띄우지 않기
+            </div>
+
+            <div style="display:inline-block; float:right">
+                <img src="../Images/Wish/icon-delete.jpg" onclick="closeWin()" style="vertical-align:middle; padding-top:5px; cursor:pointer" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>

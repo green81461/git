@@ -1,0 +1,60 @@
+﻿/*body {
+}*/
+
+
+
+
+
+      /*하단 버튼 정렬*/
+      .btn{
+        margin-top:10px;
+        float:right;
+        padding-right:0;
+        text-align:right;
+        margin-bottom:10px;
+      }
+ 
+    
+
+    /**********추가배송지 입력 팝업창*********************/
+
+    .add-popUp-table {
+        width:100%;
+}
+
+        .add-popUp-table th {
+        border:1px solid #a2a2a2;
+        background-color:#ececec;
+        height:30px;
+        }
+
+        .add-popUp-table td {
+        border:1px solid #a2a2a2;
+        height:30px;
+        }
+
+    .zipcode, .addr1, .addr2 {
+        border:1px solid #a2a2a2;
+}
+    .zipcode{
+        width:54%;
+    }
+
+    .addr1, .addr2 {
+        width:99%;
+}
+
+
+/***************************/
+
+
+.cancle-bt {
+    background-image: url("../Images/delivery/cancle-btn-off.jpg");
+}
+
+ .cancle-bt:hover {
+        background-image: url("../Images/delivery/cancle-btn-on.jpg");
+ }
+
+
+ 

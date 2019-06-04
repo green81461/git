@@ -1,0 +1,84 @@
+2019-04-15 15:44:57.2527 | 11308 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : 'System.Web.HttpUnhandledException' 형식의 예외가 Throw되었습니다.
+ Stack Trace    :    위치: System.Web.UI.Page.HandleError(Exception e)
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest()
+   위치: System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   위치: System.Web.UI.Page.ProcessRequest(HttpContext context)
+   위치: ASP.admin_goods_suppliermain_aspx.ProcessRequest(HttpContext context) 파일 c:\Users\user\AppData\Local\Temp\Temporary ASP.NET Files\vs\2e97ac09\d872c0e4\App_Web_2pi4joet.12.cs:줄 0
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: Admin_Goods_SupplierMain.ParseRequestParameters() 파일 d:\Svn\SocialWith\Admin\Goods\SupplierMain.aspx.cs:줄 36
+   위치: Admin_Goods_SupplierMain.Page_Load(Object sender, EventArgs e) 파일 d:\Svn\SocialWith\Admin\Goods\SupplierMain.aspx.cs:줄 27
+   위치: System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   위치: System.EventHandler.Invoke(Object sender, EventArgs e)
+   위치: System.Web.UI.Control.OnLoad(EventArgs e)
+   위치: System.Web.UI.Control.LoadRecursive()
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) | 
+2019-04-15 15:46:30.9777 | 11308 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : 'System.Web.HttpUnhandledException' 형식의 예외가 Throw되었습니다.
+ Stack Trace    :    위치: System.Web.UI.Page.HandleError(Exception e)
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest()
+   위치: System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   위치: System.Web.UI.Page.ProcessRequest(HttpContext context)
+   위치: ASP.admin_goods_suppliermain_aspx.ProcessRequest(HttpContext context) 파일 c:\Users\user\AppData\Local\Temp\Temporary ASP.NET Files\vs\2e97ac09\d872c0e4\App_Web_p315131f.2.cs:줄 0
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: Admin_Goods_SupplierMain.ParseRequestParameters() 파일 d:\Svn\SocialWith\Admin\Goods\SupplierMain.aspx.cs:줄 36
+   위치: Admin_Goods_SupplierMain.Page_Load(Object sender, EventArgs e) 파일 d:\Svn\SocialWith\Admin\Goods\SupplierMain.aspx.cs:줄 27
+   위치: System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   위치: System.EventHandler.Invoke(Object sender, EventArgs e)
+   위치: System.Web.UI.Control.OnLoad(EventArgs e)
+   위치: System.Web.UI.Control.LoadRecursive()
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) | 
+2019-04-15 16:30:35.9394 | 11308 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : 'System.Web.HttpUnhandledException' 형식의 예외가 Throw되었습니다.
+ Stack Trace    :    위치: System.Web.UI.Page.HandleError(Exception e)
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest()
+   위치: System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   위치: System.Web.UI.Page.ProcessRequest(HttpContext context)
+   위치: ASP.admin_member_membermain_b_aspx.ProcessRequest(HttpContext context) 파일 c:\Users\user\AppData\Local\Temp\Temporary ASP.NET Files\vs\2e97ac09\d872c0e4\App_Web_cz5uivst.20.cs:줄 0
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: Admin_Member_MemberMain_B.ParseRequestParameters() 파일 d:\Svn\SocialWith\Admin\Member\MemberMain_B.aspx.cs:줄 77
+   위치: Admin_Member_MemberMain_B.Page_Load(Object sender, EventArgs e) 파일 d:\Svn\SocialWith\Admin\Member\MemberMain_B.aspx.cs:줄 19
+   위치: System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   위치: System.EventHandler.Invoke(Object sender, EventArgs e)
+   위치: System.Web.UI.Control.OnLoad(EventArgs e)
+   위치: System.Web.UI.Control.LoadRecursive()
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) | 
+2019-04-15 16:47:15.6650 | 11308 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : 'System.Web.HttpUnhandledException' 형식의 예외가 Throw되었습니다.
+ Stack Trace    :    위치: System.Web.UI.Page.HandleError(Exception e)
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest()
+   위치: System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   위치: System.Web.UI.Page.ProcessRequest(HttpContext context)
+   위치: ASP.admin_member_membermain_b_aspx.ProcessRequest(HttpContext context) 파일 c:\Users\user\AppData\Local\Temp\Temporary ASP.NET Files\vs\2e97ac09\d872c0e4\App_Web_cz5uivst.20.cs:줄 0
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: Admin_Member_MemberMain_B.ParseRequestParameters() 파일 d:\Svn\SocialWith\Admin\Member\MemberMain_B.aspx.cs:줄 77
+   위치: Admin_Member_MemberMain_B.Page_Load(Object sender, EventArgs e) 파일 d:\Svn\SocialWith\Admin\Member\MemberMain_B.aspx.cs:줄 19
+   위치: System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   위치: System.EventHandler.Invoke(Object sender, EventArgs e)
+   위치: System.Web.UI.Control.OnLoad(EventArgs e)
+   위치: System.Web.UI.Control.LoadRecursive()
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) | 

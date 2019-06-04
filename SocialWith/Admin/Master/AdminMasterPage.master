@@ -1,0 +1,291 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="Admin_Master_AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>관리자</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="No-Cache" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../../Content/listPager.css" />
+    <link rel="stylesheet" type="text/css" href="../../Content/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../../Content/pagination.css">
+    <link rel="stylesheet" type="text/css" href="/Admin/Content/main.css" />
+    <link rel="stylesheet" type="text/css" href="/Admin/Content/common.css" />
+    <link rel="stylesheet" type="text/css" href="/Admin/Content/popup.css" />
+    <link rel="stylesheet" type="text/css" href="/Admin/Content/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="/Admin/Content/tui-chart.css" />
+    <!-- Script파일-->
+    <script type="text/javascript" src="../../Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../../Scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="../../Scripts/common.js"></script>
+    <script type="text/javascript" src="../../Scripts/pagination.js"></script>
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+    <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+
+    <script type="text/javascript" src="../../Scripts/googleAnalytics.js"></script>
+    <script type="text/javascript" src="../../Scripts/jquery.inputmask.bundle.js"></script>
+    <script type="text/javascript" src="../../Scripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../Scripts/core.js"></script>
+    <script type='text/javascript' src='../../Scripts/tui-code-snippet.min.js'></script>
+    <script type='text/javascript' src='../../Scripts/raphael.min.js'></script>
+    <script type="text/javascript" src="../../Scripts/tui-chart.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        var qs = fnGetQueryStrings();
+        var ucode = qs["ucode"];
+        $(function () {
+            $('div[ucode="' + ucode + '"]').css('display', '');
+
+            //메뉴 닫기 클릭
+            $('#aMenuClose').click(function () {
+                $('.admin-submenu-wrap').css('width', '0px');
+                $('.admin-content').css('margin-left', '0px');
+                $(this).css('display', 'none');
+                $('#aMenuOpen').css('display', 'block');
+            })
+
+            $('#aMenuOpen').click(function () {
+                $('.admin-submenu-wrap').css('width', '185px');
+
+                $('.admin-content').css('margin-left', '185px');
+                $(this).css('display', 'none');
+                $('#aMenuClose').css('display', 'block'); i
+            })
+
+            //메뉴 클릭 이벤트 //
+            //$('.admin-submenu-list li').click(function(){
+            // $(this).siblings().removeClass('select');
+            //$(this).addClass('select');
+            //});
+
+        });
+
+        //$(document).keydown(function (e) {
+        //    if (e.which === 116) {
+        //        if (typeof event == "object") {
+        //            event.keyCode = 0;
+        //        }
+        //        return false;
+        //    }
+        //    else if (e.which === 82 && e.ctrlKey) {
+        //        return false;
+        //    }
+        //});
+
+        //window.addEventListener("beforeunload", function (e) {
+        //    if ($('a').click) {
+        //        (e || window.event).returnValue = null;
+        //    } else {
+
+
+        //    fnLogout();
+        //    return false;
+        //    }
+
+
+        //    (e || window.event).returnValue = null;
+        //    return null;
+        //});
+
+        //로그아웃
+        function fnLogout() {
+            var callback = function (response) {
+                if (!isEmpty(response)) {
+                    if (response == 'OK') {
+                        location.href = '/Admin/Login.aspx';
+                    }
+                    else {
+                        alert('로그아웃을 해주세요.');
+                    }
+                }
+                else {
+                    alert('시스템 오류입니다. 관리자에게 문의하세요.');
+                }
+                return false;
+            }
+
+            var param = {
+                Method: 'SetAdminLogOut'
+            };
+
+            JqueryAjax('Post', '/Handler/Common/UserHandler.ashx', true, false, param, 'text', callback, null, null, true, sviduser);
+        }
+       
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server" name="masterForm">
+        <div class="admin-container">
+            <div class="admin-header">
+                <div class="admin-mainmenu-wrap">
+                    <a href="/Admin/Default.aspx"><span class="admin-title">소셜위드 관리자</span></a>
+                    <div class="admin-header-info">
+                        <ul>
+                            <li class="admin-header-user"><a href="#">
+                                <asp:Label runat="server" ID="lblUser"></asp:Label></a>님</li>
+                            <li class="admin-header-logout">
+                                <asp:LinkButton ID="lbLogout" runat="server" Text="로그아웃" CssClass="admin-logout" OnClick="lbLogout_Click"></asp:LinkButton>
+                               <%-- <a class="admin-logout" onclick="fnLogout(); return false;">로그아웃</a>--%>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="admin-mainmenu-list" id="ulMainMenu">
+                        <li><a href="/Admin/Order/OrderHistoryList.aspx?ucode=01">주문관리</a></li>
+                        <li><a href="/Admin/Goods/CategoryManage.aspx?ucode=02">상품관리</a></li>
+                        <li><a href="/Admin/Company/CompanyManagement.aspx?ucode=03">회원관리</a></li>
+                        <li><a href="/Admin/Board/Board_A.aspx?ucode=04">게시판 관리</a></li>
+                        <li><a href="/Admin/Promotion/PromotionManagement.aspx?ucode=05">프로모션/쿠폰</a></li>
+                        <li><a href="/Admin/SCMquote/newGoodsRequest.aspx?ucode=06">[SCM]견적관리</a></li>
+                        <%--<li><a href="#">디자인</a></li>--%>
+                        <li><a href="/Admin/Setting/SiteInfoDefault.aspx?ucode=08">환경설정</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="admin-mainwrap">
+                <div class="admin-submenu-wrap">
+                    <div ucode="01" style="display:none">
+                        <div class="admin-submenu-title">
+                            <h2>주문관리</h2>
+                        </div>
+                        <ul class="admin-submenu-list">
+                            <li><a href="/Admin/Order/OrderHistoryList.aspx?ucode=01">주문내역조회</a></li>
+                            <li><a href="/Admin/Order/OrderCancelList?ucode=01">주문취소내역</a></li>
+                            <li><a href="/Admin/Order/OrderCashList.aspx?ucode=01">입금내역확인</a></li>
+                            <li><a href="/Admin/Order/ReturnList.aspx?ucode=01">반품/교환</a></li>
+                            <li><a href="/Admin/Order/DeliveryOrderList?ucode=01">배송조회</a></li>
+                            <li><a href="/Admin/BalanceAccounts/ProfitList?ucode=01">정산내역조회(판매사)</a></li>
+                            <li><a href="/Admin/Order/OrderBillList.aspx?ucode=01">정산내역조회(구매사)</a></li>
+                            <li><a href="/Admin//Pay/FinanceDeptManage.aspx?ucode=01">여신(무)관리</a></li>
+                            <li><a href="/Admin/Order/OrderBillIssueCheck.aspx?ucode=01">BILL 현황(판매사)</a></li>
+                            <li><a href="/Admin/Order/OrderBillMain_B.aspx?ucode=01">BILL 현황(구매사)</a></li>
+                        </ul>
+                    </div>
+                    <div ucode="02" style="display:none">
+                        <div class="admin-submenu-title">
+                            <h2>상품관리</h2>
+                        </div>
+                        <ul class="admin-submenu-list">
+                            <li><a href="/Admin/Goods/CategoryManage.aspx?ucode=02">카테고리 관리</a></li>
+                            <li><a href="/Admin/Goods/BrandMain.aspx?ucode=02">브랜드 관리</a></li>
+                            <li><a href="/Admin/Goods/GoodsRegister.aspx?ucode=02" style="font-size:0.8em">(상품,서비스용역)등록 및 수정</a></li>
+                            <li><a href="/Admin/Goods/GoodsList.aspx?ucode=02">(상품,서비스용역)조회</a></li>
+                            <li><a href="/Admin/Goods/RMPPriceManagement.aspx?ucode=02">RMP 가격관리</a></li>
+                            <li><a href="/Admin/Goods/RMPGoodsPriceManagement.aspx?ucode=02">상품 단가관리(회사별)</a></li>
+                            <li><a href="/Admin/Goods/OSGoodsDisplayManagement.aspx?ucode=02">상품 Display관리(회사별)</a></li>
+                            <li><a href="/Admin/Goods/ImageUpload.aspx?ucode=02">상품 이미지업로드</a></li>
+                            <li><a href="/Admin/Goods/SupplierMain.aspx?ucode=02">공급업체 관리</a></li>
+                            <%--<li><a href="/Admin/Goods/OSGoodsPriceSearch.aspx?ucode=02">상품 단가조회</a></li>--%>
+                            <%--<li><a href="/Admin/Goods/OSGoodsDisplaySearch.aspx?ucode=02">상품 Display조회</a></li>--%>
+                        </ul>
+                    </div>
+
+                    <div ucode="03" style="display:none">
+                        <div class="admin-submenu-title">
+                            <h2>회원관리</h2>
+                        </div>
+                        <ul class="admin-submenu-list">
+                            <li><a href="/Admin/Company/CompanyManagement.aspx?ucode=03">회사관리</a></li>
+                            <li><a href="/Admin/Member/MemberMain_B.aspx?ucode=03">회원관리(구매사)</a></li>
+                            <li><a href="/Admin/Member/MemberMain_A.aspx?ucode=03">회원관리(판매사)</a></li>                            
+                            <li><a href="/Admin/Member/MemberMain_RMP.aspx?ucode=03">회원관리(RMP)</a></li>
+                            <li><a href="/Admin/Member/MemberMain_Adm.aspx?ucode=03">회원관리(관리자)</a></li>
+                            <li><a href="/Admin/Member/MemberCreate_R?ucode=03">회원가입(RMP)</a></li>
+                            <%--<li><a href="/Admin/Company/CompanyLinkManagement.aspx?ucode=03">관계사 연동관리</a></li>--%>
+                          <%--  <li><a href="/Admin/Company/BudgetMain.aspx?ucode=03">구매사 예산 계정 관리</a></li>
+                            <li><a href="/Admin/Company/BudgetAccountMain.aspx?ucode=03">구매사 예산 계정 관리</a></li>--%>
+                            <li><a href="/Admin/Company/CompanyLinkList.aspx?ucode=03">관계사 연동관리</a></li>
+                            <li><a href="/Admin/Company/CompanyLinkRole.aspx?ucode=03">관계사 연동 ROLE 등록</a></li>
+                            <li><a href="/Admin/Member/PG_Main.aspx?ucode=03">PG 관리</a></li>
+                            <li><a href="/Admin/Order/OrderBelongMain.aspx?ucode=03">주문 연동 관리</a></li>
+                            <li><a href="/Admin/Member/PlatformManagement.aspx?ucode=03">판매사 플랫폼 관리</a></li>
+                            <li><a href="/Admin/Company/BorderTypeMain.aspx?ucode=03">구매사 주문 유형 관리</a></li>
+                            <li><a href="/Admin/Member/Loan_Main.aspx?ucode=03">여신관리</a></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div ucode="04" style="display:none">
+                        <div class="admin-submenu-title">
+                            <h2>게시판 관리</h2>
+                        </div>
+                        <ul class="admin-submenu-list">
+                            <li><a href="/Admin/Board/Board_A.aspx?ucode=04">1:1 문의(고객사A/B)</a></li>
+                            <li><a href="/Admin/Notice/NoticeList.aspx?ucode=04">공지사항(고객사A/B)</a></li>
+                            <li><a href="/Admin/Board/SystemListMain.aspx?ucode=04">시스템 개선사항</a></li>
+                        </ul>
+                    </div>
+
+                    <div ucode="05" style="display:none">
+                        <div class="admin-submenu-title">
+                            <h2>프로모션/쿠폰</h2>
+                        </div>
+                        <ul class="admin-submenu-list">
+                            <li><a href="/Admin/Promotion/PromotionManagement.aspx?ucode=05">프로모션 관리</a></li>
+                            <li><a href="/Admin/Goods/RecommManagement.aspx?ucode=05">추천상품 관리</a></li>
+                            <li><a href="/Admin/Goods/RecommServiceManagement.aspx?ucode=05">추천서비스용역 관리</a></li>
+                        </ul>
+                    </div>
+
+                    <div ucode="06" style="display:none">
+                        <div class="admin-submenu-title">
+                            <h2>[SCM]견적관리</h2>
+                        </div>
+                        <ul class="admin-submenu-list">
+                            <li><a href="/Admin/SCMquote/newGoodsRequest.aspx?ucode=06">신규요청상품</a></li>
+                        </ul>
+                    </div>
+
+                    <div ucode="07" style="display:none">
+                        <div class="admin-submenu-title">
+                            <h2>디자인</h2>
+                        </div>
+                        <ul class="admin-submenu-list">
+                        </ul>
+                    </div>
+
+                    <div ucode="08" style="display:none">
+                        <div class="admin-submenu-title">
+                            <h2>환경설정</h2>
+                        </div>
+                        <ul class="admin-submenu-list">
+                            <li><a href="/Admin/Setting/SiteInfoDefault.aspx?ucode=08">사이트 관리</a></li>
+                            <li><a href="/Admin/Setting/SiteInfoPopupAll.aspx?ucode=08">공통 팝업 관리</a></li>
+                            <li><a href="/Admin/Setting/SiteInfoSiteManual.aspx?ucode=08">사이트 메뉴얼</a></li>
+                        </ul>
+                    </div>
+                    <a id="aMenuClose" class="lnb_handle close">메뉴 닫기</a>
+                    <a id="aMenuOpen" class="lnb_handle open" style="display: none">메뉴 열기</a>
+                </div>
+
+                <!-- 컨텐츠 영역 시작 -->
+                <div class="admin-content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div>
+            </div>
+            <div class="admin-bottomwrap">
+                <div class="admin-copyright">
+                    <p>COPYRIGHT (C) SOCIALWITH ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+        <%--로딩패널 시작--%>
+        <div class="wrap-loading-wrap" style="display:none;" id="divLoading">
+           <div class="wrap-loading">
+               <img src="../Images/loading.gif" />
+           </div>
+        </div>
+        <%--로딩패널 끝--%>
+    </form>
+</body>
+
+</html>

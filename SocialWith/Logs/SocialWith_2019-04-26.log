@@ -1,0 +1,6 @@
+2019-04-26 09:41:19.1482 | 7464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2313 | In | 
+2019-04-26 09:41:19.1781 | 7464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2325 | Out | 
+2019-04-26 14:30:26.9659 | 7464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2313 | In | 
+2019-04-26 14:30:27.0935 | 7464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2325 | Out | 
+2019-04-26 14:32:12.2381 | 7464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2313 | In | 
+2019-04-26 14:32:12.2381 | 7464 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2325 | Out | 

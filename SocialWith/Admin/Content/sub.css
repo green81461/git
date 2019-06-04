@@ -1,0 +1,42 @@
+﻿/**************** 서브페이지 컨텐츠 영역 시작 *****************/
+
+
+a{
+    cursor:pointer;
+}
+
+
+
+/*
+table {
+ margin-bottom:50px;
+ margin-top:3%;
+
+}*/
+
+.lbCheckText {
+    background-color: red;
+}
+/*서브 페이지 타이틀 DIV*/
+.sub-title-div {
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*서브 페이지 소제목 DIV*/
+.mini-title {
+    margin-bottom: 20px;
+}
+
+
+.padding-left-ten {
+    padding-left: 10px;
+}
+
+
+
+
+
+
+/**************** 서브페이지 컨텐츠 영역 끝 *****************/

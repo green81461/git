@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Login.master.cs" Inherits="Master_Login" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <asp:Literal runat="server" ID="metaOgTitle" EnableViewState="false"></asp:Literal>
+    <asp:Literal runat="server" ID="metaOgDescription" EnableViewState="false"></asp:Literal>
+    <asp:Literal runat="server" ID="litShortcut" EnableViewState="false"></asp:Literal>
+    <title><asp:Literal runat="server" ID="litTitle"></asp:Literal></title>
+    <!-- CSS -->
+    
+    <link rel="stylesheet" type="text/css" href="../Content/main.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/common.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/sub.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/listPager.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/pagination.css">
+    <link rel="stylesheet" type="text/css" href="../Content/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/popup.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/login2.css" />
+    <asp:Literal runat="server" ID="litSiteCss"></asp:Literal>
+    
+    <script type="text/javascript" src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="../Scripts/common.js"></script>
+    <script type="text/javascript" src="../Scripts/pagination.js"></script>
+    <script type="text/javascript" src="../Scripts/slick.js"></script>
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+    <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+    <script type="text/javascript" src="../../Scripts/jquery.inputmask.bundle.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-ui.js"></script>
+     
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+
+        <div class="container">
+            <div class="top">
+            </div>
+            <div class="main" >
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <div class="bottom">
+            </div>
+        </div>
+        
+    </form>
+</body>
+</html>

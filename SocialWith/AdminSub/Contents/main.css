@@ -1,0 +1,799 @@
+﻿@font-face {
+    font-family: 'NotoSans-Regular'; /*a name to be used later*/
+    src: url('/Content/Fonts/NotoSansCJKkr-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSans-Light'; /*a name to be used later*/
+    src: url('/Content/Fonts/NotoSansCJKkr-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSans-Medium'; /*a name to be used later*/
+    src: url('/Content/Fonts/NotoSansCJKkr-Medium.otf') format('opentype');
+}
+
+ .mainWrap-div {
+    width: 1230px;
+    height: 850px;
+    
+}
+
+.mainWrap-div a {
+    text-decoration: none;
+    color: #808080;
+}
+
+.mainWrap-div a:hover {
+	font-weight: bold;
+	color: #ec2029;
+	cursor:pointer;
+}
+
+
+
+.mainWrap-sub1-div, .mainWrap-sub5-div {
+    margin-left: 15px;
+    margin-right: 21px;
+    width: 282px;
+    height: 250px;
+    border-bottom: 1px solid #a2a2a2;
+    float: left;
+}
+
+.mainWrap-sub9-div {
+    width: 1190px;
+    height: 250px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 25px;
+    border-bottom: 1px solid #a2a2a2;
+}
+
+.mainWrap-sub5-div, .mainWrap-sub6-div,
+.mainWrap-sub7-div, .mainWrap-sub8-div {
+    margin-top: 25px;
+}
+
+
+
+.mainWrap-sub2-div, .mainWrap-sub3-div, .mainWrap-sub4-div,
+.mainWrap-sub6-div, .mainWrap-sub7-div, .mainWrap-sub8-div {
+    width: 282px;
+    height: 250px;
+    float: left;
+    margin-right: 20px;
+    border-bottom: 1px solid #a2a2a2;
+}
+
+
+
+
+/*팝업창 보더*/
+.divpopup-layer {
+    border: none;
+}
+
+.close-div {
+    width: 50px;
+    height: 30px;
+    float: right;
+}
+
+
+.tblPopup {
+    border: 1px solid #a2a2a2;
+    width: 100%;
+}
+
+    .tblPopup th {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        background-color: #ececec;
+        text-align: center;
+        width: 100px;
+    }
+
+    .tblPopup td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        width: 100px;
+    }
+
+.popup-div-top {
+    margin-top: 20px;
+}
+
+.popup-div-bottom {
+    margin-top: 20px;
+    max-height: 302px;
+    overflow: auto;
+}
+
+
+
+/* 탭버튼 css 시작*/
+/*.tabOff {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0px;
+    background-color: #ececec;
+    color: #69696b;
+    font-weight: 600;
+}
+
+    .tabOff:hover {
+        text-decoration: none;
+        color: #69696b;
+    }
+
+.tabOn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0px;
+    background-color: #ec2029;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+    .tabOn:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+.div-main-tab a:nth-child(1) {
+    margin-left: -40px;
+}*/
+
+
+
+.subTabOff {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #69696c;
+    font-weight: 600;
+    border: 2px solid #ececec;
+}
+
+    .subTabOff:active {
+        /*position: relative;
+        top: 3px*/
+    }
+
+    .subTabOff:hover {
+        text-decoration: none;
+        color: #69696c;
+    }
+
+
+.subTabOn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 35px;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ec2029;
+    font-weight: 600;
+    border: 2px solid #ec2029;
+}
+
+    .subTabOn:active {
+        /*position: relative;
+        top: 3px*/
+    }
+
+    .subTabOn:hover {
+        text-decoration: none;
+        color: #ec2029;
+    }
+
+/* 탭버튼 css 끝*/
+
+/* 페이지 타이틀 css시작 */
+.img-title {
+    margin-right: 5px;
+}
+
+.sub-title-div {
+    width: 100%;
+    border-bottom: 2px solid #888888;
+}
+.p-title-mainsentence {
+    /*font-family: YDIYGO130-KSCpc-EUC-H;*/
+    color: #69696c;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 9px;
+}
+
+.span-title-subsentence {
+    font-family: Dotum;
+    color: #626363;
+    font-size: 12px;
+    font-weight: normal
+}
+
+li {
+    list-style:none;
+}
+/* 페이지 타이틀 css끝 */
+
+.adminsub-bottomBtn {
+    text-align:left;
+}
+
+html {
+    height:100%;
+}
+html, body, form {
+    font-family: 'NotoSans-Light'; /*a name to be used later*/
+}
+
+.adminsub-mainwrap {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    background-color: #5f4a8b;
+}
+
+.adminsub-header {
+    width: 100%;
+    height: 32px;
+    background-color: #fff;
+    margin-top:4px;
+    margin-bottom:2px;
+}
+
+    .adminsub-header .adminsub-header-info {
+        width: 100%;
+        height: 100%;
+    }
+
+        .adminsub-header .adminsub-header-info ul {
+            float: right;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-left: 0px;
+            padding-top: 5px;
+            width: 460px;
+        }
+
+        .adminsub-header ul li.adminsub-header-home {
+            float: left;
+            list-style: none;
+            padding-left: 20px;
+            padding-right: 20px;
+            background: url(/AdminSub/Images/homepage-icon.png) no-repeat left center;
+            background-size: 14px;
+        }
+
+        .adminsub-header ul li.adminsub-header-user {
+            float: left;
+            color: #000;
+            font-weight:bold;
+            list-style: none;
+            padding-left: 20px;
+            padding-right: 20px;
+            background: url(/AdminSub/Images/user-icon.png) no-repeat left center;
+            background-size: 14px;
+        }
+
+        .adminsub-header ul li.adminsub-header-logout {
+            float: left;
+            color: #000;
+            list-style: none;
+        }
+
+.adminsub-logout {
+    background-color: #451852;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    /*border: 1px solid #ffffff;*/
+    display: block;
+    cursor: pointer;
+    color: #ffffff !important;
+    font-size: 13px;
+    padding: 2px 11px;
+    text-decoration: none;
+    /*height: 20px;*/
+}
+
+    .adminsub-logout:hover {
+        background-color: #6f417c;
+    }
+
+.adminsub-header .adminsub-header-info ul li a {
+    color: #99003d;
+    font-weight: 400;
+ }
+
+.adminsub-mainmenu-wrap {
+    width: 100%;
+    height: 47px;
+    background-color: #99003d
+}
+
+.adminsub-title {
+    padding-top: 12px;
+    float: left;
+    font-size: 18px;
+    width: 185px;
+    text-align: center;
+    color: #fff;
+    height: 100%;
+    background-color: #451852;
+    letter-spacing: 2px;
+    font-family: NotoSans-Medium, sans-serif;
+}
+
+.adminsub-mainmenu-list {
+    width: 1260px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    float: left;
+    padding-left:0px;
+}
+
+    .adminsub-mainmenu-list li {
+        float: left;
+        width: 150px;
+        list-style: none;
+        height: 100%;
+        display: table;
+    }
+
+        .adminsub-mainmenu-list li a {
+            color: #fff;
+            text-align: center;
+            display: table-cell;
+            font-size: 15px;
+            height: 100%;
+            vertical-align: middle;
+            letter-spacing:2px;
+            font-family:NotoSans-Medium,sans-serif;
+        }
+
+
+            .adminsub-mainmenu-list li a:hover {
+                background-color: #bda4cc;
+            }
+
+.adminsub-submenu-wrap {
+    width: 185px;
+    float: left;
+    position: relative;
+    background-color: #2C3E50;
+    height: 100%;
+}
+
+.adminsub-submenu-title {
+    height: 56px;
+    background-color: #99003d;
+    /*border-bottom: 2px solid #34495D;*/
+}
+
+    .adminsub-submenu-title h2 {
+        font-size: 18px;
+        padding-top: 20px;
+        text-align: center;
+        color: #222;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #fff;
+        letter-spacing:2px;
+        font-family:NotoSans-Medium,sans-serif;
+    }
+
+.adminsub-submenu-list {
+    background-color: #5f4a8b;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+    .adminsub-submenu-list li {
+        list-style: none;
+        line-height: 70px;
+        height: 70px;
+    }
+
+        .adminsub-submenu-list li a {
+            text-align: center;
+            display: block;
+            font-size: 15px;
+            color: #fff;
+            border-bottom: 1px solid #bda4cc;
+            font-family:NotoSans-Medium,sans-serif;
+            letter-spacing:2px;
+        }
+
+.adminsub-content {
+    border-left: 1px #c2c2d6 solid;
+    margin-left: 185px;
+    overflow: hidden;
+    height: auto;
+    padding: 35px;
+    background-color: #fff;
+    min-height: 900px;
+}
+
+.adminsub-bottomwrap {
+    width: 100%;
+    height: 56px;
+    border-top: 1px solid #bda4cc;
+}
+
+.adminsub-copyright {
+    text-align: center;
+    padding-top: 16px
+}
+
+.adminsub-moreinfo {
+    float: right;
+    font-size: 11px !important;
+    font-weight: bolder !important;
+    padding-top: 10px
+}
+.lnb_handle {
+    position: absolute;
+    overflow: hidden;
+    width: 20px;
+    height: 23px;
+    text-indent: -999px;
+    opacity: 1;
+    top: 0;
+    cursor: pointer;
+}
+
+    .lnb_handle.close {
+        background: #451852 url(/AdminSub/Images/arrow_close.png) 50% no-repeat;
+        left: 185px;
+        opacity: 1;
+    }
+
+    .lnb_handle.open {
+        background: #451852 url(/AdminSub/Images/arrow_open.png) 50% no-repeat;
+        left: 0px;
+    }
+
+
+.adminsub-submenu-list li a:hover, .adminsub-submenu-list li a:active {
+    background: #bda4cc;
+    cursor: pointer;
+}
+
+
+.adminsub-default {
+    width: 100%;
+    min-height: 900px;
+    padding: 35px;
+    background-color:#ffffff;
+    
+}
+
+.adminsub-dt01-wrap {
+    width: 680px;
+    float: left;
+}
+.adminsub-dt01 {
+}
+
+.adminsub-dt-title-wrap {
+    border-bottom: 2px solid #99003d;
+    padding-bottom: 14px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+    .adminsub-dt-title-wrap > span {
+        letter-spacing: -1px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+        .adminsub-dt-title-wrap > span.titleinfo {
+            font-size: 14px;
+            padding-left: 5px;
+            font-weight: normal
+        }
+
+.adminsub-dt01 > .adminsub-dt-table-wrap {
+    overflow: hidden;
+    border-right: 1px solid #f8e5fe;
+}
+
+    .adminsub-dt01 > .adminsub-dt-table-wrap ul {
+        border-bottom: 1px solid #f8e5fe;
+        border-left: 1px solid #f8e5fe;
+        margin-right: -1px;
+        margin-bottom: 0;
+        margin-top: 0;
+        height: 149px;
+        padding-left: 0px;
+    }
+
+        .adminsub-dt01 > .adminsub-dt-table-wrap ul li {
+            float: left;
+            height: 100%;
+            width: 25%
+        }
+        .adminsub-dt01 > .adminsub-dt-table-wrap ul li:first-child {
+            background: url(/AdminSub/Images/delivery_01.png) no-repeat left center;
+
+        }
+            .adminsub-dt01 > .adminsub-dt-table-wrap ul li:nth-child(2) {
+                background: url(/AdminSub/Images/delivery_02.png) no-repeat left center;
+            }
+        .adminsub-dt01 > .adminsub-dt-table-wrap ul li:nth-child(3) {
+                background: url(/AdminSub/Images/delivery_03.png) no-repeat left center;
+            }
+       .adminsub-dt01 > .adminsub-dt-table-wrap ul li:last-child {
+                background: url(/AdminSub/Images/delivery_04.png) no-repeat left center;
+        }
+
+            .adminsub-dt01 > .adminsub-dt-table-wrap ul li:hover {
+                background-color: #fbf5fd;
+                cursor: pointer;
+            }
+
+                .adminsub-dt01 > .adminsub-dt-table-wrap ul li:hover a {
+                    /*color: #b30039;*/
+                }
+
+                    .adminsub-dt01 > .adminsub-dt-table-wrap ul li:hover a div {
+                        color: #ff0066;
+                    }
+
+            .adminsub-dt01 > .adminsub-dt-table-wrap ul li a {
+                padding: 20px 15px;
+                display: block;
+                border-right: 1px solid #f8e5fe;
+                height: 100%;
+                color: #000;
+                font-size: 17px;
+                font-weight: bold
+            }
+
+                .adminsub-dt01 > .adminsub-dt-table-wrap ul li a span {
+                    display: block;
+                    height: 70px
+                }
+
+                .adminsub-dt01 > .adminsub-dt-table-wrap ul li a div {
+                    text-align: right;
+                    color: #0066ff
+                }
+
+.adminsub-dt02-wrap {
+    width: 440px;
+    float: left;
+    padding-left: 15px
+}
+
+.adminsub-dt02 .adminsub-dt-title-wrap {
+    border-bottom: 2px solid #99003d;
+    padding-bottom: 14px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+    .adminsub-dt02 .adminsub-dt-title-wrap span {
+        letter-spacing: -1px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+.adminsub-dt02 .adminsub-dt-table-wrap {
+    overflow: hidden;
+    padding: 10px 5px;
+    height: 149px;
+    border-bottom: 1px solid #f8e5fe;
+    border-right: 1px solid #f8e5fe;
+    border-left: 1px solid #f8e5fe;
+
+}
+
+    .adminsub-dt02 .adminsub-dt-table-wrap ul {
+        margin-bottom: 0;
+        margin-top: 0;
+        height: 149px;
+        padding-left: 0px;
+    }
+
+    .adminsub-dt02 .adminsub-dt-table-wrap ul li:not(:first-child) {
+        margin-top: 8px
+    }
+
+        .adminsub-dt02 .adminsub-dt-table-wrap ul li a {
+            display: block;
+            height: 100%;
+            color: #000;
+            font-size: 13px;
+        }
+
+        .adminsub-dt02 .adminsub-dt-table-wrap ul li a:hover {
+            text-decoration: underline;
+        }
+
+            .adminsub-dt02 .adminsub-dt-table-wrap ul li a span {
+                float: right;
+            }
+
+.adminsub-dt03-wrap {
+    width: 270px;
+    padding-left: 15px;
+    float: left;
+}
+
+.adminsub-dt03 .adminsub-dt-title-wrap {
+    border-bottom: 2px solid #99003d;
+    padding-bottom: 14px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+    .adminsub-dt03 .adminsub-dt-title-wrap span {
+        letter-spacing: -1px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+.adminsub-dt03 .adminsub-dt-table-wrap {
+    overflow: hidden;
+    padding: 10px 5px;
+    height: 149px;
+    border-bottom: 1px solid #f8e5fe;
+    border-left: 1px solid #f8e5fe;
+    border-right: 1px solid #f8e5fe;
+}
+
+    .adminsub-dt03 .adminsub-dt-table-wrap ul {
+        margin-right: -1px;
+        margin-bottom: 0;
+        margin-top: 0;
+        height: 149px;
+        padding-left: 0px;
+    }
+
+        .adminsub-dt03 .adminsub-dt-table-wrap ul li:not(:first-child) {
+            margin-top: 8px
+        }
+
+            .adminsub-dt03 .adminsub-dt-table-wrap ul li a {
+                display: block;
+                height: 100%;
+                color: #000;
+                font-size: 13px;
+            }
+
+                .adminsub-dt03 .adminsub-dt-table-wrap ul li a:hover {
+                    text-decoration: underline;
+                }
+
+                .adminsub-dt03 .adminsub-dt-table-wrap ul li a div {
+                    float: right;
+                }
+
+                    .adminsub-dt03 .adminsub-dt-table-wrap ul li a div b {
+                        color: red
+                    }
+.adminsub-dt04-wrap {
+    width: 1390px;
+    float: left;
+    padding-top: 30px;
+    float: left;
+    clear: both;
+    margin-top:30px;
+}
+
+    .adminsub-dt04-wrap .adminsub-dt-title-wrap {
+        border-bottom: 2px solid #99003d;
+        padding-bottom: 14px;
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+
+        .adminsub-dt04-wrap .adminsub-dt-title-wrap span {
+            letter-spacing: -1px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+            .adminsub-dt04-wrap .adminsub-dt-title-wrap span.titleinfo {
+                font-size: 14px;
+                padding-left: 5px;
+                font-weight: normal
+            }
+
+    .adminsub-dt04-wrap .adminsub-dt-table-wrap {
+        overflow: hidden;
+        float: left;
+        border-bottom: 1px solid #bda4cc;
+    }
+
+.admin-sub-dt-ordertable {
+    width: 600px;
+}
+
+    .admin-sub-dt-ordertable thead tr {
+        height: 43px
+    }
+
+        .admin-sub-dt-ordertable thead tr th:first-child {
+            width: 16%;
+            text-align: center;
+            color: #fff;
+            background-color: #6f417c !important;
+            border-right: 1px #6f417c solid
+        }
+
+        .admin-sub-dt-ordertable thead tr th {
+            width: 28%;
+            text-align: center;
+            color: #fff;
+            background-color: #bc507b !important;
+        }
+
+    .admin-sub-dt-ordertable tbody tr {
+        height: 43px
+    }
+
+        .admin-sub-dt-ordertable tbody tr td:first-child {
+            text-align: center;
+            border-right: 1px #e0e0eb solid;
+            border-bottom: 1px #e0e0eb solid
+        }
+
+        .admin-sub-dt-ordertable tbody tr td {
+            text-align: center;
+            border-bottom: 1px #e0e0eb solid;
+        }
+
+
+.admin-sub-dt-ordertable-sumrow {
+    height: 43px
+}
+
+    .admin-sub-dt-ordertable-sumrow td:first-child {
+        text-align: center;
+        background-color: #fbf5fd;
+        border-right: 1px #e0e0eb solid;
+        border-bottom: 1px #e0e0eb solid
+    }
+
+    .admin-sub-dt-ordertable-sumrow td {
+        text-align: center;
+        border-bottom: 1px #e0e0eb solid;
+        background-color: #fbf5fd;
+    }
+
+.admin-sub-chartwrap {
+    overflow: hidden;
+    float: left;
+    padding: 10px 0;
+    width: 790px;
+    height: 430px;
+    padding-left: 15px
+}
+
+.admin-sub-chart {
+    border: 1px solid #E6E6E6
+}

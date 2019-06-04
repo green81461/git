@@ -1,0 +1,58 @@
+﻿
+<html>
+<head>
+    <title>popup</title>
+    <script language="JavaScript">
+
+        function setCookie(name, value, expiredays) {
+            var todayDate = new Date();
+            todayDate.setDate(todayDate.getDate() + expiredays);
+            document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+        }
+
+        function closeWin() {
+            if (document.forms[0].Notice.checked)
+                setCookie("Notice", "done", 1);
+            self.close();
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <div>
+        <h3>견적 추천 상품</h3>
+        <div style="text-align:center; float:initial">
+            <span style="font-size:18px;">
+                새로운 추천 상품 리스트 ''건 이 있습니다.
+                <br />
+                리스트 확인을 위해 이동하시겠습니까?
+                <br />
+            </span>
+            <br />
+            <input type="button" style="" value="이동" onclick="" />
+            <br />
+            <br />
+            <br />
+        </div>
+        <!--<a>
+            <img src="../Images/SiteImage/UrianSummerPopup.jpg" />
+        </a>-->
+    </div>
+    <form style="text-align:right; padding-top:7px">
+        <div>
+            <div style="display:inline-block; float:left">
+                <input type="CHECKBOX" name="Notice" value="">
+                오늘 하루 팝업 띄우지 않기
+            </div>
+
+            <div style="display:inline-block; float:right">
+                <img src="../Images/Wish/icon-delete.jpg" onclick="closeWin()" style="vertical-align:middle; padding-top:5px; cursor:pointer" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+

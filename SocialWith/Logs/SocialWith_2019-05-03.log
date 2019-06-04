@@ -1,0 +1,49 @@
+2019-05-03 16:57:14.0643 | 10364 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : '/Order/OrderBillIssueCheck.aspx' 파일이 없습니다.
+ Stack Trace    :    위치: System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   위치: System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   위치: System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.PageHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-05-03 17:51:36.7245 | 10364 | iisexpress | ERROR | SocialWith.Data.Dao.DAO | SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor : 193 | ErrorMessage | Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04063: package body "C##SOCIALW.PKG_ADMIN_PAY"에 오류가 있습니다
+ORA-06508: PL/SQL: 호출 중인 프로그램 단위를 찾을 수 없습니다(: "C##SOCIALW.PKG_ADMIN_PAY").
+ORA-06512:  1행
+   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 187   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 187
+2019-05-03 17:51:36.7784 | 10364 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : Oracle Data Provider for .NET, Managed Driver
+ 에러 메시지    : ORA-04063: package body "C##SOCIALW.PKG_ADMIN_PAY"에 오류가 있습니다
+ORA-06508: PL/SQL: 호출 중인 프로그램 단위를 찾을 수 없습니다(: "C##SOCIALW.PKG_ADMIN_PAY").
+ORA-06512:  1행
+ Stack Trace    :    위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 195
+   위치: SocialWith.Biz.Pay.PayService.GetSalesExactcal(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2007
+   위치: CompanyHandler.GetSalesExactcal(HttpContext context) 파일 d:\Svn\SocialWith\Handler\Admin\CompanyHandler.ashx:줄 1299
+   위치: CompanyHandler.ProcessRequest(HttpContext context) 파일 d:\Svn\SocialWith\Handler\Admin\CompanyHandler.ashx:줄 164
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 

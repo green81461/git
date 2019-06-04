@@ -1,0 +1,1073 @@
+﻿@font-face {
+    font-family: 'NotoSans-Regular'; /*a name to be used later*/
+    src: url('/Content/Fonts/NotoSansCJKkr-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSans-Light'; /*a name to be used later*/
+    src: url('/Content/Fonts/NotoSansCJKkr-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSans-Medium'; /*a name to be used later*/
+    src: url('/Content/Fonts/NotoSansCJKkr-Medium.otf') format('opentype');
+}
+
+.mainWrap-div {
+    width: 1230px;
+    height: 850px;
+ 
+}
+
+    .mainWrap-div a {
+        text-decoration: none;
+        color: #808080;
+        cursor:pointer;
+    }
+
+        .mainWrap-div a:hover {
+            font-weight: bold;
+            color: #000000;
+        }
+
+
+
+.mainWrap-sub1-div, .mainWrap-sub5-div {
+    margin-left: 15px;
+    margin-right: 21px;
+    width: 282px;
+    height: 250px;
+    border-bottom: 1px solid #a2a2a2;
+    float: left;
+}
+
+.mainWrap-sub9-div {
+    width: 1190px;
+    height: 250px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 25px;
+    border-bottom: 1px solid #a2a2a2;
+}
+
+.mainWrap-sub5-div, .mainWrap-sub6-div,
+.mainWrap-sub7-div, .mainWrap-sub8-div {
+    margin-top: 25px;
+}
+
+
+
+.mainWrap-sub2-div, .mainWrap-sub3-div, .mainWrap-sub4-div,
+.mainWrap-sub6-div, .mainWrap-sub7-div, .mainWrap-sub8-div {
+    width: 282px;
+    height: 250px;
+    float: left;
+    margin-right: 20px;
+    border-bottom: 1px solid #a2a2a2;
+}
+
+/*팝업창 보더*/
+.divpopup-layer {
+    border: none;
+}
+
+.close-div {
+    width: 50px;
+    height: 30px;
+    float: right;
+}
+
+
+.tblPopup {
+    border: 1px solid #a2a2a2;
+    width: 100%;
+}
+
+    .tblPopup th {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        background-color: #ececec;
+        text-align: center;
+        width: 100px;
+    }
+
+    .tblPopup td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        width: 100px;
+    }
+
+.popup-div-top {
+    margin-top: 20px;
+}
+
+.popup-div-bottom {
+    margin-top: 20px;
+    max-height: 302px;
+    overflow: auto;
+}
+
+.admin-maincontents {
+    margin-top: 50px;
+}
+
+.admin-maincontents-subtitle {
+    margin:45px 0 10px 0;
+}
+
+.admin-maincontents-subtitle > span {
+        color: red;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+html {
+    height: 100%;
+}
+
+html, body, form {
+    font-family: 'NotoSans-Light',sans-serif; /*a name to be used later*/
+}
+
+.admin-mainwrap {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    background: linear-gradient(to top, #0194c0 0%, #006cac 100%);
+    min-width: 1500px;
+}
+
+.admin-header {
+    width: 100%;
+    height: 29px !important;
+    background-color: #fff
+}
+
+    .admin-header .admin-header-info {
+		position:relative;
+        right:0;
+        top:7px;
+        z-index:1;
+    }
+
+        .admin-header .admin-header-info ul {
+            float: right;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-left: 0px;
+            padding-top: 5px;
+            padding-right: 15px;
+        }
+
+    .admin-header ul li.admin-header-home {
+        float: left;
+        list-style: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        background: url(/admin/Images/homepage-icon.png) no-repeat left center;
+        background-size: 14px;
+    }
+
+    .admin-header ul li.admin-header-user {
+        float: left;
+        color: #fff;
+        list-style: none;
+        padding-right:5px;
+        background: url(/admin/Images/user-icon.png) no-repeat left center;
+        background-size: 16px;
+    }
+
+
+    .admin-header ul li.admin-header-logout {
+        float: left;
+        color: #000;
+        list-style: none;
+    }
+
+.admin-logout {
+    color: #fff;
+    background-color: #484848;
+    box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+    height: 30px;
+    border-radius: 3px;
+    font-size: 11px;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+
+    .admin-logout:hover {
+        background-color: #000;
+        cursor: pointer;
+    }
+
+.admin-header .admin-header-info ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size:12px;
+}
+
+.admin-mainmenu-wrap {
+    position: relative;
+    min-width: 1660px;
+    width: 100%;
+    height: 47px;
+    background: linear-gradient(to left, #0194c0 0%, #006cac 100%);
+}
+
+.admin-title {
+    padding-top: 10px;
+    float: left;
+    font-size: 17px;
+    width: 185px;
+    text-align: center;
+    color: #fff;
+    height: 100%;
+    background-color: #0099cc;
+    font-weight: bold
+}
+
+.admin-mainmenu-list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    float: left;
+    padding-left: 0px;
+}
+
+    .admin-mainmenu-list li {
+        float: left;
+        width: 150px;
+        list-style: none;
+        height: 100%;
+        display: table;
+    }
+
+        .admin-mainmenu-list li a {
+            color: #fff;
+            text-align: center;
+            display: table-cell;
+            font-size: 15px;
+            height: 100%;
+            vertical-align: middle;
+            font-weight: bold;
+        }
+
+
+            .admin-mainmenu-list li a:hover {
+                background: #015d8c;
+             }
+
+.adminmenu-wrap {
+    width: 185px;
+    float: left;
+    position: relative;
+    background-color: #5f4a8b;
+    height: 100%;
+}
+
+.adminmenu-title {
+    height: 56px;
+    background-color: #5b80a4;
+    /*border-bottom: 2px solid #34495D;*/
+}
+
+    .adminmenu-title h2 {
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 20px;
+        text-align: center;
+        color: #222;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #fff;
+    }
+
+.adminmenu-list {
+    background-color: #5f4a8b;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+    .adminmenu-list li {
+        list-style: none;
+        line-height: 73px;
+        height: 73px;
+    }
+
+        .adminmenu-list li a {
+            text-align: center;
+            display: block;
+            font-size: 13px;
+            color: #fff;
+            border-bottom: 2px solid #34495D;
+            font-weight: bold;
+        }
+
+.admin-bottomwrap {
+    width: 100%;
+    height: 56px;
+    color: #fff;
+    min-width: 1500px;
+    background-color: #444648;
+}
+
+.admin-copyright {
+    text-align: center;
+    padding-top: 16px
+}
+
+.lnb_handle {
+    position: absolute;
+    overflow: hidden;
+    width: 20px;
+    height: 23px;
+    text-indent: -999px;
+    opacity: 1;
+    top: 0;
+    cursor: pointer;
+}
+
+    .lnb_handle.close {
+        background: #0099cc url(/admin/Images/arrow_close.png) 50% no-repeat;
+        left: 185px;
+        opacity: 1;
+    }
+
+    .lnb_handle.open {
+        background: #0099cc url(/admin/Images/arrow_open.png) 50% no-repeat;
+        left: 0px;
+    }
+
+
+.admin-submenu-list li a:hover, .admin-submenu-list li a:active {
+    cursor: pointer;
+}
+
+.admin-submenu-list li:hover {
+    background: #015d8c;
+}
+
+.admin-default {
+    width: 100%;
+    min-height: 900px;
+    padding: 15px 35px 80px 35px;
+    height: 100%;
+    background-color: #f7f8fc;
+    overflow: hidden;
+}
+
+.admin-dt01-wrap {
+    width: 35%;
+    float: left;
+    margin-top:40px;
+    background:#fff;
+    box-shadow:0 2px 2px rgba(0,0,0,0.3);
+    padding:10px;
+}
+
+
+.admin-dt-title-wrap {
+    border-bottom: 2px solid #016cac;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+    .admin-dt-title-wrap > span {
+        letter-spacing: 5px;
+        font-weight: bold;
+        font-size: 20px;
+        color: #000080;
+        margin-left: 5px;
+        vertical-align: middle;
+        font-family: 'Noto Sans KR Regular';
+    }
+
+        .admin-dt-title-wrap > span.titleinfo {
+            font-size: 14px;
+            padding-left: 5px;
+            font-weight: normal;
+                letter-spacing:0px;
+        }
+
+.admin-dt01 > .admin-dt-table-wrap {
+    overflow: hidden;
+    border-right: 1px solid #dfdffe;
+}
+
+    .admin-dt01 > .admin-dt-table-wrap ul {
+        /*border-bottom: 1px solid #E6E6E6;*/
+        border-left: 1px solid #e9e9ff;
+        margin-right: -1px;
+        margin-bottom: 0;
+        margin-top: 0;
+        height: 298px;
+        padding-left: 0px;
+    }
+
+        .admin-dt01 > .admin-dt-table-wrap ul li {
+            float: left;
+            height: 50%;
+            width: 25%;
+            border-bottom: 1px solid #e9e9ff;
+        }
+
+            .admin-dt01 > .admin-dt-table-wrap ul li:hover {
+                background-color: #f3f3ff;
+                cursor: pointer;
+            }
+
+                    .admin-dt01 > .admin-dt-table-wrap ul li:hover a div {
+                        color: #ff0066;
+                    }
+
+            .admin-dt01 > .admin-dt-table-wrap ul li a {
+                padding: 20px 15px;
+                display: block;
+                border-right: 1px solid #e9e9ff;
+                height: 100%;
+                color: #000;
+                font-size: 15px;
+                font-weight: bold
+            }
+
+                .admin-dt01 > .admin-dt-table-wrap ul li a span {
+                    display: block;
+                    height: 70px
+                }
+
+                .admin-dt01 > .admin-dt-table-wrap ul li a div {
+                    text-align: right;
+                    color: #0066ff
+                }
+
+.admin-dt02-wrap {
+    width: 50%;
+    float: left;
+    margin-top: 40px;
+    margin-left: 39px;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+.admin-dt02 .admin-dt-title-wrap {
+    border-bottom: 2px solid #016cac;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+    .admin-dt02 .admin-dt-title-wrap span {
+        letter-spacing: 5px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+.admin-dt02 .admin-dt-table-wrap {
+    overflow: hidden;
+    height: 298px;
+    border: 1px solid #e9e9ff;
+}
+
+    .admin-dt02 .admin-dt-table-wrap .admin-dt-subtitle-wrap {
+        background-color: #efefff;
+        padding: 3px 5px;
+    }
+
+.admin-dt02-subtitle {
+    font-size: 13px;
+    color: #000080;
+    font-weight: bold;
+    width: 90%;
+    display: inline-block;
+}
+
+.admin-dt02 .admin-dt-table-wrap ul {
+    margin-bottom: 0;
+    margin-top: 5px;
+    height: 121px;
+    padding-left: 0px;
+}
+.admin-dt02 .admin-dt-table-wrap ul li {
+    height: 20px;
+    padding:0 5px;
+}
+        .admin-dt02 .admin-dt-table-wrap ul li:not(:first-child) {
+            margin-top: 4px
+        }
+
+        .admin-dt02 .admin-dt-table-wrap ul li a {
+            height: 100%;
+            color: #000;
+            font-size: 13px;
+            display:inline-block;
+            width:100%;
+        }
+
+            .admin-dt02 .admin-dt-table-wrap ul li a:hover span.admin-dash-board-title {
+                text-decoration: underline;
+                text-decoration-color:darkblue
+            }
+
+            
+                .admin-dt02 .admin-dt-table-wrap ul li a span.admin-dash-board-compname {
+                    font-weight: bold;
+                    float: left;
+                    padding-right: 5px
+                }
+
+                .admin-dt02 .admin-dt-table-wrap ul li a span.admin-dash-board-title {
+                    display: inline-block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 155px;
+                    width: auto;
+                    float: left
+                }
+
+                .admin-dt02 .admin-dt-table-wrap ul li a span.admin-dash-board-new {
+                    float: left;
+                    padding-left: 5px
+                }
+
+                    .admin-dt02 .admin-dt-table-wrap ul li a span.admin-dash-board-new img {
+                        padding-bottom: 3px;
+                    }
+
+                .admin-dt02 .admin-dt-table-wrap ul li a span.admin-dash-board-result {
+                    
+                    color: #fff;
+                    padding:0 3px;
+                    float: left;
+                   background-color:#0099cc;
+                   border-radius:5px;
+                   margin-left:3px;
+                }
+
+            .admin-dt02 .admin-dt-table-wrap ul li a span.admin-dash-board-date {
+                float: right
+            }
+
+.admin-dt03-wrap {
+    width:25%;
+    float: left;
+    clear: both;
+    margin-top: 40px;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+.admin-dt03 .admin-dt-title-wrap {
+    border-bottom: 2px solid #016cac;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-family: 'Noto Sans KR Regular';
+}
+
+    .admin-dt03 .admin-dt-title-wrap span {
+        letter-spacing: 5px;
+        font-weight: bold;
+        font-size: 20px;
+        vertical-align: middle;
+    }
+
+.admin-dt03 .admin-dt-table-wrap {
+    overflow: hidden;
+    padding: 10px 5px;
+    height: 149px;
+    border: 1px solid #e9e9ff;
+}
+
+    .admin-dt03 .admin-dt-table-wrap ul {
+        /*margin-right: -1px;*/
+        margin-bottom: 0;
+        margin-top: 0;
+        height: 149px;
+        padding-left: 0px;
+    }
+        .admin-dt03 .admin-dt-table-wrap ul li {
+            height: 18px;
+        }
+
+        .admin-dt03 .admin-dt-table-wrap ul li:not(:first-child) {
+            margin-top: 4px
+        }
+
+        .admin-dt03 .admin-dt-table-wrap ul li a {
+            display: block;
+            height: 100%;
+            
+        }
+
+            .admin-dt03 .admin-dt-table-wrap ul li a:hover span.admin-dash-boardtitle {
+               text-decoration:underline;
+               text-decoration-color:darkblue;
+            }
+
+            .admin-dt03 .admin-dt-table-wrap ul li a span.admin-dash-boardtitle {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 155px;
+                width: auto;
+                color: #000;
+                font-size: 13px;
+                float: left;
+            }
+
+            .admin-dt03 .admin-dt-table-wrap ul li a:hover {
+                text-decoration: underline;
+            }
+
+            .admin-dt03 .admin-dt-table-wrap ul li a span.admin-dash-boarddate {
+                float: right;
+                color: #000;
+            }
+
+
+
+.admin-dt04-wrap {
+    width: 33%;
+    margin-left: 37px;
+    float: left;
+    margin-top: 40px;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+.admin-dt04 .admin-dt-title-wrap {
+    border-bottom: 2px solid #016cac;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+    .admin-dt04 .admin-dt-title-wrap span {
+        letter-spacing: 5px;
+        font-weight: bold;
+        font-size: 20px;
+        vertical-align: middle;
+        font-family: 'Noto Sans KR Regular';
+    }
+
+.admin-dt04 .admin-dt-table-wrap {
+    overflow: hidden;
+    padding: 10px 5px;
+    height: 149px;
+    border: 1px solid #e9e9ff;
+}
+
+    .admin-dt04 .admin-dt-table-wrap ul {
+        /*margin-right: -1px;*/
+        margin-bottom: 0;
+        margin-top: 0;
+        height: 149px;
+        padding-left: 0px;
+    }
+        .admin-dt04 .admin-dt-table-wrap ul li {
+            height: 18px
+        }
+
+        .admin-dt04 .admin-dt-table-wrap ul li:not(:first-child) {
+            margin-top: 4px
+        }
+
+        .admin-dt04 .admin-dt-table-wrap ul li a {
+            height: 100%;
+            color: #000;
+            font-size: 13px;
+            display: inline-block;
+            width: 100%;
+        }
+
+            .admin-dt04 .admin-dt-table-wrap ul li a:hover span.admin-dash-newgoods-title {
+                text-decoration: underline;
+                text-decoration-color: darkblue;
+            }
+
+            .admin-dt04 .admin-dt-table-wrap ul li a span.admin-dash-newgoods-title {
+                float: left;
+                width: auto;
+                max-width: 330px;
+                white-space: nowrap;
+                display: inline-block;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+
+            .admin-dt04 .admin-dt-table-wrap ul li a span.admin-dash-newgoods-new {
+                float: left;
+                padding-left: 5px
+            }
+
+                .admin-dt04 .admin-dt-table-wrap ul li a span.admin-dash-newgoods-new img {
+                    padding-bottom: 3px;
+                    
+                }
+
+            .admin-dt04 .admin-dt-table-wrap ul li a span.admin-dash-newgoods-result {
+                float: left;
+                background-color: #d3559f;
+                border-radius: 5px;
+                padding: 0 3px;
+                color: #fff;
+                margin-left:3px;
+            }
+
+            .admin-dt04 .admin-dt-table-wrap ul li a span.admin-dash-newgoods-date {
+                float: right;
+                
+            }
+
+
+.admin-dt05-wrap {
+    width:25%;
+    margin-left: 38px;
+    float: left;
+    margin-top: 40px;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+.admin-dt05 .admin-dt-title-wrap {
+    border-bottom: 2px solid #016cac;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-family: 'Noto Sans KR Regular';
+}
+
+    .admin-dt05 .admin-dt-title-wrap span {
+        letter-spacing: 5px;
+        font-weight: bold;
+        font-size: 20px;
+        vertical-align: middle;
+        font-family: 'Noto Sans KR Regular';
+    }
+
+.admin-dt05 .admin-dt-table-wrap {
+    overflow: hidden;
+    height: 149px;
+    border: 1px solid #e9e9ff;
+}
+
+    .admin-dt05 .admin-dt-table-wrap .admin-dt-subtitle-wrap {
+       
+        height: 50%;
+    }
+
+.admin-dt05-subtitle {
+    font-size: 13px;
+    color: #000080;
+    font-weight: bold;
+    width: 70%;
+    display: inline-block;
+    padding: 3px 0;
+}
+.admin-dt05 .admin-dt-table-wrap ul {
+    /*margin-right: -1px;*/
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 149px;
+    padding-left: 0px;
+}
+
+        .admin-dt05 .admin-dt-table-wrap ul li:not(:first-child) {
+            margin-top: 4px
+        }
+
+        .admin-dt05 .admin-dt-table-wrap ul li a {
+            display: block;
+            height: 100%;
+            color: #000;
+            font-size: 13px;
+        }
+
+            .admin-dt05 .admin-dt-table-wrap ul li a:hover {
+                text-decoration: underline;
+            }
+
+            .admin-dt05 .admin-dt-table-wrap ul li a span {
+                float: right;
+            }
+
+.admin-dt06-wrap {
+    width:87%;
+    float: left;
+    margin-top: 40px;
+    float: left;
+    clear: both;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+    .admin-dt06-wrap .admin-dt-title-wrap {
+        border-bottom: 2px solid #016cac;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+        .admin-dt06-wrap .admin-dt-title-wrap span {
+            letter-spacing: 5px;
+            vertical-align: middle;
+            font-size: 22px;
+            font-family: 'Noto Sans KR Regular';
+        }
+
+            .admin-dt06-wrap .admin-dt-title-wrap span.titleinfo {
+                font-size: 14px;
+                padding-left: 5px;
+                font-weight: normal;
+                letter-spacing:0px;
+            }
+
+    .admin-dt06-wrap .admin-dt-table-wrap {
+        overflow: hidden;
+        float: left;
+        width:45%;
+        border-bottom: 1px solid #E6E6E6;
+    }
+.admin-dt07-wrap {
+    width: 87%;
+    float: left;
+    margin-top: 40px;
+    float: left;
+    clear: both;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+    .admin-dt07-wrap .admin-dt-table-wrap {
+        overflow: hidden;
+        float: left;
+        width:18%;
+        border-bottom: 2px solid #016cac;
+        margin: 10px 10px 0 0;
+    }
+
+.admin-dt07 .admin-dt-table-wrap p {
+    text-align: right;
+    color: #000080;
+    font-weight:bold;
+}
+
+.admin-dt-ordertable.colunms-3 {
+    width:100%;
+}
+
+.admin-dt-ordertable.colunms-3 thead tr th {
+    width: 25%;
+}
+
+    .admin-dt-ordertable.colunms-3 thead tr th:first-child {
+        width: 25%;
+    }
+
+.admin-dt-ordertable {
+    width:100%;
+}
+
+    .admin-dt-ordertable thead tr {
+        height: 43px
+    }
+
+        .admin-dt-ordertable thead tr th:first-child {
+            width: 16%;
+            text-align: center;
+            color: #fff;
+            background-color: #016cac !important;
+            border-right: 1px #e9e9ff solid
+        }
+
+        .admin-dt-ordertable thead tr th {
+            width: 28%;
+            text-align: center;
+            color: #fff;
+            background-color: #0194c0 !important;
+        }
+
+    .admin-dt-ordertable tbody tr {
+        height: 44px
+    }
+
+        .admin-dt-ordertable tbody tr td:first-child {
+            text-align: center;
+            border-right: 1px #e9e9ff solid;
+            border-bottom: 1px #e9e9ff solid;
+        }
+
+        .admin-dt-ordertable tbody tr td {
+            text-align: center;
+            border-bottom: 1px #e9e9ff solid;
+        }
+
+.admin-dt-ordertable-sumrow {
+    height: 43px
+}
+
+    .admin-dt-ordertable-sumrow td:first-child {
+        text-align: center;
+        background-color: #efefff;
+        border-right: 1px #e9e9ff solid;
+        border-bottom: 1px #e9e9ff solid
+    }
+
+    .admin-dt-ordertable-sumrow td {
+        text-align: center;
+        border-bottom: 1px #e9e9ff solid;
+        background-color: #efefff;
+    }
+
+.admin-chartwrap {
+    overflow: hidden;
+    float: left;
+    width: 50%;
+    height: 450px; 
+}
+
+.admin-dt07 .admin-chartwrap {
+    overflow: hidden;
+    float: left;
+    width: 42%;
+    height: 450px;
+}
+
+.admin-chart {
+    border: 1px solid #e9e9ff;
+    margin-left:20px;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+.admin-submenu-wrap {
+    width: 185px;
+    float: left;
+    position: relative;
+    height: 100%;
+}
+
+.admin-submenu-title {
+    height:80px;
+    border-bottom: 1px solid #53aac7;
+}
+
+    .admin-submenu-title h2 {
+        font-size:20px;
+        padding-top:25px;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #fff;
+        letter-spacing: 2px;
+        font-family: NotoSans-Medium,sans-serif;
+    }
+
+.admin-submenu-list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+    .admin-submenu-list li {
+        list-style: none;
+        line-height: 50px;
+        height:50px;
+    }
+
+        .admin-submenu-list li a {
+            text-align: center;
+            display: block;
+            font-size: 13px;
+            color: #fff;
+            border-bottom: 1px solid #53aac7; font-family: NotoSans-Medium, sans-serif;
+            letter-spacing: 2px;
+        }
+
+
+.admin-content {
+    border-left: 1px #c2c2d6 solid;
+    margin-left: 185px;
+    overflow: hidden;
+    height: auto;
+    padding: 35px;
+    background-color: #fff;
+    min-height: 900px;
+}
+
+
+.sub-title-div {
+    width: 100%;
+}
+
+.p-title-mainsentence {
+    color: #69696c;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 9px;
+}
+
+.span-title-subsentence {
+    font-family: Dotum;
+    color: #626363;
+    font-size: 12px;
+    font-weight: normal
+}
+
+.visit_list {
+    overflow:hidden;
+    margin:40px 0 20px 0;
+}
+
+.visit_list > li {
+    position:relative;
+    display:inline-block;
+    float:left;
+    text-align:center;
+    width:33%;
+}
+
+    .visit_list > li img {
+        width:65px;
+    }
+
+    .visit_list > li .count {
+        font-size: 43px;
+        font-weight: bold;
+        margin-top:13px;
+    }
+
+    .visit_list > li .title {
+        font-size:17px;
+        font-weight:bold;
+        margin-top:20px;
+    }
+
+    .visit_list > li:last-child .title {
+        margin-top:0;
+    }
+
+    .visit_list > li .id {
+        font-size:13px;
+        font-weight: bold;
+        color: #016cac;
+    }

@@ -1,0 +1,41 @@
+﻿.pageNavigation {
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    display: inline-block;
+}
+
+    .pageNavigation .ucPager_div {
+        margin: 0 auto;
+        width: 600px;
+        color: #a2a2a2;
+    }
+
+    .pageNavigation .ucPager_table {
+        margin: 0 auto;
+        color: #a2a2a2;
+    }
+
+.btnGoFirstPage, .btnGoPreviousPage,
+.btnGoNextPage, .btnGoLastPage {
+    width: 30px;
+    height: 25px;
+    margin: 0 2px 0 2px;
+    border: none;
+    background: url("../Images/etc_out.jpg");
+    font-weight: bold;
+    color: #a2a2a2;
+}
+
+.lblPageList {
+    font-weight: bold;
+    color: black;
+}
+
+
+
+
+    .lblPageList a {
+        color: #a2a2a2;
+    }

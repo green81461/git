@@ -1,0 +1,204 @@
+﻿
+/*팝업창*/
+.divpopup-layer {
+    border: none;
+}
+
+.close-div {
+    width: 50px;
+    height: 30px;
+    float: right;
+}
+
+
+.tblPopup {
+    border: 1px solid #a2a2a2;
+    width: 100%;
+}
+
+ .tblPopup th {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        background-color: #ececec;
+        text-align: center;
+        width: 100px;
+ }
+
+ .tblPopup td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        width: 100px;
+  }
+
+
+
+.popup-div {
+    margin-top: 20px;
+    height: 514px;
+    overflow: auto;
+ 
+}
+
+/*탭메뉴*/
+.sub-tab-div {
+    width: 100%;
+    height: 36px;
+    border-bottom: 1px solid #ec2028
+}
+
+    .sub-tab-div a:nth-child(1) {
+        margin-left: -40px;
+    }
+
+    .sub-tab-div a:nth-child(2) {
+        margin-left: -3px;
+    }
+
+    .sub-tab-div a:nth-child(3) {
+        margin-left: -3px;
+    }
+
+
+    /*버튼 정렬*/
+
+.bt-align-div {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*테이블*/
+
+.tblPromotion {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+}
+
+.tblPromotion thead{
+    height:40px;
+}
+
+.tblPromotion th{
+    background-color:#ececec;
+    height:30px;
+    text-align:center;
+    border:1px solid #a2a2a2;
+    width:120px;
+}
+
+.tblPromotion td{
+    border:1px solid #a2a2a2;
+    height:30px;
+    padding-left:5px;
+    
+}
+
+
+.promotion-div {
+    margin-top: 20px;
+    
+}
+
+/*드랍다운리스트*/
+.input-drop {
+    width: 220px;;
+    height: 90%;
+    border: 1px solid #a2a2a2;
+    padding-left: 5px;
+}
+
+/*드랍다운리스트*/
+.input-drop1 {
+    width: 200px;
+    height: 90%;
+    border: 1px solid #a2a2a2;
+    padding-left: 5px;
+}
+
+/*드랍다운리스트*/
+.input-drop1 {
+    width: 100px;
+    height: 90%;
+    border: 1px solid #a2a2a2;
+    padding-left: 5px;
+}
+
+/*검색어입력창*/
+.text-search {
+    width: 365px;
+    border: 1px solid #a2a2a2;
+    height: 25px;
+    padding-left: 5px;
+}
+/*검색어입력창1*/
+.text-search1 {
+    width: 365px;
+    border: 1px solid #a2a2a2;
+    height: 25px;
+    padding-left: 5px;
+}
+.imgA {
+    position: relative;
+    top: -1px;
+}
+
+
+/*달력*/
+.calendar {
+    border: 1px solid #a2a2a2;
+    height: 90%;
+    text-align: center;
+    margin-right: 5px;
+    width: 220px;
+}
+
+.input-txt {
+    width: 100px;
+    height: 90%;
+    border: 1px solid #a2a2a2;
+}
+.fileUpload{
+    width:100%;
+    height:90%;
+}
+
+/******주문상품팝업**********/
+#productDiv {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 100;
+    widows: 50%;
+}
+
+
+.productWrapper {
+    width: 1200px;
+    height: auto;
+    margin: 10px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.productContent {
+    background-color: #ffffff;
+    height: 720px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+.input-drop2{
+    width:60px;
+    height:90%;
+}

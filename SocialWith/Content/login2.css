@@ -1,0 +1,388 @@
+﻿html, body, form {
+    height: 100%;
+}
+
+body {
+    margin: 0
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    background: url(/images/backgroundimgnam.jpg) no-repeat;
+}
+
+.top {
+    width: 100%;
+}
+
+    .top img {
+        display: block;
+        margin: 0 auto;
+    }
+
+.main {
+    height:auto;
+}
+
+.bottom {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.bottom img{
+    width:100%;
+}
+
+.login_txt {
+    color: inherit;
+    width: 260px;
+    height: 30px;
+    padding-left:5px;
+    border: 1px solid #2e3e72;
+    margin-left:7px;
+    vertical-align:top;
+}
+.login_main {
+    position:relative;
+    width:1200px;
+    text-align: center;
+    margin: 0 auto;
+    height: 542px;
+}
+
+.login_imgwrap {
+    display: inline-block;
+    width: 300px;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.login_wrap {
+    margin: 0 auto;
+}
+
+.login_logo {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 5px
+}
+
+.login_tablewrap {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.login_table {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 314px;
+}
+
+    .login_table tr {
+        height: 56px
+    }
+
+
+.login_bottombtn {
+    width: 550px;
+    margin: 0 auto
+}
+
+    .login_bottombtn div:nth-child(1) {
+        display: inline-block;
+        float: left;
+    }
+
+    .login_bottombtn div:nth-child(2) {
+        display: inline-block;
+        float: right;
+    }
+
+    .login_bottombtn div:nth-child(2) > a {
+        cursor:pointer;
+    }
+        .login_bottombtn div:nth-child(2) > a:hover {
+            color: blue;
+        } 
+        .login_bottombtn div:nth-child(2) > a >span{
+           font-weight:bold;
+           font-size:13px;
+        }
+        
+
+
+.idsave {
+    color: #000;
+}
+
+.nbottomline {
+    margin-top: 50px;
+   
+    
+}
+.nidbtn {
+    color: #000;
+}
+.commonBtn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #000;
+    padding: 0px;
+    font-weight: 600;
+    border: none;
+}
+.commonBtn:hover {
+    color: #B31E23;
+}
+
+.nam {
+    height:30px;
+    width:100%;
+}
+.membershipnam {
+    margin: 0 auto;
+    /*background-color: #B31E23;*/
+
+    width: 320px;
+    text-align: center;
+    border-radius: 3px;
+}
+.sociteimgnam {
+    margin:0 auto;
+    width:100%;
+    text-align:center;
+}
+
+
+.commonBtn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ffffff;
+    padding: 0px;
+    background-color: #69696b;
+    font-weight: 600;
+    border: none;
+    cursor:pointer;
+}
+
+
+    .commonBtn:hover {
+        background-color: #ec2029;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+
+
+.mainbtn {
+    cursor: pointer;
+    border-radius:0 !important;
+    text-decoration: none;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    display: inline-block;
+    background-color: white;
+    font-weight: bold;
+}
+
+
+    .mainbtn.type1 {
+        color: #fff;
+        background-color: #3a3939 !important;
+        border: none;
+    }
+        .mainbtn.type1:hover {
+            background-color:black !important;
+        }
+        /* .mainbtn.type1:hover { */
+        /* background-color: #003B59; */
+        /* color: #fff; */
+        /* } */
+    .mainbtn.type2 {
+        color: #fff;
+        background-color: #3a3939;
+        border: none;
+        /* color: #FF1919; */
+        /* border: 1px #FF1919 solid; */
+    }
+            .mainbtn.type2:hover {
+               background-color:black!important;
+            }
+
+            .login_btn {
+                padding: 10px 15px 12px;
+                cursor: pointer;
+                margin-left: 8px;
+                width: 200px;
+                height: 32px;
+                font-size: 12px;
+                border: none;
+                vertical-align:top;
+            }
+                .login_btn:hover {
+                    background: #101d46 !important;
+                }
+.border {
+    position:absolute;
+    width: 1200px;
+    height: 188px;
+    text-align: center;
+    background-color: #eaeaea;
+    top:360px;
+}
+.line_black {
+    width: 1079px;
+    margin: 0 auto;
+    border-bottom: 1px solid #223570;
+    padding-top: 33px;
+    background-color: #eaeaea;
+}
+.login_text {
+    position:relative;
+    margin-top: -5px;
+    padding-top: 35px;
+    height: 71px;
+}
+.loginw {
+    font-size: 15px;
+}
+.pswd {
+    color: #223570;
+    font-size: 14px !important;
+    text-align: center;
+    width: 542px;
+    margin-left: 349px;
+}
+
+.society {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 6px;
+}
+.society p {
+    color: #223570;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0 auto;
+ }
+.memberjoin {
+    font-size: 12px;
+    cursor: pointer;
+}
+    .memberjoin:hover {
+        color: #460777;
+    }
+.id_find {
+    margin-left: 50px;
+    font-size: 12px;
+    cursor: pointer;
+}
+    .id_find:hover {
+        color: #460777;
+    }
+.login_text span{
+    font-size:14px !important;
+}
+.login_txt {
+    font-size: 14px !important;
+}
+.center-td {
+    text-align: center;
+    color: #B31E23;
+    font-weight: bold;
+}
+.capslock {
+    display: none;
+    margin-top: 15px;
+    font-size: 13px;
+    margin-left: -263px;
+}
+.guestlogin_btn {
+    display: inline-block;
+    padding: 10px 15px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 8px;
+    width: 300px;
+    height: 38px;
+    font-size: 12px;
+    border: none;
+}
+
+
+.ci {
+    width:1200px;
+    margin:0 auto;
+}
+
+
+.capserror-wrap .capserror-box {
+    font-size: 11px;
+    line-height: 14px;
+    position: static;
+    margin-top: 8px;
+    padding: 9px 9px 7px;
+    letter-spacing: -1px;
+    color: #777;
+    border: solid 1px #d8d1aa;
+    background: #fffadc;
+}
+
+    .capserror-wrap .capserror-box strong {
+        color: #555;
+    }
+
+.mismsg-wrap {
+    position: absolute;
+    top: 75px;
+    left: 354px;
+}
+
+    .mismsg-wrap .mismsg {
+        color: #B31E23
+    }
+    .capserror-wrap {
+        position: absolute;
+        z-index: 10;
+        top: 61px;
+        left: 630px;
+        display: block;
+        zoom: 1;
+    }
+
+.btn_style {
+    background: #223570;
+    color:#fff;
+    font-size:12px;
+    padding:3px 20px;
+    position:absolute;
+    top:130px;
+    left:158px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+    .btn_style:hover {
+        background: #101d46;
+    }

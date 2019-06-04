@@ -1,0 +1,5450 @@
+﻿/**************************************************************
+    main.css
+***************************************************************/
+/**************** 메인페이지 컨텐츠 영역 시작 *****************/
+
+/*게시판 테이블*/
+* {
+    font-size: 12px;
+}
+
+
+
+@font-face {
+    font-family: 'NotoSans-Light'; /*a name to be used later*/
+    src: url('/Content/Fonts/NotoSansCJKkr-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSans-Regular'; /*a name to be used later*/
+    src: url('/Content/Fonts/NotoSansCJKkr-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSans-Medium'; /*a name to be used later*/
+    src: url('/Content/Fonts/NotoSansCJKkr-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'DoHyeon-Regular'; /*a name to be used later*/
+    src: url('/Content/Fonts/DoHyeon-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PoorStory-Regular'; /*a name to be used later*/
+    src: url('/Content/Fonts/PoorStory-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: "NotoSans-Regular",sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+.contents-main {
+    margin-top: 24px;
+    width: 100%;
+}
+
+
+.contents-div {
+    margin-top: 201px;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.carousel-div {
+    height: 445px;
+    width: 100%
+}
+
+#main_carousel {
+    position: absolute;
+}
+
+/**************** 헤더 영역 시작 *****************/
+
+/*상위 고정 헤더*/
+.fixed-div {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+
+.topbanner-wrap {
+    position: relative;
+    width: 100%;
+    height: 67px;
+    text-align: center;
+    background-color: #afe2ff;
+    border-bottom: 1px solid #dadada;
+}
+
+#btnTopMenuCls {
+    position: absolute;
+    top: 50%;
+    right: 103px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    cursor: pointer
+}
+
+    #btnTopMenuCls > img {
+        width: 100%
+    }
+
+/***************쇼핑이벤트부분*************/
+/*쇼핑이벤트 전체 div*/
+.main-best-wrap {
+    min-width: 1256px;
+    margin: 0 auto;
+}
+
+.main-best {
+    width: 1256px;
+    margin-bottom: 15px;
+    margin: 0 auto;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.main-best-tab {
+    overflow: hidden;
+    width: 1256px;
+    padding-left: 0px;
+}
+
+    .main-best-tab li {
+        float: left;
+        width: 18%;
+        height: 100px;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #d9d9d9;
+        border-left: 0;
+        cursor: pointer;
+    }
+
+
+
+
+        .main-best-tab li.active a {
+            color: #ffffff;
+        }
+
+        .main-best-tab li:first-child { /*전체*/
+            background-image: url(/Images/nth_child_1.png);
+            background-repeat: no-repeat;
+            background-position: 12px 3px;
+        }
+
+            .main-best-tab li:first-child.active {
+                background-image: url(/Images/nth_child_1_h.png);
+                background-repeat: no-repeat;
+            }
+
+        .main-best-tab li:nth-child(3) { /*사무*/
+            background-image: url(/Images/nth_child_2.png);
+            background-repeat: no-repeat;
+            background-position: -15px 0px;
+        }
+
+            .main-best-tab li:nth-child(3).active {
+                background-image: url(/Images/nth_child_2_h.png);
+                background-repeat: no-repeat;
+            }
+
+        .main-best-tab li:nth-child(4) { /*생활*/
+            background-image: url(/Images/nth_child_6.png);
+            background-repeat: no-repeat;
+            background-position: -4px 0px;
+        }
+
+            .main-best-tab li:nth-child(4).active {
+                background-image: url(/Images/nth_child_6_h.png);
+                background-repeat: no-repeat;
+            }
+
+        .main-best-tab li:nth-child(2) { /*식음료*/
+            background-image: url(/Images/nth_child_3.png);
+            background-repeat: no-repeat;
+            background-position: -3px 0px;
+        }
+
+            .main-best-tab li:nth-child(2).active {
+                background-image: url(/Images/nth_child_3_h.png);
+                background-repeat: no-repeat;
+            }
+
+
+        .main-best-tab li:nth-child(5) { /*일반*/
+            background-image: url(/Images/nth_child_4.png);
+            background-repeat: no-repeat;
+            background-position: -5px 0px;
+        }
+
+            .main-best-tab li:nth-child(5).active {
+                background-image: url(/Images/nth_child_4_h.png);
+                background-repeat: no-repeat;
+            }
+
+        .main-best-tab li:last-child { /*시설*/
+            background-image: url(/Images/nth_child_5.png);
+            background-repeat: no-repeat;
+            background-position: -8px 0px;
+        }
+
+            .main-best-tab li:last-child.active {
+                background-image: url(/Images/nth_child_5_h.png);
+                background-repeat: no-repeat;
+            }
+
+        .main-best-tab li a {
+            display: table;
+            width: 100%;
+            height: 86px;
+            padding-top: 74px;
+            font-size: 12px;
+            color: #373838;
+            vertical-align: top;
+        }
+
+
+.main-best-list {
+    width: 1280px
+}
+
+
+/*더보기 div, 제목*/
+.more {
+    text-align: center;
+    text-decoration: none;
+    width: 45px;
+    float: right;
+    margin-right: 25px;
+}
+
+
+    /*더보기 버튼*/
+    .more a {
+        text-align: right;
+        right: 80px;
+        text-decoration: none;
+        color: #a2a2a2;
+        cursor: pointer;
+    }
+
+
+/**************** 메인 페이지 컨텐츠 영역 끝 *****************/
+
+/**************** 제품 카테고리 메뉴 시작 *****************/
+/* 전체카테고리 css 시작*/
+#navi-liAll {
+    position: relative;
+    width: 210px;
+    float: left;
+}
+
+#hiddenNavi-liAll {
+    position: relative;
+    width: 210px;
+    float: left;
+}
+
+
+.navi-AllCategoryList {
+    position: absolute;
+    z-index: 100;
+    height: 486px;
+    float: left;
+}
+
+
+
+    .navi-AllCategoryList > ul {
+        width: 210px;
+        height: 486px;
+        padding: 0;
+    }
+
+        /*.navi-AllCategoryList > ul > li:last-child {/*카테고리 2개 추가될시 활성화
+            border-bottom:none;
+        }*/
+
+
+        .navi-AllCategoryList > ul > li > a {
+            position: relative;
+            display: block;
+            padding: 1px 0 0 24px;
+            line-height: 26px;
+        }
+
+
+
+            .navi-AllCategoryList > ul > li > a > span {
+                font-size: 13px;
+                /*font-weight: bold;*/
+            }
+
+        .navi-AllCategoryList > ul > li > ul {
+            display: none;
+        }
+
+        .navi-AllCategoryList > ul > li.active > ul {
+            display: block
+        }
+
+
+
+        .navi-AllCategoryList > ul > li > ul > li .divCategoryLevel02 {
+            position: absolute;
+            top: 0;
+            left: 210px;
+            width: 1046px;
+            height: 486px;
+            z-index: 100;
+            padding-top: 7px;
+        }
+
+            .navi-AllCategoryList > ul > li > ul > li .divCategoryLevel02 > h4 {
+                padding-left: 50px;
+                font-size: 20px;
+            }
+
+            .navi-AllCategoryList > ul > li > ul > li .divCategoryLevel02 > .divCategoryImg {
+                position: absolute;
+                left: 789px;
+                top: 75px;
+                width: 214px;
+                height: 242px;
+                /* cursor:pointer; */
+            }
+
+            .navi-AllCategoryList > ul > li > ul > li .divCategoryLevel02 > ul {
+                width: 220px;
+                padding-right: 11px
+            }
+
+                .navi-AllCategoryList > ul > li > ul > li .divCategoryLevel02 > ul > li { /*border-bottom:1px solid rgba(0,0,0,.14);*/
+                    margin-left: 0px;
+                }
+
+                    .navi-AllCategoryList > ul > li > ul > li .divCategoryLevel02 > ul > li > a {
+                        display: block;
+                        padding: 3px 9px;
+                        line-height: 20px;
+                    }
+
+                        .navi-AllCategoryList > ul > li > ul > li .divCategoryLevel02 > ul > li > a > span {
+                            font-size: 13px;
+                        }
+
+                    .navi-AllCategoryList > ul > li > ul > li .divCategoryLevel02 > ul > li > ul {
+                        position: absolute;
+                        left: 215px;
+                        top: 61px;
+                        width: 589px;
+                        display: none;
+                    }
+
+                    .navi-AllCategoryList > ul > li > ul > li .divCategoryLevel02 > ul > li.active > ul {
+                        display: block;
+                        height: 428px;
+                        display: flex;
+                        align-content: flex-start;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                    }
+
+                    .navi-AllCategoryList > ul > li > ul > li .divCategoryLevel02 > ul > li > ul > li {
+                        width: 250px;
+                        clear: both;
+                        margin-left: -25px;
+                        margin-right: 25px; /*border-bottom:1px solid #eaeaea;*/
+                    }
+
+                        .navi-AllCategoryList > ul > li > ul > li .divCategoryLevel02 > ul > li > ul > li > a {
+                            display: block;
+                            padding: 3px 9px;
+                            line-height: 20px;
+                        }
+
+
+
+                            .navi-AllCategoryList > ul > li > ul > li .divCategoryLevel02 > ul > li > ul > li > a > span {
+                                font-size: 13px;
+                                margin-left: 20px;
+                            }
+
+
+
+/* 전체카테고리 css 끝*/
+
+
+/**************** 자동완성 시작*****************/
+
+
+.autocomplete-ItemsLi {
+    width: 140px;
+    height: 214px;
+    margin-left: 4.7px;
+    float: left;
+    list-style: none;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    cursor: pointer
+}
+
+
+.autocomplete-Items {
+    width: 100px;
+    height: 100px; /*border:1px solid #a2a2a2;*/
+    margin-left: 3px;
+    float: left
+}
+
+.ui-autocomplete {
+    max-height: 443px;
+    overflow-y: auto; /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+}
+
+/**************** 자동완성 끝*****************/
+
+
+/* 컨텐츠 영역 전체를 감싸는 div*/
+.container-div {
+    min-width: 1600px;
+    height: auto;
+    width: 100%;
+}
+
+
+
+/*********버튼 시작***********/
+.btndetailsearch {
+    display: inline-block;
+    padding: 9px 10px 12px 10px;
+    cursor: pointer;
+    margin-left: 1px;
+    width: 77px;
+    height: 37px;
+    font-size: 13px;
+    border: none;
+}
+
+
+.btnuserdefault {
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 1px;
+    font-size: 11px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    display: inline-block;
+}
+
+.mainbtn {
+    cursor: pointer;
+    text-decoration: none;
+    /*transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;*/
+    display: inline-block;
+    background-color: white;
+    font-weight: bold;
+}
+
+.categoryAllBtn { /*카테고리 전체버튼*/
+    width: 163px;
+    text-decoration: none;
+    line-height: 47px;
+    font-size: 18px;
+    text-indent: 25px;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff !important;
+    background-color: #3e3e46 !important;
+    position: relative;
+}
+
+    .categoryAllBtn img {
+        margin-right: 12px !important;
+        padding-bottom: 4px;
+    }
+
+    .categoryAllBtn.up_btn:after {
+        transform: rotate(-180deg);
+    }
+
+    .categoryAllBtn:after {
+        content: '';
+        display: inline-block;
+        background: url("/Images/Button/down.png");
+        width: 14px;
+        height: 7px;
+        position: absolute;
+        top: 20px;
+        right: 14px;
+        transition: all .4s;
+    }
+
+.btn-my, .btn-my2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 47PX;
+    height: 47px;
+    border-left: 1px solid #555560;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #3e3e46 !important;
+}
+
+    .btn-my img, .btn-my2 img {
+        margin-top: 12px;
+    }
+
+.my-category, .my-category2 {
+    position: absolute;
+    z-index: 200;
+    left: 210px;
+    display: none;
+}
+
+.btn-my.on, .btn-my2.on {
+    position: absolute;
+    border-top: 2px solid #3e3e46;
+    border-left: 2px solid #3e3e46;
+    border-right: 2px solid #3e3e46;
+    background-color: #fff !important;
+    z-index: 2;
+}
+
+    .btn-my.on img, .btn-my2.on img {
+        margin-top: 10px;
+        margin-left: 2px;
+    }
+
+.btn-my-box {
+    position: absolute;
+    border: 2px solid #3e3e46;
+    background: #fff;
+    width: 200px;
+    height: 368px;
+    margin-top: 45px;
+    margin-left: -47px;
+    z-index: 1;
+}
+
+    .btn-my-box p.recent-category {
+        font-size: 16px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .btn-my-box > ul {
+        padding: 0 15px;
+        font-size: 14px;
+        color: grey;
+        min-height: 272px;
+    }
+
+        .btn-my-box > ul > a > li {
+            line-height: 18px;
+            color: #000;
+        }
+
+
+    .btn-my-box p.delete-category {
+        border-top: 1px solid #dcdee3;
+        padding: 10px 25px;
+        font-size: 14px;
+        color: grey;
+        cursor: pointer;
+        text-align: center;
+    }
+/*********버튼 끝***********/
+/********* 메뉴 영역 시작 /*********/
+nav {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.navi-div {
+    border: 0;
+    padding: 0;
+    height: 48px;
+    position: relative;
+    min-width: 1256px;
+}
+
+.navi-div-wrap {
+    width: 1256px;
+    margin: 0 auto;
+    position: relative;
+}
+/********* 메뉴 영역 끝 *********/
+/**************** 헤더 영역 시작 *****************/
+/*ul li 이미지 타이틀들*/
+#categories {
+    width: 1256px;
+    text-align: center;
+    height: 48px;
+}
+
+    /*ul안에 있는 모든 a태그 밑줄 없애기
+    #categories > li > a {
+        text-decoration: none;
+        color: #000000; /*검정글꼴
+        font-size: 18px;
+    }*/
+
+    #categories > li {
+        float: left;
+        position: relative;
+        padding: 0;
+        margin: 0 40px;
+        width: /*151px; /*이미지 가로 95px, 드랍다운글자크기 잘림현상때문에 가로 110로 조정*/
+        /*margin-left: -3px;*/
+    }
+
+        #categories > li:first-child {
+            margin-left: 80px;
+        }
+
+        #categories > li:hover .stickymenu-sub-wrap {
+            display: block;
+        }
+
+        #categories > li > a {
+            display: inline-block;
+            font-size: 15px;
+            color: #333;
+            height: 48px;
+            text-decoration: none;
+            padding: 13px 10px 0;
+        }
+
+
+
+
+.stickymenu-sub-wrap {
+    display: none;
+    position: absolute;
+    top: 46px;
+    left: 50%;
+    z-index: 12;
+    box-sizing: border-box !important;
+    width: 151px;
+    margin-left: -76px;
+    text-align: center;
+}
+
+    .stickymenu-sub-wrap .stickymenu-sub-list {
+        display: inline-block;
+        box-sizing: border-box !important;
+        min-width: 152px;
+        padding: 2px 8px 2px 8px;
+        border: 2px solid #000;
+        background: #fff;
+    }
+
+
+        .stickymenu-sub-wrap .stickymenu-sub-list > a {
+            display: block;
+            width: auto;
+            height: auto;
+            padding: 5px 3px 5px 3px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333;
+            text-align: center;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+            .stickymenu-sub-wrap .stickymenu-sub-list > a:not(:first-child) {
+                border-top: 1px solid #000;
+            }
+
+/** 상단 검색 영역 끝 **/
+
+
+/**************** 헤더 영역 끝 *****************/
+
+/**************** Footer 영역 시작 *****************/
+
+.footer-div {
+    min-width: 1600px;
+    width: 100%;
+    margin: auto auto 20px auto;
+}
+
+.footer-menu-div {
+    height: 44px;
+    line-height: 44px;
+    text-align: left;
+    vertical-align: middle;
+    border-top: 1px solid #caccce;
+    border-bottom: 1px solid #000;
+}
+
+.footer_deliveryfree {
+    margin-top: 55px;
+    background-color: #f4f9ff;
+    text-align: center;
+    min-width: 1600px;
+    height: auto;
+    width: 100%;
+}
+
+.footer-menu-div ul {
+    display: block;
+    width: 1256px;
+    margin: 0 auto;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+    .footer-menu-div ul li:first-child {
+        padding-left: 0;
+        padding-left: 0px;
+    }
+
+    .footer-menu-div ul li {
+        float: left;
+        padding: 0 30px;
+    }
+
+        .footer-menu-div ul li a {
+            font-size: 14px;
+            color: #484949;
+            display: block;
+        }
+
+
+.copyright {
+    width: 1256px;
+    margin: 20px auto 110px auto;
+}
+
+    .copyright li {
+        float: left
+    }
+
+/****************메인 헤더 시작 ****************/
+.top_header {
+    width: 1256px;
+    height: 91px;
+    margin: 0 auto;
+    display: table;
+    position: relative;
+    margin-top: 10px;
+}
+
+    .top_header .top_header_left {
+        float: left;
+        vertical-align: middle;
+        width: 1000px;
+    }
+
+        .top_header .top_header_left .toplogodiv {
+            display: inline-block;
+            float: left;
+            width: 210px;
+        }
+
+        .top_header .top_header_left .searchdiv {
+            position: relative;
+            width: 624px;
+            float: left;
+            padding-top: 29px;
+            padding-left: 53px;
+            text-align: center;
+        }
+
+
+
+.searchdiv .powersearch { /*메인검색창*/
+    width: 100%;
+    padding: 0 20px 0 10px;
+    border: 0;
+    height: 28px;
+    line-height: 28px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+
+    .searchdiv .powersearch:-ms-input-placeholder { /*메인검색창*/
+        vertical-align: top;
+    }
+
+.searchdiv img {
+    cursor: pointer;
+    position: absolute;
+    right: 3px;
+    top: 39px;
+}
+
+
+
+.top_header_left a {
+    height: 100px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.top_header .top_header_left .toplogo {
+    width: 100%;
+}
+
+.top_header .top_header_right {
+    float: left;
+    vertical-align: middle;
+    padding-top: 12px;
+    width: 270px;
+}
+
+
+.top_header .top_header_cs {
+    padding-top: 18px;
+    width: 250px;
+    float: left;
+    cursor: pointer;
+}
+
+    .top_header .top_header_cs table {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+.top-csinfo-txt1 {
+    font-family: NotoSans-Regular,sans-serif;
+    padding-left: 6px
+}
+
+.top-csinfo-txt2 {
+    font-family: NotoSans-Regular,sans-serif;
+    padding-left: 4px
+}
+
+#spanTopCustTelNo {
+    font-family: NotoSans-Regular,sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    padding-left: 25px
+}
+
+/****************메인 헤더 끝 ****************/
+
+/**************** Footer 영역 끝 *****************/
+
+/* top main 베너 */
+.tab-wrap {
+    position: relative;
+    width: 830px;
+    display: block;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+    .tab-wrap .ctrl {
+        right: 50%;
+        bottom: -400px;
+        margin-right: -409px;
+        position: absolute;
+        padding: 0 8px;
+        border-radius: 22px;
+        background: rgba(0,0,0,.3);
+        line-height: 44px;
+        color: #fff;
+        letter-spacing: -3px;
+    }
+
+        .tab-wrap .ctrl .cnt {
+            display: inline-block;
+            padding-left: 14px;
+            font-size: 14px;
+            letter-spacing: 0;
+            vertical-align: middle;
+            line-height: 44px;
+            color: #fff;
+        }
+
+
+            .tab-wrap .ctrl .cnt strong {
+                font-size: 14px;
+            }
+
+            .tab-wrap .ctrl .cnt .bannerTotalCnt {
+                font-size: 14px;
+            }
+
+        .tab-wrap .ctrl button {
+            display: inline-block;
+            height: 16px;
+            padding: 0 12px;
+            line-height: 20px;
+            text-indent: 0;
+            vertical-align: middle;
+            background-color: transparent;
+            border: 0;
+            border-radius: 0;
+            outline: 0;
+            cursor: pointer;
+        }
+
+            .tab-wrap .ctrl button i {
+                font-size: 0;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            .tab-wrap .ctrl button.prev {
+                border-right: 1px solid rgba(255,255,255,.2);
+            }
+
+                .tab-wrap .ctrl button.prev i {
+                    width: 9px;
+                    height: 16px;
+                    background: url(/Images/ctrl.png)no-repeat;
+                    background-position: 0 0;
+                }
+
+            .tab-wrap .ctrl button.next i {
+                width: 9px;
+                height: 16px;
+                background: url(/Images/ctrl.png)no-repeat;
+                background-position: -13px 0;
+            }
+
+.billboard-wrap {
+    position: relative;
+    z-index: 1;
+    height: 445px;
+    min-width: 830px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+    .billboard-wrap .billboard-main {
+        overflow: hidden;
+        height: 486px;
+        width: 100%;
+        position: absolute;
+        background-position: center center;
+		z-index:10;
+    }
+
+        .billboard-wrap .billboard-main > a {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+            .billboard-wrap .billboard-main > a > img {
+                height: 100%;
+            }
+
+    .billboard-wrap a, .billboard-wrap a span {
+        color: #757575;
+        font-size: 11px;
+        letter-spacing: 0
+    }
+
+        .billboard-wrap a span {
+            position: static
+        }
+
+
+    .billboard-wrap .billboard-tab {
+        position: absolute;
+        vertical-align: bottom;
+        bottom: -486px;
+        right: 0;
+        z-index: 100;
+        height: 48px;
+        overflow: hidden;
+        width: 830px;
+    }
+
+        .billboard-wrap .billboard-tab ul {
+            height: 48px;
+            padding-left: 0;
+            margin-bottom: 0;
+            margin: 0 auto;
+            overflow: hidden;
+            width: 200%;
+            position: relative;
+        }
+
+            .billboard-wrap .billboard-tab ul a {
+                line-height: 13px;
+                text-align: center;
+                display: block
+            }
+
+            .billboard-wrap .billboard-tab ul li {
+                font-family: NotoSans-Regular,sans-serif;
+                float: left;
+                position: relative;
+                width: 166px;
+                height: 48px;
+                color: #000;
+                background-color: #f8f8f8;
+                border-right: 1px solid #e5e5e5;
+            }
+
+                .billboard-wrap .billboard-tab ul li:last-child {
+                    border-right: none;
+                }
+
+
+
+
+
+billboard-wrap .billboard-tab ul li.on span {
+    display: block;
+}
+
+.billboard-wrap .billboard-tab ul li > a {
+    font-size: 13px;
+    /*font-weight: bold;*/
+    line-height: 46px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+.billboard-wrap > .billboard-tab ul li.on > a:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.billboard-wrap > .billboard-tab ul li > a:not(:last-child) {
+}
+
+.billboard-wrap > .billboard-tab ul li > a > span {
+    display: block;
+}
+
+.billboard-wrap > .billboard-tab ul li > a:hover, .billboard-wrap ul li > a.on {
+    /*font-weight: bold;*/
+    /*text-decoration: none;*/
+}
+
+.billboard-wrap > .billboard-tab ul li > a.on {
+    line-height: 40px;
+    margin-top: 0;
+    font-weight: bold;
+    color: #454c5f;
+    border-bottom: 3px solid #eb000a
+}
+
+.billboard-wrap > .billboard-tab ul li span {
+    position: absolute;
+    bottom: 39px;
+    left: 0;
+    z-index: 100;
+    display: none;
+    width: 100%;
+    text-align: center
+}
+
+.billboard-wrap > .billboard-tab ul li:hover span {
+    display: block;
+}
+
+.billboard-wrap > .billboard-tab ul li span a {
+    width: 100%;
+    padding: 8px 7px 8px 6px;
+    background: #eaeaea;
+    color: #000;
+    /*border-top: 1px solid #e0e0eb;
+    border-left: 1px solid #e0e0eb;
+    border-right: 1px solid #e0e0eb;*/
+    text-align: left;
+    /*opacity: 0.95;*/
+    /*filter: alpha(opacity=95);*/
+    font-weight: bold;
+}
+
+*:first-child + html .billboard-wrap li span a {
+    width: 102px;
+}
+
+.billboard-wrap ul li span a:first-child {
+    /*border-top: none*/
+}
+
+.billboard-wrap ul li span a:hover, .billboard-wrap ul li span a.on {
+    border-bottom: none;
+    background: #d4382e;
+    color: #fff;
+    font-weight: normal;
+}
+
+
+
+/*.billboard-wrap ul li:not(:first-child):before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 1px;
+    height: 22px;
+    background: #fff;
+    opacity: .5;
+}*/
+
+
+.billboard-ctrl {
+    position: absolute;
+    width: 95px;
+    height: 39px;
+    float: left;
+    left: 931px;
+    z-index: 101;
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px #bfbfbf solid;
+}
+
+.billboard-direction {
+    float: left;
+    width: 60px;
+    height: 39px;
+}
+
+.billboard-ctrl .billboard-direction .prev {
+    background: url(/Images/RollingBanner/left.png) center no-repeat;
+    height: 100%;
+    font-size: 0;
+    width: 28px;
+    float: left;
+    display: block;
+    text-indent: -100px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+    .billboard-ctrl .billboard-direction .prev:hover {
+        background: url(/Images/RollingBanner/left-hover.png) center no-repeat;
+    }
+
+    .billboard-ctrl .billboard-direction .prev:after {
+        content: "";
+        position: absolute;
+        top: 13px;
+        /*right: 79px;*/
+        right: 65px;
+        width: 0.7px;
+        height: 13px;
+        background: #a6a6a6;
+    }
+
+
+.billboard-ctrl .billboard-direction .next {
+    background: url(/Images/RollingBanner/right.png) center no-repeat;
+    height: 100%;
+    font-size: 0;
+    width: 32px;
+    float: left;
+    display: block;
+    text-indent: -100px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+    .billboard-ctrl .billboard-direction .next:hover {
+        background: url(/Images/RollingBanner/right-hover.png) center no-repeat;
+    }
+
+    .billboard-ctrl .billboard-direction .next:after {
+        content: "";
+        position: absolute;
+        top: 13px;
+        /*right: 49px;*/
+        right: 35px;
+        width: 1px;
+        height: 13px;
+        background: #a6a6a6;
+    }
+
+
+.billboard-pausestart {
+    float: left;
+    display: block;
+    width: 30px;
+    height: 39px;
+}
+
+
+
+.billboard-ctrl .billboard-pausestart .stop {
+    background: url(/Images/RollingBanner/stop.png) center no-repeat;
+    height: 39px;
+    width: 30px;
+    font-size: 0;
+    float: left;
+    display: block;
+    text-indent: -100px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+    .billboard-ctrl .billboard-pausestart .stop:hover {
+        background: url(/Images/RollingBanner/stop-hover.png) center no-repeat;
+    }
+
+.billboard-ctrl .billboard-pausestart .start {
+    background: url(/Images/RollingBanner/start.png) center no-repeat;
+    height: 39px;
+    width: 30px;
+    font-size: 0;
+    float: left;
+    display: block;
+    text-indent: -100px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+    .billboard-ctrl .billboard-pausestart .start:hover {
+        background: url(/Images/RollingBanner/start-hover.png) center no-repeat;
+    }
+
+.category-landing-wrap {
+    width: 1256px;
+    height: auto;
+    margin: 0 auto;
+    /*border: 1px #f2f2f2 solid;*/
+}
+
+.category-landing-main {
+    margin: 0 auto;
+    display: table;
+}
+
+    .category-landing-main ul {
+        overflow:hidden;
+        padding-left: 0px;
+        margin-left: -9px
+    }
+
+
+.hovereffect img {
+    /*width: 550px;
+            height:280px;*/
+}
+
+.category-landing-text {
+}
+
+    .category-landing-text span {
+    }
+
+.hovereffect {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+    .hovereffect.s-size {
+        margin: 0 0 40px 9.8px;
+    }
+
+/*.hovereffect.m-size {
+                    margin: 10px 3px 0 9px;
+        }*/
+
+main-middle-banner .overlay {
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.5);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+    border: 1px #d9d9d9 solid;
+}
+
+    .hovereffect img.ss-size {
+        width: 306.5px;
+        height: 200px;
+    }
+
+    .hovereffect img.s-size {
+        width: 412px;
+        height: 200px;
+    }
+
+    .hovereffect img.m-size {
+        width: 623px;
+        height: 200px;
+    }
+
+    .hovereffect img.l-size {
+        width: 1256px;
+        height: 200px;
+    }
+
+
+.hovereffect a.info {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    filter: alpha(opacity=0);
+    margin: 90px 0 0;
+    padding: 11px 14px;
+    width: 170px;
+    height: 40px;
+}
+
+    .hovereffect a.info:hover {
+        box-shadow: 0 0 5px #fff;
+    }
+
+.hovereffect:hover img {
+    /*-ms-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);*/
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.hovereffect:hover h2, .hovereffect:hover a.info {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-transform: translatey(0);
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+}
+
+.hovereffect:hover a.info {
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+}
+
+.main-title-wrap {
+    width: 1256px;
+    height: 66px;
+}
+
+
+    .main-title-wrap h3 {
+        font-weight: bold;
+    }
+
+    .main-title-wrap img {
+        width: 35px;
+        height: 35px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+.top_stickymenu_wrap {
+    width: 100%;
+    min-width: 1256px;
+    border-bottom: 1px solid #dadada;
+}
+
+.top_stickymenu {
+    width: 1256px;
+    margin: 0 auto;
+    height: 30px;
+    vertical-align: middle;
+    padding-top: 7px;
+}
+
+    .top_stickymenu .leftinfo {
+        display: inline-block;
+        float: left
+    }
+
+    .top_stickymenu .rightinfo {
+        display: inline-block;
+        float: right;
+        position: relative;
+        width: 410px;
+    }
+
+    .top_stickymenu .leftinfo > .leftinfo-list {
+        padding-left: 0px;
+    }
+
+        .top_stickymenu .leftinfo > .leftinfo-list > li > a,
+        .top_stickymenu .rightinfo > .rightinfo-list > li > a {
+            padding: 0 4px;
+            color: #787a7f;
+            cursor: pointer;
+        }
+
+            .top_stickymenu .leftinfo > .leftinfo-list > li > a > span.top_info_num {
+                background-color: #ee2248;
+                color: #ffffff;
+                width: 19px;
+                border-radius: 5px;
+                text-align: center;
+                display: inline-block;
+            }
+
+    .top_stickymenu .rightinfo > ul.rightinfo-list {
+        position: relative;
+        float: right;
+    }
+
+    .top_stickymenu .leftinfo > ul.leftinfo-list > li {
+        float: left;
+    }
+
+    .top_stickymenu .rightinfo > ul.rightinfo-list > li {
+        float: left;
+    }
+
+
+
+.mypage > ul.mypage_sub_menu {
+    display: none;
+    position: absolute;
+    left: -8px;
+    right: 9px;
+    top: -8px;
+    padding-top: 38px;
+    padding-bottom: 8px;
+    padding-left: 11px;
+    padding-right: 11px;
+    background-color: hsla(0, 0%, 100%,0);
+    border: 2px solid #666;
+    z-index: 1000;
+    line-height: 18px;
+}
+
+    .mypage > ul.mypage_sub_menu:hover .top_stickymenu_mypage {
+        color: red;
+        cursor: pointer;
+    }
+
+li.mypage {
+    position: relative;
+}
+
+
+.mypage > ul.mypage_sub_menu > li {
+    white-space: nowrap;
+    margin-top: 0px;
+    position: relative;
+}
+
+.mypage > ul.mypage_sub_menu li a {
+    display: inline-block;
+    padding-right: 17px;
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .mypage > ul.mypage_sub_menu li a:hover {
+        color: #333;
+        text-decoration: underline;
+    }
+
+
+
+.top_stickymenu .leftinfo > a {
+    padding: 0 4px;
+    color: #787a7f;
+}
+
+
+
+
+.top_stickymenu .leftinfo .leftinfo-list > li > a.top_stickymenu_a:hover,
+.top_stickymenu .rightinfo .rightinfo-list > li > a.top_stickymenu_a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.downarrow {
+    position: absolute;
+    right: 0px;
+    top: 6px;
+    width: 7px;
+    height: 7px;
+    background: url(/Images/caret-down.png) no-repeat;
+    vertical-align: middle;
+}
+
+
+
+
+
+.top_stickymenu_mypage {
+    cursor: pointer;
+    position: relative;
+    display: inline-block
+}
+
+
+
+
+
+
+.rightinfo .tx_bar, .leftinfo .tx_bar {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 6px;
+    background: #e2e1e0;
+    vertical-align: -1px;
+}
+
+
+.sidedelivery {
+    width: 1256px;
+    height: 14px;
+    font-size: 16px;
+    color: #54626F;
+    font-family: DoHyeon-Regular;
+    margin: 0 auto;
+    text-align: right;
+    margin-right: 88px;
+    margin-top: 10px;
+    position: absolute;
+    top: 80px;
+}
+
+.headerbutton-wrap {
+    margin-right: 88px;
+    margin-top: 10px;
+    position: absolute;
+    top: 55px;
+    left: 997px;
+    width: 400px;
+}
+
+.headerbutton-1 {
+    background: #c47135;
+    margin: 20px auto;
+    width: 130px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: .2s;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+    display: inline-block;
+    padding-top: 2px;
+}
+
+.headerbutton-1-sub {
+    position: relative;
+    width: 50px;
+    height: 37px;
+    margin-top: -25px;
+    padding-top: 7px;
+    background: #3D4C53;
+    left: -50px;
+    transition: .3s;
+}
+
+.headerbutton-1 > .headerbutton-1-text {
+    color: white;
+    transition: .3s;
+    font-family: NotoSans-Regular,sans-serif;
+    font-size: 14px;
+}
+
+.headerbutton-1-sub > .headerbutton-1-sub-text {
+    margin-top: 4px;
+    margin-right: -10px;
+    color: #FFF;
+    font-family: NotoSans-Regular,sans-serif;
+    font-size: 13px;
+}
+
+.headerbutton-1:hover .headerbutton-1-sub { /*When hovering over .button change .btnTwo*/
+    left: -10px;
+}
+
+.headerbutton-1:hover .headerbutton-1-text { /*When hovering over .button change .btnText*/
+    margin-left: 35px;
+}
+
+.headerbutton-1:active { /*Clicked and held*/
+    box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
+}
+
+
+.headerbutton-2 {
+    background: #26A69A;
+    margin: 20px auto;
+    width: 130px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: .2s;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+    display: inline-block;
+    padding-top: 2px;
+}
+
+.headerbutton-2-sub {
+    position: relative;
+    width: 50px;
+    height: 37px;
+    margin-top: -25px;
+    padding-top: 7px;
+    background: #3D4C53;
+    left: -50px;
+    transition: .3s;
+}
+
+.headerbutton-2 > .headerbutton-2-text {
+    color: white;
+    transition: .3s;
+    font-family: NotoSans-Regular,sans-serif;
+    font-size: 14px;
+}
+
+.headerbutton-2-sub > .headerbutton-2-sub-text {
+    margin-top: 4px;
+    margin-right: -10px;
+    color: #FFF;
+    font-family: NotoSans-Regular,sans-serif;
+    font-size: 13px;
+}
+
+.headerbutton-2:hover .headerbutton-2-sub { /*When hovering over .button change .btnTwo*/
+    left: -10px;
+}
+
+.headerbutton-2:hover .headerbutton-2-text { /*When hovering over .button change .btnText*/
+    margin-left: 35px;
+}
+
+.headerbutton-2:active { /*Clicked and held*/
+    box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
+}
+
+.sidedelivery > a > span {
+    font-size: 16px;
+    border: 1.5px solid #938f8f;
+    border-radius: 3px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+
+.sidedelivery span:hover {
+    color: white;
+    background-color: #54626F;
+    border: 1.5px solid #54626F;
+}
+
+
+
+/***마스터 페이지 상단 히든 검색창 시작****/
+.fixed-div-sub {
+    position: fixed;
+    top: -240px;
+    width: 100%;
+    height: 48px;
+    z-index: 100;
+    transition: top 0.3s;
+    border-bottom: 1px solid #a7a7a7;
+    background-color: #fff;
+}
+
+.fixed-div-subwrap {
+    position: relative;
+    width: 1256px;
+    margin: 0 auto;
+}
+
+.fixed-div-sub-btn {
+    font-size: 11px;
+    border: 1px solid #938f8f;
+    border-radius: 3px;
+    padding: 9px 9px 9px 9px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+    .fixed-div-sub-btn:hover {
+        color: white;
+        background-color: #54626F;
+        border: 1px solid #54626F;
+    }
+
+.fixed-div-sub-logoutbtn {
+    font-size: 11px;
+    border: 1px solid #e68a00;
+    border-radius: 3px;
+    padding: 9px 9px 9px 9px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #804d00;
+    display: block;
+    width: 62px;
+    text-align: center
+}
+
+    .fixed-div-sub-logoutbtn:hover {
+        color: white;
+        background-color: #e68a00;
+        border: 1px solid #e68a00;
+    }
+
+.fixed-div-subwrap .fixed-div-sub-logoarea {
+    display: inline-block;
+    width: 300px;
+    float: left;
+    position: relative;
+}
+
+.fixed-div-subwrap .toplogodiv > a > img {
+    width: 215px;
+    height: 65px;
+}
+
+.fixed-div-sub-searchdiv {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 500px;
+    padding-left: 81px;
+}
+
+.fixed-div-sub-btnarea {
+    float: left;
+    display: inline-block;
+    width: 424px;
+    padding-left: 98px;
+    height: 48px;
+}
+
+    .fixed-div-sub-btnarea ul li {
+        float: left;
+        padding: 15px 13px 0 8px;
+    }
+
+        .fixed-div-sub-btnarea ul li a.hiddenheaderbtnlink {
+            color: #000000;
+            font-size: 13px;
+            cursor: pointer
+        }
+
+            .fixed-div-sub-btnarea ul li a.hiddenheaderbtnlink:hover {
+                color: #ee2248;
+            }
+
+.fixed-div-sub-searchtxt {
+    width: 458px;
+    height: 31px;
+    border: 0px;
+    padding-left: 15px;
+    padding-right: 40px;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 700;
+    margin-top: 8px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-right: none;
+}
+
+
+
+
+/***마스터 페이지 상단 히든 검색창 끝****/
+
+
+
+
+
+/* floatbar */
+.floatbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 74px;
+    background: #9197a0;
+    z-index: 1000;
+}
+
+.btmbar {
+    width: 1260px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .btmbar:after, .btmBtns:after {
+        content: '';
+        display: block;
+        clear: both;
+        visibility: hidden;
+        zoom: 1;
+    }
+
+.btmBtns {
+    position: relative;
+    float: left;
+    width: 511px;
+    padding-left: 0px;
+}
+
+    .btmBtns li {
+        float: left;
+        width: 20%;
+        height: 74px;
+        border-right: 1px solid #7b8087;
+    }
+
+        .btmBtns li a {
+            display: block;
+            width: 100%;
+            font-size: 13px;
+            padding-top: 5px;
+            color: #fff;
+            text-align: center;
+        }
+
+.btnBtmWrap {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -681px;
+    width: 53px;
+    height: 74px;
+    font-size: 13px;
+    color: #fff;
+    z-index: 1001;
+}
+
+    .btnBtmWrap a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        padding-top: 15px;
+        text-align: center;
+    }
+
+.btn_BtmUp {
+    background: #65696e url(/Images/cm/btn/btm_hv.png) no-repeat center -65px;
+}
+
+.btn_BtmDown {
+    background: #65696e url(/Images/cm/btn/btm_hv.png) no-repeat center 16px;
+}
+
+.btnBtmWrap2 {
+    float: left;
+    border-left: 1px solid #7b8087;
+    width: 53px;
+    height: 74px;
+    font-size: 13px;
+    color: #fff;
+    z-index: 1000;
+}
+
+    .btnBtmWrap2 a {
+        display: block;
+        width: 53px;
+        height: 37px;
+        font-size: 13px;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        z-index: 2000000111;
+        padding-top: 3px;
+    }
+
+.btn_BtmTop {
+    padding-top: 16px;
+    background: url(/Images/cm/btn/bg_btnBtmWrap2.png) no-repeat center 7px;
+}
+
+.btn_BtmBtm {
+    padding-top: 5px;
+    background: url(/Images/cm/btn/bg_btnBtmWrap2.png) no-repeat center -30px;
+}
+
+.recentGoods {
+    float: left;
+    position: relative;
+    width: 692px;
+    height: 74px;
+}
+
+    .recentGoods strong {
+        float: left;
+        display: block;
+        width: 96px;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 20px 0 0;
+        color: #fff;
+        text-align: right;
+    }
+
+    .recentGoods:after {
+        content: '';
+        display: block;
+        clear: both;
+        visibility: hidden;
+        zoom: 1;
+    }
+
+    .recentGoods > div {
+        width: 655px;
+        height: 74px;
+        padding: 9px 0px;
+        overflow: hidden;
+    }
+
+        .recentGoods > div ul.recentList {
+            float: left;
+            width: 498px;
+            height: 54px;
+            overflow: hidden;
+        }
+
+            .recentGoods > div ul.recentList:after {
+                content: '';
+                display: block;
+                clear: both;
+                visibility: hidden;
+                zoom: 1;
+            }
+
+        .recentGoods > div li {
+            float: left;
+            position: relative;
+            width: 54px;
+            border: 1px solid #5b6067;
+            margin-left: 5px;
+        }
+
+.btn_btmdel {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 17px;
+    height: 17px;
+    text-indent: -9999px;
+    background: url(/Images/deleteicon-xs.png) no-repeat 0 0px;
+    background-color: #9197a0;
+    cursor: pointer;
+}
+
+.recentGoods > div li img {
+    width: 100%;
+    height: auto;
+}
+
+.recentGoods .btn_moreGoods {
+    color: #fff;
+    font-size: 13px;
+    background: url(/Images/cm/btn/btn_moreGoods.png) no-repeat 0 22px;
+}
+
+.moreGoods {
+    position: absolute;
+    min-height: 140px;
+    max-height: 330px;
+    right: 0px;
+    border: 3px solid #777d86;
+    background: #f6f6f6;
+    padding: 15px 20px;
+    width: 554px;
+    z-index: 1;
+}
+
+    .moreGoods p {
+        color: #4e535c;
+        font-size: 17px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+
+    .moreGoods div {
+        min-height: 69px;
+        max-height: 231px;
+        width: 513px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+        .moreGoods div ul {
+            float: none;
+            width: 480px;
+            min-height: 67px;
+            overflow: hidden;
+            padding-left: 0px;
+        }
+
+        .moreGoods div li {
+            position: relative;
+            float: left;
+            width: 69px;
+            height: 69px;
+            margin-bottom: 8px;
+            border: 1px solid #d4dae3;
+            margin: 0 4px 8px 0;
+        }
+
+            .moreGoods div li img {
+                width: 100%;
+                height: 100%;
+            }
+
+.recentGoods .btn_moreClose {
+    width: 63px;
+    height: 74px;
+    margin-top: -10px;
+    color: #fff;
+    font-size: 13px;
+    background: url(/Images/cm/btn/btn_btmClose.png) no-repeat center 12px;
+}
+
+.searchBar {
+    position: absolute;
+    top: -49px;
+    left: 100px;
+    width: 410px;
+    height: 48px;
+}
+
+    .searchBar > div {
+        position: relative;
+        padding: 4px 4px 4px 4px;
+        background: #69717d url(/Images/cm/btn/bg_btmserch2.jpg) no-repeat 3px 45px;
+    }
+
+    .searchBar input {
+        width: 100%;
+        height: 42px;
+        padding: 10px;
+        border: none;
+    }
+
+        /*.searchBar img.schBtm {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 30px;
+        height: 30px;
+        background: url(/Images/icon-search.png) no-repeat 0px 10px;
+        text-indent: -9999px;
+    }*/
+
+        .searchBar input.footersearchicon {
+            background: url(/Images/icon-search-tranparent.png) no-repeat;
+            background-position: 14px 12px;
+            background-color: #69717d;
+            border: none;
+            width: 45px;
+            height: 42px;
+            cursor: pointer;
+            position: absolute;
+            right: 3px;
+            top: 4px;
+        }
+
+.nolist {
+    font-size: 14px;
+    float: left;
+    width: 498px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.btmico01 {
+    background: url(/Images/cm/icon/btmico01.png) no-repeat center 12px;
+}
+
+.btmico02 {
+    background: url(/Images/cm/icon/btmico02.png) no-repeat center 10px;
+}
+
+    .btmico02.close {
+        height: 74px;
+        background: #69717d url(/Images/cm/btn/bg_btmserch.jpg) no-repeat center 0;
+    }
+
+.btmico03 {
+    position: relative;
+    background: url(/Images/cm/icon/btmico03.png) no-repeat center 14px;
+}
+
+    .btmico03 em {
+        position: absolute;
+        top: 6px;
+        left: 58px;
+        font-size: 13px;
+        text-align: center;
+        line-height: 22px;
+        padding: 0 8px;
+        border: 1px solid #f71d1e;
+        border-radius: 20px;
+        background: #f71d1e;
+        behavior: url(com/PIE.htc);
+    }
+
+.btmico04 {
+    background: url(/Images/cm/icon/btmico04.png) no-repeat center 9px;
+}
+
+.btmico05 {
+    background: url(/Images/cm/icon/btmico05.png) no-repeat center 11px;
+}
+
+.line_gy {
+}
+
+    .line_gy > span > img {
+        min-width: 1256px;
+        width: 100%;
+    }
+
+.lage_text {
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: bottom;
+    line-height: 1;
+    color: #1d1d1c;
+}
+
+.stlage_text {
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: middle;
+    color: #1d1d1c;
+}
+
+.small_text {
+    font-size: 12px;
+    vertical-align: bottom;
+}
+
+.aglarge_test {
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 1;
+    color: #1d1d1c;
+}
+
+.cscenter-div {
+    width: 100%;
+    height: 143px;
+    background-color: #f5f9fd;
+    margin-top: 100px;
+    border-top: 1px solid #bdd8ef;
+    border-bottom: 1px solid #bdd8ef;
+}
+
+.cscenter-table {
+    height: 143px;
+    width: 1256px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.call_icon {
+    float: left;
+    height: 100px;
+    width: 100px;
+    padding: 10px 40px 0 0px;
+}
+
+.c_center {
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #484949;
+}
+
+.call {
+    font-size: 35px;
+    color: #1a7aaa;
+    padding-top: 25px;
+}
+
+.faq {
+    color: #1a7aaa !important;
+}
+
+.noice_last {
+    color: #484949 !important;
+}
+
+.searchdiv fieldset {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 40px;
+    width: 536px;
+    border-right: none;
+}
+
+.navi-AllCategoryList > ul.site-category {
+    padding-top: 10px;
+    background-color: #555560;
+}
+
+.navi-AllCategoryList > ul > li > ul > li .divCategoryLevel02 > ul > li.active > a.site-category {
+    color: #fff;
+    background: #65696e;
+}
+
+.navi-AllCategoryList > ul > li > ul > li .divCategoryLevel02 > h4.site-category > img.categoryicon {
+    margin-left: 18px;
+    padding-bottom: 10px;
+    width: 50px;
+}
+
+.call_center a {
+    color: #428bca !important;
+}
+
+    .call_center a:hover {
+        color: #ee2248 !important;
+    }
+
+
+.notice {
+    width: 293px;
+    padding: 10px;
+    float: left;
+    height: 125px;
+    background-repeat: no-repeat;
+}
+
+    .notice span {
+        font-weight: 400 !important;
+    }
+
+
+.return {
+    background-repeat: no-repeat;
+    width: 335px;
+    padding: 10px;
+    float: left;
+    height: 125px;
+}
+
+.call_center {
+    width: 360px;
+    padding: 10px;
+    float: left;
+    height: 125px;
+}
+
+.plus_text {
+    color: #3e3e46;
+    border: 1px solid #9d9d9d;
+    padding: 0 10px;
+}
+
+    .plus_text:hover {
+        border: 1px solid #3e3e46;
+        background-color: #eee;
+    }
+
+.more_nam {
+    color: #428bca !important;
+    font-size: 15px !important;
+}
+
+.main-csbanner-wrap {
+    position: relative;
+    width: 1256px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+}
+
+.main-banner {
+    position: relative;
+    margin: 35px auto 20px auto;
+}
+
+.main-csbanner {
+    position: relative;
+    margin: 20px auto 40px auto;
+    overflow: hidden;
+}
+
+    .main-csbanner .info_box {
+        display: inline-block;
+        float: left;
+        width: 400px;
+        height: 143px;
+        border: 3px solid #e5e5e5;
+        margin-right: 28px;
+        box-sizing: border-box;
+        overflow: hiddne;
+        padding: 10px;
+    }
+
+        .main-csbanner .info_box.notice:before {
+            content: '';
+            display: inline-block;
+            float: left;
+            width: 65px;
+            height: 65px;
+            margin: 42px 0 0 15px;
+            background-image: url(/Images/main/notic.png);
+        }
+
+        .main-csbanner .info_box.exchange:before {
+            content: '';
+            display: inline-block;
+            float: left;
+            width: 65px;
+            height: 70px;
+            margin: 25px 0 0 15px;
+            background-image: url(/Images/main/exhange.png);
+        }
+
+        .main-csbanner .info_box.info:before {
+            content: '';
+            display: inline-block;
+            float: left;
+            width: 65px;
+            height: 65px;
+            margin: 25px 0 0 15px;
+            background-image: url(/Images/main/call.png);
+        }
+
+        .main-csbanner .info_box:first-child {
+            margin-left: -40px;
+        }
+
+        .main-csbanner .info_box:last-child {
+            margin-right: 0;
+        }
+
+        .main-csbanner .info_box > div {
+            float: left;
+            display: inline-block;
+            margin-left: 18px;
+        }
+
+        .main-csbanner .info_box .notice_tit {
+            position: absolute;
+            left: 30px;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+            .main-csbanner .info_box .notice_tit:after {
+                content: '';
+                display: block;
+                border-bottom: 1px solid #333;
+                width: 35px;
+                margin: 7px 0 10px 0;
+            }
+
+        .main-csbanner .info_box.notice span {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            color: #000;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .main-csbanner .info_box .call_number {
+            margin: 7px 0 3px 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .main-csbanner .info_box .exchange_tit {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 13px;
+        }
+
+
+
+/**메인 상단 비주얼 영역**/
+.contents-wrap {
+    position: relative;
+}
+
+    .contents-wrap .category-bnr {
+        position: relative;
+        width: 1256px;
+        margin: 0 auto;
+    }
+
+        .contents-wrap .category-bnr > div {
+            position: absolute;
+            width: 206px;
+            background-color: #fff;
+            border: 1px solid #e5e5e5;
+            right: 0;
+            top: 25px;
+            z-index: 10;
+        }
+
+            .contents-wrap .category-bnr > div > div {
+                padding: 10px 10px;
+                text-align: center;
+            }
+
+
+                .contents-wrap .category-bnr > div > div .more-view {
+                    margin-left: 20px;
+                    color: #32353c;
+                    letter-spacing: -0.7px;
+                    cursor: pointer;
+                    display: none;
+                }
+
+        .contents-wrap .category-bnr ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .contents-wrap .category-bnr li {
+            position: relative;
+            border-top: 1px solid #e5e5e5;
+            height: 80px;
+            padding: 0;
+            margin: 0;
+        }
+
+            .contents-wrap .category-bnr li:nth-child(even) {
+                background-color: #f8f8f8;
+            }
+
+            .contents-wrap .category-bnr li a {
+                display: block;
+                width: 206px;
+                height: 80px;
+            }
+
+            .contents-wrap .category-bnr li div {
+                padding: 20px 0 0 33px;
+                font-size: 14px;
+                color: #32353c;
+                letter-spacing: -0.5px;
+                /* 여러 줄 자르기 추가 스타일 */
+                width: 133px;
+                height: 55px;
+                white-space: normal;
+                line-height: 1.2;
+                word-wrap: break-word;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            .contents-wrap .category-bnr li .img {
+                position: absolute;
+                top: 16px;
+                right: 12px;
+                width: 50px;
+                height: 50px;
+                border-radius: 60px;
+            }
+
+/******매출내역 퀵메뉴******/
+#quick {
+    position: absolute;
+    width: 265px;
+    height: 220px;
+    margin: 0 0 0 560px;
+    top: 150px;
+    right: 172px;
+    z-index: 20;
+    background-image: url(/Images/main/quick_bg.png);
+}
+
+    #quick .title {
+        position: relative;
+        color: #fff;
+        padding: 10px;
+        height: 90px;
+    }
+
+        #quick .title .month {
+            display: inline-block;
+            font-size: 30px;
+            line-height: 15px;
+            margin: 20px 10px 0 20px;
+            font-weight: 200;
+        }
+
+            #quick .title .month:after {
+                content: '';
+                display: inline-block;
+                width: 100%;
+                height: 3px;
+                background: #fff;
+            }
+
+        #quick .title .sub_title {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 12px;
+        }
+
+            #quick .title .sub_title .name {
+                display: block;
+                font-size: 13px;
+                text-align: center;
+            }
+
+            #quick .title .sub_title > span {
+                display: block;
+                font-size: 18px;
+                text-align: center;
+            }
+
+        #quick .title .icon {
+            display: inline-block;
+            vertical-align: top;
+            margin: 10px 0 0 10px;
+        }
+
+        #quick .title .close {
+            position: absolute;
+            top: 5px;
+            right: 15px;
+        }
+
+    #quick .ul {
+        position: relative;
+        padding: 10px 10px;
+        width: 255px;
+        height: 125px;
+        overflow: auto;
+    }
+
+        #quick .ul > .li {
+            margin-left: 10px;
+            display: block;
+            line-height: 20px;
+            vertical-align: middle;
+        }
+
+            #quick .ul > .li:nth-last-child(even) {
+                background: #f8f8f8;
+            }
+
+            #quick .ul > .li span {
+                display: inline-block;
+                font-size: 13px;
+                color: #404040;
+            }
+
+            #quick .ul > .li .list_name {
+            }
+
+            #quick .ul > .li .price {
+                float: right;
+            }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #cfcfcf;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8;
+    }
+
+
+/**************************************************************
+    common.css
+***************************************************************/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+}
+
+li {
+    list-style: none
+}
+
+label {
+    font-weight: normal;
+}
+
+.textbox {
+    width: 100%;
+    height: 90px;
+    resize: none; /* 사용자 임의 변경 불가 */
+}
+
+.sub-contents-div {
+    padding-top: 5px;
+    width: 1256px;
+    margin: 0 auto;
+    min-height: 900px;
+    /*position:relative;*/
+    height: auto;
+    overflow: hidden;
+}
+
+/**************** div Layer Popup 영역 시작 *****************/
+/*.divpopup-layer-package {
+    display: none;
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+}
+
+.divpopup-layer-package .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+.divpopup-layer {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    border: 3px solid black;
+    z-index: 10;
+}
+
+.divpopup-layer .divpopup-layer-container {
+    padding: 20px 25px;
+}
+
+.divpopup-layer-package .divpopup-layer {
+    display: block;
+}*/
+
+/**************** div Layer Popup 영역 끝 *****************/
+
+/**************** Tab Control 영역 시작 *****************/
+
+.tabHeaderWrap {
+    border-bottom: 2px solid #272D66;
+    height: 30px;
+    margin-bottom: 10px;
+    min-width: 300px;
+}
+
+    .tabHeaderWrap a {
+        float: left;
+        display: block;
+        margin-right: 1px;
+        background: #ccc;
+        color: #666;
+        margin-top: 2px;
+        height: 28px;
+        line-height: 30px;
+        padding: 0 10px;
+        border-radius: 5px 5px 0 0;
+        text-decoration: none
+    }
+
+        .tabHeaderWrap a:hover {
+            background: #eee;
+            text-decoration: none;
+        }
+
+        .tabHeaderWrap a.on {
+            border: 2px solid #272D66;
+            border-bottom: none;
+            background: #fff;
+            color: #000;
+            font-weight: bold;
+            height: 30px;
+            margin-top: 0;
+            text-decoration: none
+        }
+
+/**************** Tab Control 영역 끝 *****************/
+
+
+
+
+
+
+
+
+.subTabOff {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 32px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #69696c;
+    font-weight: 600;
+    border: 2px solid #ececec;
+    border-radius: 36px;
+}
+
+    .subTabOff:active {
+        /*position: relative;
+        top: 3px*/
+    }
+
+    .subTabOff:hover {
+        text-decoration: none;
+        color: #69696c;
+        border: 2px solid #a5cfef;
+    }
+
+
+.subTabOn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 32px;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #428bca;
+    font-weight: 600;
+    border: 2px solid #428bca;
+    border-radius: 36px;
+}
+
+    .subTabOn:active {
+        /*position: relative;
+        top: 3px*/
+    }
+
+    .subTabOn:hover {
+        text-decoration: none;
+        color: #3d3a3a;
+    }
+/* 탭버튼 css 끝*/
+
+/* 페이지 타이틀 css시작 */
+.img-title {
+    margin-right: 5px;
+}
+
+.p-title-mainsentence {
+    font-family: YDIYGO130-KSCpc-EUC-H;
+    color: #69696c;
+    font-size: 20px;
+    font-weight: bold
+}
+
+.span-title-subsentence {
+    font-family: Dotum;
+    color: #626363;
+    font-size: 12px;
+    font-weight: normal
+}
+/* 페이지 타이틀 css끝 */
+
+
+/* input  css 시작 */
+
+.input-qty {
+    border: 1px solid #adafb4;
+    float: left;
+    position: relative;
+    width: 57px;
+    text-align: center;
+    height: 30px;
+    display: block;
+}
+
+    .input-qty input[type=number], .input-qty input[type=text] {
+        position: absolute;
+        left: 1px;
+        top: 0;
+        width: 43px;
+        height: 28px;
+        padding: 0 0 1px 3px;
+        text-align: center;
+        border: none;
+        border-right: 1px solid #adafb4;
+        z-index: 10;
+        box-sizing: border-box;
+    }
+
+        .input-qty input[type=number]::-webkit-inner-spin-button,
+        .input-qty input[type=number] ::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+    .input-qty .input-arrow-up {
+        position: absolute;
+        right: 1px;
+        top: 0;
+        display: block;
+        height: 15px;
+        text-align: center;
+        border-bottom: 1px solid #adafb4;
+    }
+
+    .input-qty .input-arrow-down {
+        position: absolute;
+        bottom: -1px;
+        right: 1px;
+        display: block;
+        height: 14px;
+    }
+
+    .input-qty .imgarrowup {
+        margin-bottom: 3px;
+        cursor: pointer;
+    }
+
+    .input-qty .imgarrowdown {
+        margin-top: -4px;
+        cursor: pointer;
+    }
+/* input  css 끝 */
+
+
+/* Default 페이지 협력사 시작 */
+
+#divPartnersContent {
+    height: auto;
+    overflow: hidden;
+    width: 1256px;
+    margin: 30px auto 0 auto;
+}
+
+    #divPartnersContent > h3 {
+        font-size: 25px;
+        text-align: center;
+        font-family: YDIYGO130-KSCpc-EUC-H;
+    }
+
+    #divPartnersContent > ul {
+        width: 100%;
+        padding-left: 0;
+        overflow: hidden;
+        border-top: 1px #d9d9d9 solid;
+        border-bottom: 1px #d9d9d9 solid;
+        padding: 10px 0;
+    }
+
+        #divPartnersContent > ul > li {
+            float: left;
+            width: 209px;
+            background-color: #fff;
+            box-sizing: border-box;
+            border: 4px solid #fff;
+        }
+
+
+            #divPartnersContent > ul > li > a {
+                display: block;
+                text-align: center;
+            }
+
+            #divPartnersContent > ul > li:hover {
+                border: 4px solid #e0e9f5;
+            }
+
+            #divPartnersContent > ul > li > a > img {
+                width: 160px;
+                height: 53px;
+                cursor: pointer;
+                padding: 7px 7px 7px 7px;
+            }
+/* Default 페이지 협력사 끝 */
+
+
+/*Default페이지 중앙 배너 시작*/
+
+#defaultMiddleBanner {
+    height: auto;
+    overflow: hidden;
+    width: 1260px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+    #defaultMiddleBanner > ul.main-middle-banner {
+        padding-left: 0px;
+        margin-left: -72px;
+    }
+
+    #defaultMiddleBanner > ul > li {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: 374px;
+        height: 150px;
+        margin: 0 0 18px 69px;
+    }
+
+    #defaultMiddleBanner > ul.main-middle-banner > li.center {
+        padding: 0 73px 0 73px;
+    }
+
+    #defaultMiddleBanner > ul > li > a {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+        #defaultMiddleBanner > ul > li > a > img {
+            width: 374px;
+            height: 150px;
+            transition: 0.3s ease-in-out;
+            -webkit-transition: 0.3s ease-in-out;
+        }
+
+
+        #defaultMiddleBanner > ul > li > a .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 374px;
+            height: 150px;
+            background-color: rgba(0,0,0,0.5);
+            filter: alpha(opacity=0);
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            opacity: 0;
+        }
+
+            #defaultMiddleBanner > ul > li > a .overlay:hover {
+                opacity: 1;
+            }
+
+    #defaultMiddleBanner > ul > li:hover img {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+
+    #defaultMiddleBanner > ul > li > a .info {
+        text-decoration: none;
+        display: inline-block;
+        text-transform: uppercase;
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: transparent;
+        filter: alpha(opacity=0);
+        margin: 55px 105px 0;
+        padding: 11px 14px;
+        width: 170px;
+        height: 40px;
+        text-align: center;
+    }
+
+        #defaultMiddleBanner > ul > li > a .info:hover {
+            opacity: 1;
+            box-shadow: 0 0 5px #fff;
+        }
+
+    #defaultMiddleBanner > h3 {
+        font-size: 25px;
+        text-align: center;
+        font-family: YDIYGO130-KSCpc-EUC-H;
+    }
+
+/*Default페이지 중앙 배너 끝*/
+
+.tbl_search {
+    width: 100%;
+    min-width: 100%;
+    border-collapse: separate;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+
+    .tbl_search th {
+        border-left: none;
+        background-color: #f4f4f4;
+        border-bottom: 1px solid #aaa;
+        padding: 15px 0;
+        font-weight: bold;
+        color: #333333;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .tbl_search td {
+        border-left: 1px solid #eee;
+        border-bottom: 1px solid #aaa;
+        background: #fff;
+        padding: 6px 10px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .tbl_search thead {
+        height: 40px;
+    }
+
+    .tbl_search select > input[type=text] {
+        height: 26px;
+    }
+
+    .tbl_search input[type=text].calendar {
+        width: 150px;
+        height: 24px;
+        border: 1px solid #a2a2a2;
+    }
+
+    .tbl_search input[type=text].input-drop {
+        width: 99%;
+        height: 24px;
+        border: 1px solid #a2a2a2;
+    }
+
+    .tbl_search span {
+        font-size: 13px;
+    }
+/*테이블 헤더가 1줄일경우*/
+.tbl_main {
+    width: 100%;
+    min-width: 100%;
+    border-collapse: separate;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+    .tbl_main th {
+        border-left: none;
+        background-color: #f4f4f4;
+        border-bottom: 1px solid #aaa;
+        padding: 15px 0;
+        font-weight: bold;
+        color: #333333;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .tbl_main td {
+        border-bottom: 1px solid #aaa;
+        background: #fff;
+        padding: 10px 10px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+        .tbl_main td a {
+            font-size: 13px;
+        }
+
+.align-left {
+    text-align: left !important;
+}
+
+.tbl_main span {
+    font-size: 13px;
+}
+
+.border-right {
+    border-right: 1px solid #aaa;
+}
+
+.tbl_main a {
+    color: #333;
+}
+
+    .tbl_main a:hover {
+        text-decoration: underline;
+    }
+/*테이블 헤더가 2줄일경우 */
+.tbl_main2 th {
+    padding: 9px 0;
+}
+
+.tbl_main2 td {
+    font-size: 12px;
+}
+/*인증상품 관련 시작*/
+.goods_confirmMark {
+    float: right
+}
+
+.spanCert {
+    cursor: default;
+    font-weight: bold;
+    color: #050099;
+}
+/*인증상품 관련 끝*/
+
+
+.emptyDiv-l {
+    padding-bottom: 130px
+}
+
+.emptyDiv-m {
+    padding-bottom: 80px
+}
+
+.emptyDiv-s {
+    padding-bottom: 20px
+}
+
+/****************  Button Style 시작 *****************/
+
+.commonBtn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ffffff;
+    padding: 0px;
+    background-color: #3e3e46;
+    font-weight: 600;
+    border: none;
+}
+
+    .commonBtn:active {
+        /*position: relative;
+        top: 3px*/
+    }
+
+    .commonBtn:hover {
+        background-color: #000000;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+.subBtn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0px;
+    background-color: #ffffff;
+    color: #69696b;
+    font-weight: 600;
+    border: 1px solid #69696b;
+}
+
+    .subBtn:active {
+        /*position: relative;
+        top: 3px*/
+    }
+
+    .subBtn:hover {
+        background-color: #69696b;
+        color: #ffffff;
+        text-decoration: none;
+        border: 1px solid #69696b;
+    }
+
+
+.listBtn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #69696b;
+    padding: 0px;
+    font-weight: 600;
+    border: 1px solid #69696b;
+}
+
+    .listBtn:active {
+        position: relative;
+        top: 3px
+    }
+
+    .listBtn:hover {
+        background-color: #69696b;
+        color: #ffffff;
+        text-decoration: none;
+        border: 1px solid #69696b;
+    }
+
+
+.listBtn2 {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #69696b;
+    padding: 0px;
+    background-color: #ffffff;
+    font-weight: 600;
+    border: 1px solid #69696b;
+}
+
+    .listBtn2:active {
+        position: relative;
+        top: 3px
+    }
+
+    .listBtn2:hover {
+        background-color: #69696b;
+        color: #ffffff;
+        text-decoration: none;
+        border: none;
+    }
+/**************** Button Style 끝 *****************/
+
+
+.left-menu-wrap {
+    width: 150px;
+    margin-top: 64px;
+    position: absolute;
+    margin-left: -795px;
+    left: 50%;
+    top: 208px;
+}
+
+
+    .left-menu-wrap dl.first {
+        border: none;
+    }
+
+    .left-menu-wrap dl dt {
+        padding: 25px 0 25px 0;
+        text-align: center;
+        border-top: 3px solid #3e3e46;
+    }
+
+        .left-menu-wrap dl dt strong {
+            font-weight: bold;
+            color: #252525;
+            font-size: 30px;
+        }
+
+    .left-menu-wrap dl dd {
+        display: block;
+        font-size: 20px;
+        text-indent: 15px;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+        .left-menu-wrap dl dd.active {
+            background-color: #3e3e46;
+        }
+
+            .left-menu-wrap dl dd.active a {
+                color: #ffffff !important;
+            }
+
+        .left-menu-wrap dl dd a {
+            display: block;
+            color: #666;
+            font-size: 14px;
+            line-height: 40px;
+            height: 40px;
+        }
+
+
+/**************** 회원가입 제목 타이틀  *****************/
+.member_sub {
+    color: #ee2248;
+    font-size: 18px;
+    margin: 50px 0 0 5px;
+}
+
+.pad_right { /*버튼사이 마진값*/
+    margin-right: 10px;
+}
+
+.pad_left { /*버튼사이 마진값*/
+    margin-left: 10px;
+}
+
+/**************************************************************
+    goods.css
+***************************************************************/
+
+
+/*body {
+}*/
+
+.detail_search_div {
+    border: 1px solid black;
+    height: 300px;
+    width: 500px;
+    margin-left: 280px;
+}
+
+.detail_search_left_div {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.detail_search_right_div {
+    position: absolute;
+    top: 240px;
+    left: 47%;
+}
+
+#btnSearch1 {
+    position: absolute;
+    top: 700px;
+    left: 0;
+    border: 1px solid red
+}
+
+ul {
+    list-style: none;
+}
+
+    ul li span:hover, ul li span:focus {
+        /*font-weight: bold;*/
+        cursor: pointer;
+    }
+
+
+
+/*GoodsList */
+
+.goodsdetail_hint:hover { /*인기상품 마우스 오버색상*/
+    background-color: #f7fafc;
+}
+
+/*상단 카테고리 검색 시작*/
+.ctgrselector-wrap {
+    font-size: 12px;
+    width: 1256px;
+    height: 35px;
+    padding-top: 6px;
+}
+
+.ctgrselector {
+    display: inline
+}
+
+    .ctgrselector .home-icon {
+        padding-bottom: 3px;
+        cursor: pointer;
+        margin-left: 7px;
+        margin-bottom: 5px;
+    }
+
+    .ctgrselector .rightarrow-icon {
+        padding-bottom: 3px;
+        cursor: pointer;
+    }
+
+    .ctgrselector select {
+        width: 210px;
+        height: 27px
+    }
+
+
+.Category {
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+#divGoodsCount {
+    width: 100%;
+    text-align: center;
+    height: 30px;
+}
+
+    #divGoodsCount span.goodscount-num {
+        color: red;
+    }
+
+    #divGoodsCount span {
+        font-size: 14px;
+        color: #666;
+    }
+
+    #divGoodsCount .goodscount {
+        color: red;
+        font-weight: bold;
+    }
+/*상단 카테고리 검색 끝*/
+
+/*상단 재검색 시작*/
+
+.goodslist-researchwrap {
+    width: 100%;
+    border-bottom: 1px solid #caccce;
+    border-left: 1px solid #caccce;
+    border-right: 1px solid #caccce;
+    border-top: 1px solid #666666;
+    /*margin-bottom: 15px;*/
+    height: auto;
+    overflow: hidden;
+}
+
+.goodslist-research-brand {
+    width: 100%;
+    float: left;
+    position: relative;
+    /*border-bottom: 1px solid #caccce;*/
+    border-top: 1px solid #caccce;
+    /*background: #fcfcfc;*/
+}
+
+    .goodslist-research-brand .title {
+        font-size: 14px;
+        width: 100px;
+        float: left;
+        padding: 33px 11px 33px 21px;
+        font-weight: bold;
+    }
+
+    .goodslist-research-brand ul {
+        margin: 0 auto;
+        width: 1153px;
+        float: left;
+        padding-left: 0px;
+        padding-top: 24px
+    }
+
+        .goodslist-research-brand ul > li {
+            float: left;
+            width: 220px;
+        }
+
+            .goodslist-research-brand ul > li > input[type='checkbox'] {
+                display: none;
+            }
+
+                .goodslist-research-brand ul > li > input[type='checkbox'] + label {
+                    color: #333333;
+                    font-weight: normal;
+                }
+
+            .goodslist-research-brand ul > li > label:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            .goodslist-research-brand ul > li > input[type='checkbox'] + label span {
+                display: none;
+                display: inline-block;
+                width: 16px;
+                height: 19px;
+                margin: -2px 6px 0 0;
+                vertical-align: middle;
+                background: url('/Images/goods_check_radio_sheet.png') left top no-repeat;
+                cursor: pointer;
+            }
+
+            .goodslist-research-brand ul > li > input[type='checkbox']:checked + label span {
+                background: url('/Images/goods_check_radio_sheet.png') -19px top no-repeat;
+            }
+
+            .goodslist-research-brand ul > li > span {
+                font-size: 14px;
+            }
+
+
+/* 인증상품 */
+.goodslist-research-certify {
+    width: 100%;
+    float: left;
+    height: 42px;
+    border-bottom: 1px solid #caccce;
+}
+
+    .goodslist-research-certify .title {
+        font-size: 14px;
+        font-weight: bold;
+        padding-left: 21px;
+        padding-top: 9px;
+        float: left;
+        width: 100px;
+    }
+
+    .goodslist-research-certify > input[type='checkbox'] {
+        display: none;
+    }
+
+        .goodslist-research-certify > input[type='checkbox'] + label {
+            color: #333333;
+            font-weight: normal;
+        }
+
+            .goodslist-research-certify > input[type='checkbox'] + label span {
+                display: none;
+                display: inline-block;
+                width: 16px;
+                height: 19px;
+                margin: -2px 6px 0 0;
+                vertical-align: middle;
+                background: url('/Images/goods_check_radio_sheet.png') left top no-repeat;
+                cursor: pointer;
+            }
+
+        .goodslist-research-certify > input[type='checkbox']:checked + label span {
+            background: url('/Images/goods_check_radio_sheet.png') -19px top no-repeat;
+        }
+
+    .goodslist-research-certify > span {
+        font-size: 14px;
+    }
+
+.css-certify-lb {
+    margin-left: 100px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+    .css-certify-lb:hover.css-certify-lb > img {
+        transform: scale(1.1);
+    }
+
+    .css-certify-lb > img {
+        transition: all ease 0.1s;
+    }
+
+
+.goodslist-research-etc {
+    width: 100%;
+    float: left;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+    .goodslist-research-etc .title {
+        font-size: 14px;
+        width: 100px;
+        float: left;
+        padding-left: 21px;
+        padding-top: 4px;
+        font-weight: bold;
+    }
+
+    .goodslist-research-etc input {
+        width: 237px;
+        height: 30px;
+        float: left;
+        border-radius: 2px;
+        border: 1px solid #d2d2d2;
+        padding-left: 15px;
+    }
+
+        .goodslist-research-etc input:hover {
+            /*border: 1px solid #3277b3;*/
+        }
+
+.goodslist-research-btnarea {
+    width: 100%;
+    float: left;
+    padding-top: 19px;
+    text-align: right;
+}
+
+
+#ulMoreBrandList > li {
+    float: left;
+    width: 195px
+}
+
+    #ulMoreBrandList > li > input[type='checkbox'] {
+        display: none;
+    }
+
+        #ulMoreBrandList > li > input[type='checkbox'] + label {
+            color: #333333;
+            font-weight: normal;
+        }
+
+    #ulMoreBrandList > li > label:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    #ulMoreBrandList > li > input[type='checkbox'] + label span {
+        display: none;
+        display: inline-block;
+        width: 16px;
+        height: 19px;
+        margin: -2px 6px 0 0;
+        vertical-align: middle;
+        background: url('/Images/goods_check_radio_sheet.png') left top no-repeat;
+        cursor: pointer;
+    }
+
+    #ulMoreBrandList > li > input[type='checkbox']:checked + label span {
+        background: url('/Images/goods_check_radio_sheet.png') -19px top no-repeat;
+    }
+
+    #ulMoreBrandList > li > span {
+        font-size: 14px;
+    }
+
+/* 브랜드 체크 뷰 */
+.goodslist-brand-check-view {
+    width: 100%;
+    float: left;
+    /*border-top: 1px solid #caccce;*/
+    background: #fcfcfc;
+    /*padding-top: 11px;*/
+    min-height: 40px;
+}
+
+    .goodslist-brand-check-view .title {
+        font-size: 13px;
+        width: 100px;
+        float: left;
+        padding: 22px 11px 22px 21px;
+        font-weight: bold;
+    }
+
+.brand-check-li {
+    /*margin-left: 10px;
+    margin-bottom: 5px;*/
+    margin: 22px 11px 22px 21px;
+    /*padding: 22px 11px 22px 21px;*/
+    float: left;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid #caccce;
+    border-radius: 3px;
+}
+
+.check-li-txt {
+    padding-left: 5px;
+}
+
+.brand-check-li .brand-delete {
+    float: right;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.goodslist-brand-buttonwrap {
+    margin-bottom: 15px;
+}
+
+
+#btnBrandWrap {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+    background: -moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background: -webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background: -o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color: #ffffff;
+    /*border-radius: 6px;*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: none;
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    padding: 2px 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    outline: none;
+}
+
+    #btnBrandWrap:hover {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+        background: -moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+        background: -webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+        background: -o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+        background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+        background-color: #f6f6f6;
+    }
+
+/*상단 재검색 끝*/
+.goods_grid_box {
+    border: 1px #d9d9d9 solid;
+    width: 252px;
+    height: 360px;
+    padding: 3px 12px;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: -1px;
+    background-color: #ffffff;
+}
+
+    .goods_grid_box:hover {
+        border: 1px solid #1e2c63;
+        position: relative;
+        z-index: 30;
+    }
+
+.goods_certify {
+    float: right;
+    cursor: default;
+    font-weight: bold;
+    color: #187087;
+    font-family: "PoorStory-Regular", sans-serif;
+}
+
+.goods_grid_number {
+    height: 20px;
+}
+
+.item_cnt {
+    font-size: 13px;
+    color: #040770;
+    float: left;
+    vertical-align: middle;
+    font-family: "NotoSans-Medium",sans-serif;
+    /*letter-spacing: 1px;*/
+    /*font-weight: bold;*/
+}
+
+.goods_grid_box h3 {
+    margin: 0;
+    font-weight: normal;
+    overflow: hidden;
+    font-size: 16px;
+    text-align: left;
+    height: 41px;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 226px;
+    font-size: 15px;
+    margin-top: 8PX;
+}
+
+.goods_grid_box:hover h3 {
+    text-decoration: underline;
+}
+
+.goods_grid_image img {
+    height: 210px;
+    width: 210px;
+    overflow: hidden;
+}
+
+.goods_manufacturers {
+    font-size: 20px;
+    color: #676868;
+    display: inline-block;
+    width: 100%;
+}
+
+    .goods_manufacturers span.goods_brand {
+        font-size: 12px;
+        color: #69696c;
+        float: left;
+    }
+
+    .goods_manufacturers span.goods_today {
+        height: 19px;
+        font-size: 11px;
+        width: 50px;
+        padding: 0px 3px 1px 3px;
+        border: 1px solid #36a77c;
+        color: #36a77c;
+        float: right;
+    }
+
+.keep_words {
+    white-space: nowrap;
+    word-break: keep-all;
+    word-wrap: normal;
+}
+
+
+
+.goods_textag {
+    font-family: "PoorStory-Regular",sans-serif;
+    font-size: 13px;
+    color: #fff;
+    background-color: #4F86F7;
+    /*padding: 1px 5px 3px 8px;*/
+    text-align: center;
+    /*height: 19px;*/
+    width: 36px;
+    border-radius: 8px;
+}
+
+.goods_price span {
+    color: black;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.page_curl {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+
+.search-table {
+    width: 100%;
+    height: 70px;
+    margin-left: 0px;
+}
+
+    .search-table th, .search-table td {
+        border: 1px solid #a2a2a2;
+    }
+
+
+    .search-table th {
+        width: 100px;
+        text-align: center;
+        background-color: #ececec;
+    }
+
+
+.search-content-table {
+    width: 1000px;
+    height: 70px;
+    margin-top: 50px;
+    margin-left: 0px;
+}
+
+    .search-content-table th {
+        text-align: center;
+        background-color: #ececec;
+        height: 30px;
+    }
+
+    .search-content-table td {
+        padding-left: 5px;
+    }
+
+    .search-content-table th, .search-content-table td {
+        border: 1px solid #a2a2a2;
+    }
+
+
+
+/*div 버튼 */
+.search-btn {
+    padding-top: 15px;
+    width: 955px;
+    height: 35px;
+    text-align: right;
+}
+
+.search_btn {
+    background-color: #69696c;
+    width: 120px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+#goodsCode, #goodsName, #modelName, #brandName {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*크롬 브라우저 CSS*/
+
+
+@media screen and (-webkit-min-device-pixel-ratio:1) {
+    .sub-contents-right-div {
+        width: 100%;
+        min-height: 900px;
+        margin-top: -4px;
+    }
+
+    .search-table {
+        width: 1000px;
+        height: 70px;
+        margin-left: -16px;
+    }
+
+    .search-content-table {
+        width: 1000px;
+        height: 70px;
+        margin-top: 50px;
+        margin-left: -16px;
+    }
+
+    .board-search-btn {
+    }
+}
+
+/******상품코드**********/
+#popupDiv {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 2000;
+    widows: 50%;
+}
+
+
+.popupWrapper {
+    width: 700px;
+    height: auto;
+    margin: 200px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.popupContent {
+    background-color: #ffffff;
+    height: 400px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+/******장바구니담기**********/
+#cartDiv {
+    /*margin: 10px 0 0 0;*/
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 2000;
+    widows: 50%;
+}
+
+
+.cartWrapper {
+    width: 432px;
+    height: auto;
+    margin: 300px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.cartContent {
+    background-color: #ffffff;
+    height: 180px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+/*****관심상품담기***********/
+#wishListDiv {
+    /*margin: 10px 0 0 0;*/
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 2000;
+    widows: 50%;
+}
+
+
+.wishListWrapper {
+    width: 432px;
+    height: auto;
+    margin: 300px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.wishListContent {
+    background-color: #ffffff;
+    height: 180px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+
+/*****반품/교환신청 팝업창***********/
+#returnExchangeDiv {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 2000;
+    widows: 50%;
+}
+
+
+.returnExchangeWrapper {
+    width: 800px;
+    height: auto;
+    margin: 100px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+#ReturnDocDiv {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 2000;
+    widows: 50%;
+}
+
+.returnExchangeContent {
+    background-color: #ffffff;
+    height: 450px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+.ReturnDocWrapper {
+    width: 800px;
+    height: auto;
+    margin: 100px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.ReturnDocContent {
+    background-color: #ffffff;
+    height: 450px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+
+
+
+#tblReq_popup {
+    border: 1px solid #a2a2a2;
+    width: 100%;
+}
+
+    #tblReq_popup th {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        background-color: #ececec;
+        text-align: center;
+    }
+
+    #tblReq_popup td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        padding-left: 5px;
+    }
+
+.popBt-align {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#sboxGubun {
+    width: 50%;
+    height: 80%;
+}
+
+#sboxTypeEx {
+    width: 98%;
+    height: 80%;
+}
+
+#inputRtnChgQty {
+    border: 1px solid #a2a2a2;
+    height: 80%;
+}
+
+/*****반품/교환신청 팝업창***********/
+#asPayDiv {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 2000;
+    widows: 50%;
+}
+
+#divpopupPay {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 2000;
+    widows: 50%;
+}
+
+.asPayWrapper {
+    width: 1100px;
+    height: auto;
+    margin: 30px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.asPayContent {
+    background-color: #ffffff;
+    height: 790px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+
+
+.Cbt-align {
+    text-align: right;
+}
+
+
+
+#img {
+    padding-bottom: 3px;
+    padding-right: 5px;
+}
+
+
+.goodslist-topbar {
+    height: 43px;
+    padding-top: 11px;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+}
+
+.goodslist-topbar-order {
+    padding-left: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+}
+
+    .goodslist-topbar-order ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+        .goodslist-topbar-order ul li {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            border: 0;
+            float: left;
+        }
+
+            .goodslist-topbar-order ul li:not(:first-child) {
+                margin-left: 10px;
+            }
+
+            .goodslist-topbar-order ul li a {
+                cursor: pointer;
+                text-decoration: none;
+                display: inline-block;
+                position: relative;
+                color: #666;
+                vertical-align: top;
+                margin-left: 17px;
+                font-size: 13px;
+            }
+
+                .goodslist-topbar-order ul li a:hover {
+                    text-decoration: underline;
+                }
+
+                .goodslist-topbar-order ul li a.active {
+                    color: #222;
+                    text-decoration: underline;
+                }
+
+                .goodslist-topbar-order ul li a:after {
+                    background: url(/Images/dot-symbol.png) no-repeat;
+                    background-size: 4px;
+                    position: absolute;
+                    top: 7px;
+                    left: -9px;
+                    width: 17px;
+                    height: 24px;
+                    content: '';
+                }
+
+                .goodslist-topbar-order ul li a.active:after {
+                    background: url(/Images/check-symbol.png) no-repeat;
+                    position: absolute;
+                    top: 1px;
+                    left: -17px;
+                    width: 23px;
+                    height: 24px;
+                    content: '';
+                }
+
+.goodslist-topbar-listtype {
+    display: inline-block;
+    float: right;
+}
+
+    .goodslist-topbar-listtype a.gridlink {
+        display: inline-block;
+        cursor: pointer;
+        padding-right: 10px;
+    }
+
+    .goodslist-topbar-listtype a.listlink {
+        display: inline-block;
+        cursor: pointer
+    }
+
+    .goodslist-topbar-listtype a img.gridicon {
+        height: 15px;
+    }
+
+    .goodslist-topbar-listtype a img.listcon {
+        height: 15px;
+    }
+
+.goodslist-favorites {
+    padding: 2px 5px;
+    width: auto;
+    height: 24px;
+    .goods_gridicon_cart float: right;
+    text-align: right;
+    display: inline-block
+}
+
+.goodslist-wrap {
+    position: relative;
+    margin: 20px 0 60px 0;
+    overflow: hidden;
+}
+
+.grid-parent-frame {
+    border-left: 1px solid #ececec;
+}
+
+.wrap-loading-wrap {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255,.65);
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+    .wrap-loading-wrap .wrap-loading {
+        text-align: center;
+        top: 35%;
+        position: relative;
+    }
+
+        .wrap-loading-wrap .wrap-loading img {
+            width: 80px;
+            height: 79px
+        }
+/******엑셀 파일 업로드 다운로드**********/
+.fileDiv {
+    /*margin-top: 20px;*/
+}
+
+
+.fileTbl {
+    border: 1px solid #a2a2a2;
+    /*width: 100%;*/
+}
+
+    .fileTbl th {
+        border: 1px solid #a2a2a2;
+        background-color: #ececec;
+        height: 30px;
+        text-align: center;
+        /*width: 240px;*/
+    }
+
+    .fileTbl td {
+        height: 30px;
+        border: 1px solid #a2a2a2;
+        vertical-align: middle;
+    }
+
+
+.excelfileupload {
+    height: 90%;
+    /*width: 710px;*/
+}
+
+
+.upLoad {
+    vertical-align: middle;
+}
+
+/******엑셀 파일 업로드 다운로드 끝**********/
+
+@media screen and (-webkit-min-device-pixel-ratio:1) {
+
+
+
+    #img {
+        padding-bottom: 3px;
+        padding-right: 5px;
+    }
+}
+
+#ReturnDocDiv {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 2000;
+    widows: 50%;
+}
+
+.ReturnDocWrapper {
+    width: 600px;
+    height: auto;
+    margin: 100px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.ReturnDocContent {
+    background-color: #ffffff;
+    height: 480px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+
+
+.reDocTbl {
+    border: 1px solid #a2a2a2;
+    width: 100%;
+}
+
+    .reDocTbl th {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        text-align: center;
+        background-color: #ececec;
+    }
+
+    .reDocTbl td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        padding-left: 5px;
+    }
+
+.txtInput {
+    border: 1px solid #a2a2a2;
+    height: 26px;
+}
+
+
+
+/*인증상품 관련 시작*/
+
+.goods_confirmMark {
+    float: right;
+    padding-bottom: 5px;
+}
+
+    .goods_confirmMark > span {
+        font-size: 12px;
+        color: #3277b3;
+        font-weight: 400;
+    }
+
+
+.spanCert {
+    cursor: default;
+    font-weight: bold;
+    color: #050099;
+}
+/*인증상품 관련 끝*/
+
+/*추천/특가/시즌/상품리스트 시작*/
+
+
+.goods_hint {
+    border: 1px #d9d9d9 solid;
+    width: 244px;
+    height: 360px;
+    padding: 3px 12px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 9px;
+    background-color: #ffffff;
+}
+
+.goods_md_recommand:hover .goods_hint {
+    position: relative;
+    z-index: 30;
+    border: 1px solid #000;
+}
+
+    .goods_md_recommand:hover .goods_hint h4 {
+        text-decoration: underline;
+    }
+
+.goods_hint .goods_img {
+    padding: 0 8px;
+}
+
+.goods_hint img {
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;
+}
+
+.goods_hint h4 {
+    height: 46px;
+    width: 100%;
+    line-height: 22px;
+    color: #000;
+    font-weight: normal;
+    font-size: 15px;
+    margin: 0;
+}
+
+
+.goodshint_mapname {
+    color: #fff;
+    height: 19px;
+    font-size: 11px;
+    width: 50px;
+    padding: 1px 3px;
+    border: 1px solid #36a77c;
+    color: #36a77c;
+}
+
+
+.goods_hint .goodshint_brand {
+    width: 100%;
+    color: #69696c;
+    font-size: 12px;
+}
+
+.goods_hint .keep_words {
+    white-space: nowrap;
+    word-break: keep-all;
+    word-wrap: normal;
+}
+
+.goods_hint .goods_price {
+    /*border-top: 1px solid #eaeaea;*/
+    text-align: left;
+}
+
+    .goods_hint .goods_price .keep_words > span {
+        color: black;
+        font-size: 18px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+.goodsdetail_hint_title {
+    position: relative;
+    height: 40px;
+    padding-left: 10px;
+    border-bottom: 1px solid #333;
+    letter-spacing: -1px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+.goodsdetail_hint {
+    /*border: 1px solid #CECECE;*/
+    width: 200px;
+    height: 310px;
+    padding: 3px 5px;
+    float: left;
+    margin-left: -1px;
+    margin-top: -1px;
+    /*margin-right: 8px;*/
+}
+
+
+
+    .goodsdetail_hint .goods_img {
+        padding: 0 9px;
+    }
+
+    .goodsdetail_hint img {
+        width: 170px;
+        height: 170px;
+        margin: 0 auto;
+        margin-top: 6px;
+    }
+
+    .goodsdetail_hint h4 {
+        height: 43px;
+        width: 100%;
+        line-height: 22px;
+        font-family: "NotoSans-Medium",sans-serif;
+        color: #091994;
+        font-size: 13px;
+        font-weight: 400;
+        color: black;
+        margin: 0;
+    }
+
+    .goodsdetail_hint div.subinfo {
+        width: 100%;
+        height: 29px;
+        padding-top: 6px;
+    }
+
+        .goodsdetail_hint div.subinfo span.goodshint_brand {
+            color: #69696c;
+            font-size: 12px;
+            height: 19px;
+            display: inline-block;
+            float: left;
+        }
+
+        .goodsdetail_hint div.subinfo span.goodshint_mapname {
+            color: #fff;
+            height: 19px;
+            font-size: 11px;
+            width: 50px;
+            padding: 1px 3px;
+            border: 1px solid #36a77c;
+            color: #36a77c;
+            float: right;
+        }
+
+
+
+
+    .goodsdetail_hint .keep_words {
+        white-space: nowrap;
+        word-break: keep-all;
+        word-wrap: normal;
+    }
+
+    .goodsdetail_hint .goods_price {
+        text-align: left;
+    }
+
+        .goodsdetail_hint .goods_price .keep_words > span {
+            color: black;
+            font-size: 17px;
+            font-weight: bold;
+            text-align: left;
+        }
+/*추천/특가/시즌/상품리스트 끝*/
+
+
+
+/*상품 사이드 카테고리*/
+
+.goods_side_wrap {
+    width: 229px;
+    height: 720px;
+    /*border: 1px solid #a2a2a2;*/
+    padding: 0;
+    margin-top: -2px;
+}
+
+    .goods_side_wrap ul li span {
+        /*font-family: NotoSans-Regular;*/
+    }
+
+        .goods_side_wrap ul li span:hover {
+            /*font-family: NotoSans-Regular;*/
+            /*font-weight: bold;*/
+            cursor: pointer;
+            color: #CC3333;
+        }
+
+
+.goods_side_box {
+    width: 100%;
+    padding: 0px;
+    border-left: 1px #a2a2a2 solid;
+    border-right: 1px #a2a2a2 solid;
+    border-top: 1px #a2a2a2 solid;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+    .goods_side_box span {
+        padding: 6px 0 6px 18px;
+        color: #333;
+        font-size: 16px;
+        /*font-family: NotoSans-Light;*/
+        display: table;
+        font-weight: 800;
+    }
+
+.treeSideMenu-list {
+    width: 100%;
+    padding: 0px;
+    border-left: 1px #a2a2a2 solid;
+    border-right: 1px #a2a2a2 solid;
+    border-bottom: 1px #a2a2a2 solid;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
+/**{font-size:12px; }*/
+
+
+
+/*카테고리 div, 브랜드div*/
+#categorySideMenu {
+    min-height: 350px;
+    height: auto;
+    margin-top: 0px;
+}
+
+#brandSideMenu {
+    height: 305px;
+    margin-top: 0px;
+    /*overflow-y: scroll;*/
+}
+
+
+
+
+    #categorySideMenu li, #brandSideMenu li {
+        height: 25px;
+        padding-left: 10px;
+    }
+
+
+/*전체카테고리, 전체브랜드 이미지 위치 조정*/
+.category-sub-title {
+    padding: 10px 10px;
+}
+
+#divCategoryAllList {
+    position: relative;
+    top: -37px;
+    left: 171px;
+}
+
+    #divCategoryAllList a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+
+
+/*상품 상세 페이지 시작*/
+
+.goods_detail_maintable {
+    width: 722px;
+    float: left;
+    margin-left: 124px;
+    border-bottom: 2px solid black;
+    margin-top: 36px;
+}
+
+    .goods_detail_maintable tbody > tr.cert {
+        height: 50px;
+    }
+
+        .goods_detail_maintable tbody > tr.cert td > div.imagewrap {
+            width: 75%;
+            float: left;
+        }
+
+        .goods_detail_maintable tbody > tr.cert td > div.textwrap {
+            float: right;
+            padding-top: 12px;
+        }
+
+            .goods_detail_maintable tbody > tr.cert td > div.textwrap span {
+                text-align: right;
+                color: #69696c;
+            }
+
+    .goods_detail_maintable tbody > tr > td.titlename {
+        width: 70%;
+        height: 31px;
+        background-color: #fff;
+        padding-bottom: 8px;
+    }
+
+    .goods_detail_maintable tbody > tr > td > span {
+        font-size: 14px;
+    }
+
+    .goods_detail_maintable tbody > tr > td.titlename > label.goodsinfo {
+        font-size: 28px;
+        color: #3f3e3e;
+        padding-top: 9px;
+        margin-top: 3px;
+        font-weight: 400;
+    }
+
+    .goods_detail_maintable tbody > tr > td > b.modelname {
+        padding-left: 10px;
+    }
+
+.goods_detail_table {
+    width: 722px;
+    float: left;
+    margin-left: 126px;
+    border-bottom: 1px solid #a2a2a2;
+}
+
+
+
+
+    .goods_detail_table tbody > tr > td.title {
+        width: 186px;
+        height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .goods_detail_table tbody > tr > td.info {
+        width: 520px;
+        height: 30px;
+        padding: 10px 10px;
+    }
+
+    .goods_detail_table tbody > tr > td > span {
+        font-size: 15px;
+    }
+
+    .goods_detail_table tbody > tr > td > b {
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    .goods_detail_table > tbody > tr:first-child {
+        /*border-bottom: 2px solid #a2a2a2;*/
+    }
+
+
+
+
+.goods_standardinfo {
+    position: relative;
+    float: right;
+    margin-left: 20px;
+    width: 731px;
+    padding-top: 15px;
+}
+
+    .goods_standardinfo span.info1 {
+        color: #999;
+        font-size: 14px
+    }
+
+    .goods_standardinfo span.info2 {
+        color: blue;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+.goods-favoritekeyword {
+    max-width: 200px;
+    color: #ec2029;
+    float: left;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.goods-favoritebtn {
+    float: right;
+    margin-top: -3px;
+    height: 23px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 62px;
+    border-radius: 5px;
+    color: #000000;
+    line-height: 12px;
+}
+
+
+#lblTitleBrand > td > b > a > span {
+    font-weight: 300;
+    font-size: 14px;
+    padding: 4px 12px 4px;
+    color: #3e3e46;
+    background-color: #fff;
+    border: 1px solid #3e3e46;
+    box-sizing: border-box;
+}
+
+
+#tdDeliveryOrder .goodsdetail-deliverymapname {
+    background-color: #ee2248;
+    color: #fff;
+    height: 22px;
+    width: 59px;
+    padding: 3px 5px 3px 8px;
+    font-size: 12px;
+}
+
+#tdDeliveryOrder .goodsdetail-deliverymaptext {
+    font-size: 14px;
+    color: #0850bf;
+    padding-left: 9px;
+}
+/*상품 상세 페이지 끝*/
+
+/*상품이미지가 없습니다 nam*/
+.imgetextnam {
+    margin: 0 auto;
+    width: 970px;
+}
+
+    .imgetextnam .leftimgetext_seach {
+        font-size: 18px;
+        /*font-family: NanumGothic- Bold;*/
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    .imgetextnam .imgetexttop {
+        width: 100%;
+        height: 250px;
+    }
+
+    .imgetextnam span {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .imgetextnam .rightimgetext .red {
+        color: red;
+    }
+
+.bottomimgetext {
+    padding-bottom: 10px;
+}
+
+    .bottomimgetext p {
+        font-size: 15px !important;
+    }
+
+    .bottomimgetext .red {
+        color: red;
+        font-size: 15px;
+    }
+
+    .bottomimgetext span {
+        font-size: 16px !important;
+    }
+
+.rightimgetext .jumnam {
+    font-size: 14px;
+    color: #4d4c4c;
+    font-family: PoorStory-Regular, sans-serif;
+    line-height: 2px;
+    vertical-align: middle;
+}
+
+.imgetextnam .leftimgetext {
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    width: 271px;
+    float: left;
+}
+
+.imgetextnam .bottomimgetext {
+    text-align: center;
+    width: 900px;
+    height: 119px;
+}
+
+.imgetextnam .rightimgetext {
+    text-align: left;
+    margin-left: 64px;
+    padding-top: 20px;
+    float: left;
+}
+
+    .imgetextnam .rightimgetext p {
+        padding-top: 7px;
+    }
+
+.rightimgetext .linernam {
+    font-size: 22px;
+    margin-left: -6px;
+}
+
+.rightimgetext .jumnamex {
+    color: red;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.mtnam {
+    margin-top: -20px !important;
+}
+
+.imgetexttop .leftimgetext_seach .jumnam {
+    font-family: "PoorStory-Regular", sans-serif;
+    line-height: 2px;
+    margin-right: 5px;
+}
+
+
+
+.search-emptywrap {
+    height: 160px;
+    margin-top: 100px;
+    display: none;
+}
+
+    .search-emptywrap table tr td.search-empty-cautionicon {
+        width: 200px;
+        text-align: center
+    }
+
+    .search-emptywrap table tr td.title {
+        font-size: 18px;
+        font-family: Dotum;
+        font-weight: bold;
+        color: #69696c;
+    }
+
+    .search-emptywrap table tr td.keyword {
+        font-size: 18px;
+        color: #ec2028;
+        font-weight: bold;
+    }
+
+    .search-emptywrap table tr td.result {
+        font-size: 18px;
+        font-family: Dotum;
+        font-weight: bold;
+        color: #69696c;
+    }
+
+        .search-emptywrap table tr td.result span {
+            font-size: 18px;
+            font-family: Dotum;
+            font-weight: bold;
+            color: #69696c;
+        }
+
+.powersearch-emptywrap {
+    display: none;
+    width: 100%;
+    height: 104px;
+    text-align: center;
+}
+
+.powersearch-empty-result {
+    height: 80px;
+    width: 100%;
+}
+
+
+    .powersearch-empty-result #noResultMsg {
+        color: red;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: x-large
+    }
+
+    .powersearch-empty-result .resulttext {
+        font-weight: bold;
+        color: #565554;
+        font-size: 15px;
+    }
+
+
+.goods_grid_box .goods_icon_link {
+    position: absolute;
+    width: 100%;
+    margin-top: 150px;
+    display: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+    .goods_grid_box .goods_icon_link > div {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+        .goods_grid_box .goods_icon_link > div img {
+            display: inline-block;
+        }
+
+.goods_icon_cart {
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    /*padding:0 4px;*/
+}
+
+
+.goods_icon_wish {
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    /*padding:0 4px;*/
+}
+
+.goods_list_box {
+    position: relative;
+    border-bottom: 1px solid #d9d9d9;
+    height: auto;
+    overflow: hidden;
+    padding: 10px 0 10px 0;
+}
+
+    .goods_list_box:hover {
+        background: #f7fafc;
+    }
+
+    .goods_list_box img {
+        border: 1px solid #e4e4e4;
+        box-sizing: border-box;
+    }
+
+    .goods_list_box:hover img {
+        border: 2px solid #33a6ff;
+    }
+
+.goods_list_info {
+    float: left;
+    width: 75%;
+    padding-top: 15px;
+    padding-left: 20px
+}
+
+    .goods_list_info .goods_today {
+        margin-left: 10px;
+        float: left !important;
+        padding-top: 0px !important;
+    }
+
+.goods_icon_detail {
+    cursor: pointer;
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+}
+
+.goods_gridicon_wrap {
+    position: absolute;
+    text-align: right;
+    top: 72px;
+    right: 0;
+    width: 151px;
+}
+
+.goods_gridicon_cart {
+    cursor: pointer;
+    background: url(/Images/Goods/cart.png) no-repeat;
+    width: 47px;
+    height: 47px;
+    display: inline-block;
+}
+
+.goods_gridicon_wish {
+    cursor: pointer;
+    background: url(/Images/Goods/wishlist.png) no-repeat;
+    width: 47px;
+    height: 47px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.goods_gridicon_detail {
+    cursor: pointer;
+    background: url(/Images/Goods/detail.png) no-repeat;
+    width: 47px;
+    height: 47px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.product_Promotion_text {
+    color: white;
+    font-size: 14px;
+    letter-spacing: -.1em;
+    padding: 4px 4px 4px 4px;
+    margin-right: 3px;
+    width: 48px;
+    line-height: 10px;
+}
+
+
+/*상품 상세 페이지*/
+
+.goodsdetail-info-wrap {
+    float: left;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: table;
+}
+
+.goodsdetail-info {
+    width: 400px;
+    height: 400px;
+    vertical-align: top;
+    display: table-cell;
+    /*border: 1px solid #CECECE;
+    border-radius:20px;*/
+}
+
+    .goodsdetail-info .mainimg {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+
+    .goodsdetail-info .zoomimg {
+        position: relative;
+        top: -300px;
+        left: 320px;
+    }
+
+.goodsdetail-zoomtextwrap {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+    .goodsdetail-zoomtextwrap span {
+        font-size: 12px;
+        font-weight: bold;
+        color: #69686d;
+    }
+
+.goods-favorite-wrap {
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    border: 1px solid #a2a2a2;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    width: auto;
+    max-width: 300px;
+    height: 26px;
+    text-align: center;
+    padding-top: 3px;
+    text-decoration: none;
+    color: rgba(0,0,0,.65);
+}
+
+.goodsdetail-btnarea {
+    text-align: right;
+}
+
+.goodsdetail-detailimgarea {
+    margin-top: 120px;
+    width: 1256px;
+    height: auto;
+}
+
+    .goodsdetail-detailimgarea > div {
+        text-align: center;
+    }
+
+/* 상품디테일 빠른 옵션 선택*/
+.goodsdetail-optionselector-wrap {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #CECECE;
+    margin-top: 42px;
+}
+
+.goodsdetail-optionselector-title {
+    display: inline-block;
+    float: left;
+    width: 100%
+}
+
+    .goodsdetail-optionselector-title h4 {
+        font-weight: bold;
+        border-bottom: 1px solid #CECECE;
+        padding-bottom: 10px;
+    }
+
+.goodsdetail-optionselector {
+}
+
+    .goodsdetail-optionselector dl.optionlist {
+        margin-bottom: 0px;
+        float: left;
+        width: 23%;
+        margin-right: 2%;
+        margin-top: 5px;
+    }
+
+        .goodsdetail-optionselector dl.optionlist dt {
+            padding-bottom: 5px;
+        }
+
+        .goodsdetail-optionselector dl.optionlist dd {
+            margin-left: 0;
+            width: 100%;
+            height: auto;
+            display: block;
+            overflow: auto;
+            padding-bottom: 10px;
+        }
+
+            .goodsdetail-optionselector dl.optionlist dd a.selected {
+                border: 1px solid #ff7200;
+                background: #ff7200;
+                color: #fff;
+            }
+
+            .goodsdetail-optionselector dl.optionlist dd a {
+                float: left;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                border: 1px solid #c9cbcf;
+                padding: 4px;
+                min-width: 28px;
+                text-align: center;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .goodsdetail-optionselector dl.optionlist dd:after {
+                content: '\A';
+                white-space: pre;
+            }
+
+/*상품 옵션 테이블 시작
+.goodsSummary-table {
+    min-width: 1256px;
+    border-collapse: separate;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+    .goodsSummary-table th {
+        border-left: none;
+        background-color: #f7fafc;
+        border-bottom: 2px solid #aaa;
+        padding: 15px 0;
+        font-weight: normal;
+        color: #333333;
+        font-size: 13px;
+    }
+
+    .goodsSummary-table td {
+        border-left: 1px solid #eee;
+        background: #fff;
+        padding: 6px 10px;
+        text-align: center;
+        font-size: 13px;
+    }*/
+
+
+
+
+/*상품 옵션 테이블 끝*/
+
+/*상품 디테일 하단 리스트(카테고리 브랜드 상품 ) 시작*/
+
+.slider {
+    width: 1256px;
+    margin: 7px auto;
+    /*border-top: 1px solid black;*/
+    /*border-bottom: 1px solid #ECECEC;*/
+}
+
+.slick-slide {
+    margin: 0px 5px;
+}
+
+    .slick-slide img {
+        /*width: 100%;*/
+    }
+
+.slick-prev:before,
+.slick-next:before {
+    color: red;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: 1;
+}
+
+/*상품 디테일 하단 리스트(카테고리 브랜드 상품 ) 끝*/
+.product_Promotion_text {
+    color: #ee2248;
+    margin-left: 5px;
+    font-size: 14px;
+    padding: 2px 2px 2px 2px;
+    margin-right: 3px;
+    width: 30px;
+    line-height: 17px;
+}
+
+
+.ui-tooltip {
+    padding: 0;
+    max-width: 600px;
+}
+
+/*상품 즐겨찾기, 찜하기, 옵션전체보기  버튼 영역*/
+.mainbtn-area {
+    position: relative;
+    float: right;
+    margin-left: 20px;
+    margin-top: 50px;
+}

@@ -1,0 +1,51 @@
+2019-04-11 09:03:47.2849 | 9940 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2307 | In | 
+2019-04-11 09:03:47.3178 | 9940 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2319 | Out | 
+2019-04-11 09:03:52.6196 | 9940 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : 'System.Web.HttpUnhandledException' 형식의 예외가 Throw되었습니다.
+ Stack Trace    :    위치: System.Web.UI.Page.HandleError(Exception e)
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest()
+   위치: System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   위치: System.Web.UI.Page.ProcessRequest(HttpContext context)
+   위치: ASP.board_boardedit_aspx.ProcessRequest(HttpContext context) 파일 c:\Users\user\AppData\Local\Temp\Temporary ASP.NET Files\vs\2e97ac09\d872c0e4\App_Web_3ggcuiyl.2.cs:줄 0
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: Board_BoardEdit.ParseRequestParameters() 파일 d:\Svn\SocialWith\Board\BoardEdit.aspx.cs:줄 30
+   위치: Board_BoardEdit.Page_Load(Object sender, EventArgs e) 파일 d:\Svn\SocialWith\Board\BoardEdit.aspx.cs:줄 18
+   위치: System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   위치: System.EventHandler.Invoke(Object sender, EventArgs e)
+   위치: System.Web.UI.Control.OnLoad(EventArgs e)
+   위치: System.Web.UI.Control.LoadRecursive()
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) | 
+2019-04-11 09:04:05.2414 | 9940 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2307 | In | 
+2019-04-11 09:04:05.2414 | 9940 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2319 | Out | 
+2019-04-11 09:04:18.6356 | 9940 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : 'System.Web.HttpUnhandledException' 형식의 예외가 Throw되었습니다.
+ Stack Trace    :    위치: System.Web.UI.Page.HandleError(Exception e)
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest()
+   위치: System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   위치: System.Web.UI.Page.ProcessRequest(HttpContext context)
+   위치: ASP.board_boardedit_aspx.ProcessRequest(HttpContext context) 파일 c:\Users\user\AppData\Local\Temp\Temporary ASP.NET Files\vs\2e97ac09\d872c0e4\App_Web_3ggcuiyl.2.cs:줄 0
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: Board_BoardEdit.ParseRequestParameters() 파일 d:\Svn\SocialWith\Board\BoardEdit.aspx.cs:줄 30
+   위치: Board_BoardEdit.Page_Load(Object sender, EventArgs e) 파일 d:\Svn\SocialWith\Board\BoardEdit.aspx.cs:줄 18
+   위치: System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   위치: System.EventHandler.Invoke(Object sender, EventArgs e)
+   위치: System.Web.UI.Control.OnLoad(EventArgs e)
+   위치: System.Web.UI.Control.LoadRecursive()
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) | 
+2019-04-11 09:47:35.5403 | 9940 | iisexpress | DEBUG | PageBase | Board_BoardList.BoardBind : 53 | 1 | 
+2019-04-11 14:44:29.4593 | 9940 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2307 | In | 
+2019-04-11 14:44:29.4872 | 9940 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2319 | Out | 
+2019-04-11 14:59:59.0822 | 9940 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2307 | In | 
+2019-04-11 14:59:59.0822 | 9940 | iisexpress | DEBUG | GoodsHandler | GoodsHandler.GetPopularGoodsList : 2319 | Out | 

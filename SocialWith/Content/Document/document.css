@@ -1,0 +1,455 @@
+﻿
+/*버튼 오른쪽정렬*/
+    .bt-align-div{
+        text-align:right;
+        margin-top:20px;
+    }
+
+/*텍스트박스 보더제거*/
+    .input-text{
+        border:1px solid #a2a2a2;
+       
+        width:99%;
+        height:90%;
+        text-align:center;
+    }
+
+/*팝업창 테두리*/
+    .divpopup-layer{
+        border:none;
+    }
+
+    .divpopup-layer-conts{
+        overflow:auto;
+}
+/*****************BuyRequestList 스타일시트*****************/
+#approStartDate, #approEndDate {
+    border: 1px solid #a2a2a2;
+    margin-left: 5px;
+    text-align: center;
+    width: 150px;
+}
+
+
+    #payReqStartDate, #payReqEndDate {
+        border: 1px solid #a2a2a2;
+        margin-left: 5px;
+        text-align: center;
+        width: 150px;
+    }
+
+    .bt-align-div1 {
+    text-align: right;
+    margin-top: 50px;
+}
+
+    
+/***************BuyApprovalMain 스타일시트******************/
+.board-table {
+    border: 1px solid #a2a2a2;
+    width:100%;
+    margin:0;
+    padding:0;
+
+}
+    
+    .board-table th{
+        border:1px solid #a2a2a2;
+        height:40px;
+        text-align:center;
+    }
+
+    .board-table td{
+        border:1px solid #a2a2a2;
+        height:30px;
+        padding-left:5px;
+    }
+
+    .board-table thead th{
+        font-size:12px;
+        
+    }
+
+
+
+    #approReqEndDate, #approReqStartDate{
+        border:1px solid #a2a2a2;
+        margin-left:10px;
+        text-align:center;
+        width:150px;
+    } 
+
+    
+    .del-bt-td{
+        padding-left:0;
+        text-align:center;
+    }
+
+
+    .btn1{
+        float:right;
+        margIn-top:20px;
+    }
+
+
+    #attachTable th{
+        background-color:#ececec;
+        text-align:left;
+}
+/*****************미결함 스타일시트*************************/
+.date1, .date2 {
+    border: 1px solid #a2a2a2;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    margin-right:5px;
+}
+.rbl {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    float: right
+}
+
+ .report-table {
+    width: 1218px;
+    border: 1px solid #a2a2a2;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    font-family: 돋움체, sans-serif;
+    
+}
+
+#tbSocialCompanyList {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    font-family: 돋움체, sans-serif;
+}
+
+    #tbSocialCompanyList th {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        background-color: #ececec;
+    }
+
+    #tbSocialCompanyList td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+    }
+
+#tblApprovalList {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    font-family: 돋움체, sans-serif;
+}
+
+    #tblApprovalList th{
+        border:1px solid #a2a2a2;
+        height:30px;
+        background-color:#ececec;
+    }
+
+    #tblApprovalList td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+      
+    }
+
+#tblApprovalList2 {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    font-family: 돋움체, sans-serif;
+}
+
+    #tblApprovalList2 th {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        background-color: #ececec;
+    }
+
+    #tblApprovalList2 td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+    }
+
+#tblOrderTry {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    font-family: 돋움체, sans-serif;
+}
+
+    #tblOrderTry th {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        background-color: #ececec;
+    }
+
+    #tblOrderTry td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+    }
+
+
+
+    /*목록 테이블 행 높이*/
+    .report-tr-height {
+        height: 30px;
+    }
+
+/*목록 테이블 테두리*/
+.report-table th, .report-table td {
+    border-bottom: 1px solid #a2a2a2;
+}
+
+.report-table td {
+    border: 1px solid #a2a2a2;
+    height: 30px;
+    padding-left: 5px;
+}
+
+.report-table th {
+    border:1px solid #a2a2a2;
+    background-color: #F0F0F0;
+}
+
+.rbl {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    float: right;
+    border-color:#ffffff;
+  
+
+}
+
+.txt {
+    float: left
+}
+
+
+
+
+/*****************기결함 스타일시트*************************/
+/*텍스트박스 보더제거*/
+.input-text1 {
+    border: 1px solid #a2a2a2;
+    width: 99%;
+    height: 90%;
+    text-align: center;
+   
+}
+
+.input-text2 {
+    border: 1px solid #a2a2a2;
+    width: 99%;
+    height: 98%;
+    padding-left:5px;
+}
+
+.close-bt{
+    float:right;
+}
+
+.title{
+    border:1px solid #a2a2a2;
+    height:100%;
+    padding-left:5px;
+
+}
+
+/**********************************************************/
+
+
+
+
+#tblSearch{
+    border:1px solid #a2a2a2;
+}
+
+#tblSearch th{
+     border:1px solid #a2a2a2; height:30px; 
+}
+
+#tblSearch td{
+    border:1px solid #a2a2a2; line-height:20px;  
+}
+
+
+.tblSear{
+    margin-top:20px;
+    border:1px solid #a2a2a2;
+}
+
+.tblSear th{
+    border:1px solid #a2a2a2;
+    background-color:#ececec;
+    height:40px;
+}
+.tblSear td{
+     border:1px solid #a2a2a2;
+     padding-left:5px;
+    }
+
+.searchDate{
+    border:1px solid #a2a2a2;
+    text-align:center;
+    width:200px;
+    height:25px;
+    margin-right:5px;
+}
+
+.input-text{
+    height:26px;
+}
+
+
+ .list-table{
+    margin-top:30px;       
+    max-height:281px;
+   
+    overflow:auto;   
+}
+
+
+/*********결재상신완료 페이지***************/
+.orderSuccess-table {
+    border-spacing: 0px;
+    border-bottom-style: none;
+    padding: 0px;
+    margin: 0;
+    margin-left: 223px;
+    width: 818px;
+    height: 418px;
+    border: 1px solid #a2a2a2;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+.line1 {
+    color: #e9172f;
+}
+
+    .line1 span {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+.line2, .line3 {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+    .line3 span {
+        font-weight: bold;
+        color: #e9172f;
+    }
+
+    
+
+	
+
+
+/******기결함 팝업**********/
+#reportedListDiv {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 100;
+    widows: 50%;
+}
+
+
+.reportedListWrapper {
+    width: 1200px;
+    height: auto;
+    margin: 10px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.reportedListContent {
+    background-color: #ffffff;
+    height: 800px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+
+/******장바구니담기**********/
+#reportingListDiv {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 100;
+    widows: 50%;
+}
+
+
+.reportingListWrapper {
+    width: 1200px;
+    height: auto;
+    margin: 10px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.reportingListContent {
+    background-color: #ffffff;
+    height: 800px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+
+#tblRequestList td:nth-child(6){
+    text-align:right;
+    padding-right:5px;
+}
+
+#tblRequestDetailList td:nth-child(5){
+    text-align:right;
+    padding-right:5px;
+}
+
+
+#tblRequestDetailList td:nth-child(9) {
+    text-align: right;
+    padding-right: 5px;
+}

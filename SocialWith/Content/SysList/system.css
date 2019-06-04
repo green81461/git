@@ -1,0 +1,356 @@
+﻿a{
+    cursor:pointer;
+}
+
+/*탭메뉴*/
+.sub-tab-div {
+    width: 100%;
+    height: 36px;
+    border-bottom: 1px solid #ec2028;
+}
+
+ .sub-tab-div a:nth-child(1) {
+        margin-left: -40px;
+  }
+
+  .sub-tab-div a:nth-child(2) {
+        margin-left: -2px;
+ }
+
+
+
+#tblSysList{
+    border:1px solid #a2a2a2;
+    width:100%;
+}
+
+#tblSysList th{
+    border:1px solid #a2a2a2;
+    background-color:#ececec;
+    height:30px;
+    text-align:center;
+}
+
+#tblSysList td {
+    border: 1px solid #a2a2a2;
+    height:30px;
+    padding-left:5px;
+}
+    #tblSysList td:nth-child(1) {
+        text-align: center;
+    }
+    #tblSysList td:nth-child(2) {
+        text-align: center;
+    }
+    #tblSysList td:nth-child(7) {
+        text-align: center;
+    }
+    #tblSysList td:nth-child(8) {
+        text-align: center;
+    }
+
+
+    #tblSysList td:nth-child(9) {
+        text-align: center;
+    }
+
+    #tblSysList td:nth-child(10) {
+        text-align: center;
+    }
+
+    #tblSysList td:nth-child(11){
+        text-align:center;
+    }
+
+
+
+
+
+    /******시스템개선사항요청 팝업**********/
+    #systemDiv {
+        margin: 10px 0 0 0;
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        background-color: rgba(0,0,0,.65);
+        display: none;
+        z-index: 100;
+        widows: 50%;
+    }
+
+
+.systemWrapper {
+    width: 1100px;
+    height: auto;
+    margin: 50px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.systemContent {
+    background-color: #ffffff;
+    height: 770px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+#tblSys{
+    width:100%;
+    border:1px solid #a2a2a2;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#tblSys thead{
+    height:40px;
+}
+
+    #tblSys th {
+        height: 30px;
+        text-align: center;
+        background-color: #ececec;
+        border: 1px solid #a2a2a2;
+        width: 250px
+    }
+    #tblSys td {
+        height: 30px;
+        padding-left: 5px;
+        border: 1px solid #a2a2a2;
+    }
+
+/*팝업 td 라벨*/
+ .popLabel {
+    width:99.5%;
+    height:90%;
+    background-color:#d0d0d0;
+    border:1px solid #a2a2a2;
+}
+
+.popLabel-wide {
+    width: 99.8%;
+    height: 98%;
+    background-color: #d0d0d0;
+    border: 1px solid #a2a2a2;
+}
+.txtbox {
+    width: 99.4%;
+    height: 98%;
+    border: 1px solid #a2a2a2;
+    padding-left:5px;
+}
+
+#tblSystem {
+    width: 100%;
+    border:1px solid #a2a2a2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ #tblSystem thead {
+    height: 40px;
+ }
+
+    #tblSystem th {
+        height: 30px;
+        text-align: center;
+        background-color: #ececec;
+        border: 1px solid #a2a2a2;
+        width:250px;
+    }
+
+    #tblSystem td {
+        height: 30px;
+        padding-left: 5px;
+        border: 1px solid #a2a2a2;
+    }
+
+.close-div {
+    width: 50px;
+    height: 30px;
+    float: right;
+}
+
+.btPop{
+    float:right;
+}
+
+.popDrop{
+    width:98%;
+    height:90%;
+}
+
+
+.popTxt {
+    width: 99.5%;
+    height: 90%;
+    border: 1px solid #a2a2a2;
+}
+
+.popTxt-wide {
+    width: 99.8%;
+    height: 99.9%;
+    border: 1px solid #a2a2a2;
+    padding-left:5px;
+}
+/*****************************/
+
+
+/*#tblNewGoods {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+    margin-bottom: 5px;
+}
+
+
+    #tblNewGoods th {
+        height: 30px;
+        text-align: center;
+        background-color: #ececec;
+        border: 1px solid #a2a2a2;
+        width: 250px;
+    }
+
+    #tblNewGoods td {
+        height: 30px;
+        padding-left: 5px;
+        border: 1px solid #a2a2a2;
+        text-align:center;
+    }*/
+
+    /*#tblNewGoods td:nth-child(3) {
+        text-align:left;
+        padding-left:5px;
+    }
+    #tblNewGoods td:nth-child(6) {
+        text-align:left;
+        padding-left:5px;
+    }
+    #tblNewGoods td:nth-child(10) {
+        text-align:right;
+        padding-right:2px;
+    }*/
+        #tblNewGoods td:nth-child(7) {
+            text-align: right;
+            padding-left: 5px;
+        }
+#tblNewGoodsPop {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+    margin-bottom: 5px;
+}
+
+
+    #tblNewGoodsPop th {
+        height: 30px;
+        text-align: center;
+        background-color: #ececec;
+        border: 1px solid #a2a2a2;
+        width: 250px;
+    }
+
+    #tblNewGoodsPop td {
+        height: 30px;
+        padding-left: 5px;
+        border: 1px solid #a2a2a2;
+        text-align: center;
+    }
+
+        #tblNewGoodsPop td:nth-child(3) {
+            text-align: left;
+            padding-left: 5px;
+        }
+
+        #tblNewGoodsPop td:nth-child(6) {
+            text-align: left;
+            padding-left: 5px;
+        }
+
+        #tblNewGoodsPop td:nth-child(10) {
+            text-align: right;
+            padding-right: 2px;
+        }
+
+/*.dateTbl{
+    width:100%;
+    border:2px solid #a2a2a2;
+    border-bottom:none;
+    margin-top:20px;
+}
+
+    .dateTbl th {
+        height: 50px;
+        text-align: center;
+        border-bottom: none;
+        background-color: #ececec;
+    }
+    .dateTbl td {
+        border: 1px solid #a2a2a2;
+        border-bottom: none;
+        padding-left: 5px;
+    }*/
+
+.calendar{
+    border:1px solid #a2a2a2;
+    margin-right:5px;
+
+}
+
+
+.newTbl{
+    border:1px solid #a2a2a2;
+    width:100%;
+}
+
+.newTbl th{
+    border:1px solid #a2a2a2;
+    background-color:#ececec;
+    height:30px; 
+    text-align:center;
+}
+
+.newTbl td{
+    height:30px;
+    border:1px solid #a2a2a2;
+    padding-left:5px;
+}
+
+
+#detailTextDiv, #requestTextDiv {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 100;
+    widows: 50%;
+}
+
+.popuptextContent {
+    background-color: #ffffff;
+    height: 320px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+.popuptextWrapper {
+    width: 700px;
+    max-height: 600px;
+    margin: 200px auto;
+    text-align: left;
+    background-color: #ffffff;
+}

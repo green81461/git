@@ -1,0 +1,22 @@
+2019-05-09 09:03:19.6487 | 8180 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : 'System.Web.HttpUnhandledException' 형식의 예외가 Throw되었습니다.
+ Stack Trace    :    위치: System.Web.UI.Page.HandleError(Exception e)
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest()
+   위치: System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   위치: System.Web.UI.Page.ProcessRequest(HttpContext context)
+   위치: ASP.default_aspx.ProcessRequest(HttpContext context) 파일 c:\Users\user\AppData\Local\Temp\Temporary ASP.NET Files\vs\2e97ac09\d872c0e4\App_Web_dwn0l1dg.2.cs:줄 0
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: PageBase.get_DistCssObject() 파일 d:\Svn\SocialWith\App_Code\PageBase.cs:줄 133
+   위치: PageBase.SiteRedirect() 파일 d:\Svn\SocialWith\App_Code\PageBase.cs:줄 150
+   위치: PageBase.Page_PreInit(Object sender, EventArgs e) 파일 d:\Svn\SocialWith\App_Code\PageBase.cs:줄 35
+   위치: System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   위치: System.EventHandler.Invoke(Object sender, EventArgs e)
+   위치: System.Web.UI.Page.OnPreInit(EventArgs e)
+   위치: System.Web.UI.Page.PerformPreInit()
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) | 

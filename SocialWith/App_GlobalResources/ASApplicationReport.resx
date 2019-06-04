@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    버전 2.0
+    
+    이 형식의 중요한 목표는 일반 사용자가 거의 대부분을 읽고 이해할 수 있는 간단한 
+    XML 형식을 사용할 수 있도록 한다는 것입니다. 다양한 데이터 형식을 
+    생성하고 구문 분석하는 작업은 데이터 형식과 연결된 TypeConverter 
+    클래스를 통해 수행됩니다.
+    
+    예:
+    
+    ... ado.net/XML 헤더 및 스키마 ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1">this is my long string</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        [base64 mime encoded serialized .NET Framework object]
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        [base64 mime encoded string representing a byte array form of the .NET Framework object]
+    </data>
+                
+    간단한 이름/값 쌍이 포함된 "resheader" 행이 
+    여러 개 있습니다.
+    
+    각 데이터 행에는 이름과 값이 들어 있습니다. 또한 행에는 type 또는 
+    mimetype도 들어 있습니다. type은 TypeConverter 아키텍처를 통해 
+    텍스트/값 변환을 지원하는 .NET 클래스에 해당합니다. 
+    이를 지원하지 않는 클래스는 mimetype 집합으로 
+    serialize되고 저장됩니다.
+    
+    mimetype은 serialize된 개체에 사용되며 개체를 유지하지 않는 방법을 
+    ResXResourceReader에 알려 줍니다. 이는 현재 확장 가능하지 
+    않습니다. 지정된 mimetype의 경우 값을 함께 설정해야 합니다.
+    
+    참고 - application/x-microsoft.net.object.binary.base64는 
+    ResXResourceWriter가 생성하는 형식이지만 판독기는 
+    아래 나열된 형식을 모두 읽을 수 있습니다.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    값   : 개체는 
+            : System.Serialization.Formatters.Binary.BinaryFormatter로 serialize한 다음
+            : base64 인코딩으로 인코딩해야 합니다.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    값   : 개체는 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter로 serialize한 다음
+            : base64 인코딩으로 인코딩해야 합니다.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    값   : 개체는 
+            : System.ComponentModel.TypeConverter를 사용하여 바이트 배열로 serialize한 다음
+            : base64 인코딩으로 인코딩해야 합니다.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>

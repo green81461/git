@@ -1,0 +1,139 @@
+﻿/*검색div*/
+.search-sub-div {
+    margin-top:30px;
+    margin-bottom: 30px;
+
+}
+
+/*회사검색 라벨*/
+.compSearch{
+    width:150px;
+    border:1px solid #a2a2a2;
+    text-align:center;
+    background-color:#ececec;
+    height:30px;
+    line-height:28px;
+}
+
+/*탭메뉴*/
+.sub-tab-div {
+    width: 100%;
+    height: 36px;
+}
+
+    .sub-tab-div a:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .sub-tab-div a:nth-child(2) {
+        margin-left: -2px;
+    }
+
+
+
+/*검색어입력창*/
+.search1 {
+    height: 30px;
+    border: 1px solid #a2a2a2;
+    width: 50%;
+    position: relative;
+        padding-left: 10px;
+    margin-left:-5px;;
+}
+
+/*검색버튼*/
+.searchBt {
+    position: relative;
+     top:-2px;
+}
+
+
+
+
+.dropDown {
+    width:200px;
+    height:28px;
+    padding-left:5px;
+}
+
+
+/*상단 div*/
+.top-div{
+   
+    width:1550px;
+    height:331px;
+}
+
+/*예산관리 테이블*/
+#tblBudget {
+    border: 1px solid #a2a2a2;
+    width: 1544px;
+}
+
+#tblBudget th{
+    border:1px solid #a2a2a2;
+    background-color:#ececec;
+    height:30px;
+    text-align:center;
+}
+
+#tblBudget td {
+    height:30px;
+    text-align:center;
+}
+
+
+
+
+
+
+/*하단 div*/
+.bottom-div {
+    height:391px;
+    width:1830px; 
+
+  
+}
+
+#tblBudgetList{
+    border:1px solid #a2a2a2;
+    width:2000px;
+}
+
+#tblBudgetList th{
+    border:1px solid #a2a2a2;
+    background-color:#ececec;
+    height:30px;
+    text-align:center;
+}
+
+#tblBudgetList td{
+    height:30px;
+    border:1px solid #a2a2a2;
+    text-align:center;
+}
+
+
+/*하단 div*/
+.bottom-div {
+    height: 391px;
+    width: 1830px;
+}
+
+#tblBudgetSearch {
+    border: 1px solid #a2a2a2;
+    width: 2000px;
+}
+
+    #tblBudgetSearch th {
+        border: 1px solid #a2a2a2;
+        background-color: #ececec;
+        height: 30px;
+        text-align: center;
+    }
+
+    #tblBudgetSearch td {
+        height: 30px;
+        border: 1px solid #a2a2a2;
+        text-align: center;
+    }

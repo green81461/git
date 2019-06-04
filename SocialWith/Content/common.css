@@ -1,0 +1,853 @@
+﻿body 
+{
+    margin: 0;
+    padding: 0;
+}
+
+button 
+{
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+}
+
+li {list-style:none}
+
+label {
+  font-weight:normal;
+}
+
+.textbox {
+    width: 100%;
+    height: 90px;
+    resize: none; /* 사용자 임의 변경 불가 */
+}
+.sub-contents-div {
+    padding-top: 5px;
+    width: 1256px;
+    margin: 0 auto;
+    min-height: 900px;
+    /*position:relative;*/
+    height: auto;
+    overflow: hidden;
+}
+
+/**************** div Layer Popup 영역 시작 *****************/
+/*.divpopup-layer-package {
+    display: none;
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+}
+
+.divpopup-layer-package .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+.divpopup-layer {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    border: 3px solid black;
+    z-index: 10;
+}
+
+.divpopup-layer .divpopup-layer-container {
+    padding: 20px 25px;
+}
+
+.divpopup-layer-package .divpopup-layer {
+    display: block;
+}*/
+
+/**************** div Layer Popup 영역 끝 *****************/
+
+/**************** Tab Control 영역 시작 *****************/
+
+    .tabHeaderWrap {
+        border-bottom: 2px solid #272D66;
+        height: 30px;
+        margin-bottom: 10px;
+        min-width: 300px;
+    }
+
+    .tabHeaderWrap a {
+        float: left;
+        display: block;
+        margin-right: 1px;
+        background: #ccc;
+        color: #666;
+        margin-top: 2px;
+        height: 28px;
+        line-height: 30px;
+        padding: 0 10px;
+        border-radius: 5px 5px 0 0;
+        text-decoration: none
+    }
+
+    .tabHeaderWrap a:hover {
+        background: #eee;
+        text-decoration: none;
+    }
+
+    .tabHeaderWrap a.on {
+        border: 2px solid #272D66;
+        border-bottom: none;
+        background: #fff;
+        color: #000;
+        font-weight: bold;
+        height: 30px;
+        margin-top: 0;
+        text-decoration: none
+        }
+
+/**************** Tab Control 영역 끝 *****************/
+
+
+
+
+
+
+
+
+.subTabOff {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 32px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #69696c;
+    font-weight: 600;
+    border: 2px solid #ececec;
+    border-radius:36px;
+  
+}
+
+    .subTabOff:active {
+        /*position: relative;
+        top: 3px*/
+    }
+
+    .subTabOff:hover {
+        text-decoration: none;
+        color: #69696c;
+        border: 2px solid #a5cfef;
+    }
+
+
+.subTabOn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 32px;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #428bca;
+    font-weight: 600;
+    border: 2px solid #428bca;
+    border-radius: 36px;
+}
+
+    .subTabOn:active {
+        /*position: relative;
+        top: 3px*/
+    }
+
+    .subTabOn:hover {
+        text-decoration: none;
+        color: #3d3a3a;
+    }
+/* 탭버튼 css 끝*/
+
+/* 페이지 타이틀 css시작 */
+.img-title {
+    margin-right: 5px;
+}
+
+.p-title-mainsentence {
+    font-family: YDIYGO130-KSCpc-EUC-H;
+    color: #69696c;
+    font-size: 20px;
+    font-weight: bold
+}
+
+.span-title-subsentence {
+    font-family: Dotum;
+    color: #626363;
+    font-size: 12px;
+    font-weight: normal
+}
+/* 페이지 타이틀 css끝 */
+
+
+/* input  css 시작 */
+
+.input-qty {
+    border: 1px solid #adafb4;
+    float: left;
+    position: relative;
+    width: 57px;
+    text-align: center;
+    height: 30px;
+    display: block;
+}
+
+    .input-qty input[type=number], .input-qty input[type=text] {
+        position: absolute;
+        left: 1px;
+        top: 0;
+        width: 43px;
+        height: 28px;
+        padding: 0 0 1px 3px;
+        text-align: center;
+        border: none;
+        border-right: 1px solid #adafb4;
+        z-index: 10;
+        box-sizing: border-box;
+    }
+
+        .input-qty input[type=number]::-webkit-inner-spin-button,
+        .input-qty input[type=number] ::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+    .input-qty .input-arrow-up {
+        position: absolute;
+        right: 1px;
+        top: 0;
+        display: block;
+        height: 15px;
+        text-align: center;
+        border-bottom: 1px solid #adafb4;
+    }
+
+    .input-qty .input-arrow-down {
+        position: absolute;
+        bottom: -1px;
+        right: 1px;
+        display: block;
+        height: 14px;
+    }
+
+    .input-qty .imgarrowup {
+        margin-bottom: 3px;
+        cursor:pointer;
+    }
+
+    .input-qty .imgarrowdown {
+        margin-top: -4px;
+        cursor: pointer;
+    }
+/* input  css 끝 */
+
+
+/* Default 페이지 협력사 시작 */
+
+#divPartnersContent {
+    height: auto;
+    overflow: hidden;
+    width: 1256px;
+    margin: 30px auto 0 auto;
+}
+    #divPartnersContent > h3 {
+        font-size: 25px;
+        text-align: center;
+        font-family: YDIYGO130-KSCpc-EUC-H;
+    }
+
+    #divPartnersContent > ul {
+        width: 100%;
+        padding-left: 0;
+        overflow: hidden;
+        border-top: 1px #d9d9d9 solid;
+        border-bottom: 1px #d9d9d9 solid;
+        padding:10px 0;
+    }
+
+        #divPartnersContent > ul > li {
+            float: left;
+            width: 209px;
+            background-color: #fff;
+            box-sizing: border-box;
+            border: 4px solid #fff;
+        }
+
+        
+            #divPartnersContent > ul > li > a {
+                display: block;
+                text-align:center;
+            }
+
+            #divPartnersContent > ul > li:hover {
+                border: 4px solid #e0e9f5;
+            }
+
+                #divPartnersContent > ul > li > a > img {
+                    width: 160px;
+                    height: 53px;
+                    cursor: pointer;
+                    padding: 7px 7px 7px 7px;
+                }
+/* Default 페이지 협력사 끝 */
+
+
+/*Default페이지 중앙 배너 시작*/
+
+#defaultMiddleBanner {
+    height: auto;
+    overflow: hidden;
+    width: 1260px;
+    margin: 0 auto;
+    margin-top:30px;
+}
+
+    #defaultMiddleBanner > ul.main-middle-banner {
+        padding-left: 0px;
+        margin-left: -72px;
+    }
+
+    #defaultMiddleBanner > ul > li {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: 374px;
+        height: 150px;
+        margin: 0 0 18px 69px;
+    }
+
+    #defaultMiddleBanner > ul.main-middle-banner > li.center {
+        padding: 0 73px 0 73px;
+    }
+    #defaultMiddleBanner > ul > li > a {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+        #defaultMiddleBanner > ul > li > a > img {
+            width: 374px;
+            height: 150px;
+            transition: 0.3s ease-in-out;
+            -webkit-transition: 0.3s ease-in-out;
+        }
+
+
+        #defaultMiddleBanner > ul > li > a .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 374px;
+            height: 150px;
+            background-color: rgba(0,0,0,0.5);
+            filter: alpha(opacity=0);
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            opacity: 0;
+        }
+
+     #defaultMiddleBanner > ul > li > a .overlay:hover {
+        opacity:1;
+     }
+
+    #defaultMiddleBanner > ul > li:hover img {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+
+    #defaultMiddleBanner > ul > li > a .info {
+        text-decoration: none;
+        display: inline-block;
+        text-transform: uppercase;
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: transparent;
+        filter: alpha(opacity=0);
+        margin: 55px 105px 0;
+        padding: 11px 14px;
+        width: 170px;
+        height: 40px;
+        text-align: center;
+    }
+
+    #defaultMiddleBanner > ul > li > a .info:hover {
+        opacity: 1;
+        box-shadow: 0 0 5px #fff;
+    }
+
+    #defaultMiddleBanner > h3 {
+        font-size: 25px;
+        text-align: center;
+        font-family: YDIYGO130-KSCpc-EUC-H;
+    }
+
+/*Default페이지 중앙 배너 끝*/
+
+.tbl_search {
+    width: 100%;
+    min-width: 100%;
+    border-collapse: separate;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+
+    .tbl_search th {
+        border-left: none;
+        background-color: #f4f4f4;
+        border-bottom: 1px solid #aaa;
+        padding: 15px 0;
+        font-weight:bold;
+        color: #333333;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .tbl_search td {
+        border-left: 1px solid #eee;
+        border-bottom: 1px solid #aaa;
+        background: #fff;
+        padding: 6px 10px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .tbl_search thead {
+        height: 40px;
+    }
+
+    .tbl_search select > input[type=text] {
+        height: 26px;
+    }
+    .tbl_search input[type=text].calendar {
+        width: 150px;
+        height: 24px;
+        border: 1px solid #a2a2a2;
+    }
+    .tbl_search input[type=text].input-drop {
+        width: 99%;
+        height: 24px;
+        border: 1px solid #a2a2a2;
+    }
+
+    .tbl_search span {
+        font-size:13px;
+    }
+    /*테이블 헤더가 1줄일경우*/
+.tbl_main {
+    width: 100%;
+    min-width: 100%;
+    border-collapse: separate;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+    .tbl_main th {
+        border-left: none;
+        background-color: #f4f4f4;
+        border-bottom: 1px solid #aaa;
+        padding: 15px 0;
+        font-weight: bold;
+        color: #333333;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .tbl_main td {
+        border-bottom: 1px solid #aaa;
+        background: #fff;
+        padding: 10px 10px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+        .tbl_main td a {
+            font-size:13px;
+        }
+
+        .align-left {
+            text-align: left !important;
+        }
+        .tbl_main span {
+            font-size:13px;
+        }
+    .border-right {
+       border-right: 1px solid #aaa;
+    }
+
+.tbl_main a {
+    color:#333;
+}
+    .tbl_main a:hover {
+        text-decoration:underline;
+    }
+    /*테이블 헤더가 2줄일경우 */
+    .tbl_main2 th {
+        padding: 9px 0;
+    }
+    .tbl_main2 td {
+        font-size:12px;
+    }
+        /*인증상품 관련 시작*/
+        .goods_confirmMark {
+            float: right
+        }
+
+.spanCert {
+    cursor: default;
+    font-weight: bold;
+    color: #050099;
+}
+/*인증상품 관련 끝*/
+
+
+.emptyDiv-l {
+    padding-bottom: 130px
+}
+
+.emptyDiv-m{
+
+    padding-bottom : 80px
+}
+
+.emptyDiv-s {
+    
+    padding-bottom: 20px
+}
+
+/****************  Button Style 시작 *****************/
+
+.commonBtn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ffffff;
+    padding: 0px;
+    background-color: #3e3e46;
+    font-weight: 600;
+    border: none;
+}
+
+    .commonBtn:active {
+        /*position: relative;
+        top: 3px*/
+    }
+
+    .commonBtn:hover {
+        background-color: #000000;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+.subBtn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0px;
+    background-color: #ffffff;
+    color: #69696b;
+    font-weight: 600;
+    border: 1px solid #69696b;
+}
+
+    .subBtn:active {
+        /*position: relative;
+        top: 3px*/
+    }
+
+    .subBtn:hover {
+        background-color: #69696b;
+        color: #ffffff;
+        text-decoration: none;
+        border: 1px solid #69696b;
+    }
+
+
+.listBtn {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #69696b;
+    padding: 0px;
+    font-weight: 600;
+    border: 1px solid #69696b;
+
+}
+
+    .listBtn:active {
+        position: relative;
+        top: 3px
+    }
+
+    .listBtn:hover {
+        background-color: #69696b;
+        color: #ffffff;
+        text-decoration: none;
+        border: 1px solid #69696b;
+    }
+
+
+.listBtn2 {
+    text-decoration: none;
+    font-family: Dotum;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #69696b;
+    padding: 0px;
+    background-color: #ffffff;
+    font-weight: 600;
+    border: 1px solid #69696b;
+}
+
+    .listBtn2:active {
+        position: relative;
+        top: 3px
+    }
+
+    .listBtn2:hover {
+        background-color: #69696b;
+        color: #ffffff;
+        text-decoration: none;
+        border: none;
+    }
+/**************** Button Style 끝 *****************/
+
+
+.left-menu-wrap {
+    width:150px;
+    margin-top:64px;
+    position: absolute;
+    margin-left: -795px;
+    left: 50%;
+    top: 208px;
+}
+
+
+        .left-menu-wrap dl.first {
+            border: none;
+        }
+
+    .left-menu-wrap dl dt {
+        padding: 25px 0 25px 0;
+        text-align: center;
+        border-top: 3px solid #3e3e46;
+    }
+
+            .left-menu-wrap dl dt strong {
+                font-weight: bold;
+                color: #252525;
+                font-size:30px;
+            }
+
+    .left-menu-wrap dl dd {
+        display: block;
+        font-size: 20px;
+        text-indent: 15px;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+        .left-menu-wrap dl dd.active {
+            background-color: #3e3e46;
+        }
+                .left-menu-wrap dl dd.active a {
+                    color: #ffffff !important;
+                   
+                }
+
+        .left-menu-wrap dl dd a {
+            display: block;
+            color: #666;
+            font-size: 14px;
+            line-height: 40px;
+            height: 40px;
+        }
+
+
+/**************** 회원가입 제목 타이틀  *****************/
+.member_sub {
+    color: #ee2248;
+    font-size: 18px;
+    margin: 50px 0 0 5px;
+}
+
+.pad_right { /*버튼사이 마진값*/
+    margin-right: 10px;
+}
+
+.pad_left { /*버튼사이 마진값*/
+    margin-left: 10px;
+}
+
+/**************** 회사소개(로그인 화면) *****************/
+.header {
+    position: fixed;
+    border-bottom: 1px solid #565555;
+    background-image: url(../Images/Introduce/top_bg.png);
+    background-size: cover;
+    width:100%;
+    height:110px;
+}
+
+    .header > div {
+        width: 1256px;
+        height: 110px;
+        margin: 0 auto;
+    }
+    .header .text {
+        margin-top:23px;
+    }
+
+    .header .head_logo {
+        float: right;
+        margin-top: 10px;
+    }
+
+    .tab {
+        position: fixed;
+        z-index: 1;
+        border-top: 3px solid #3e3e46;
+        background-color: #fff;
+        width: 180px;
+        margin: 0 0 0 -820px;
+        top:220px;
+        left: 50%;
+        text-align: center;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    .tab h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .tab button {
+        display: block;
+        background-color: #fff;
+        color: black;
+        padding: 12px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 15px;
+        border-top: 1px solid #eaeaea;
+    }
+
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #3e3e46;
+            color: #fff;
+        }
+
+    .tab .jump_main {
+        font-size: 12px;
+        position: absolute;
+        bottom: -180px;
+        left:20px;
+        border-top: none;
+        text-align: center;
+        line-height: 125px;
+        border-radius: 80px;
+        background: #53abcd;
+        padding: 0 8px;
+        width: auto;
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: -0.5px;
+    }
+
+.tabcontent {
+    width: 1256px;
+    margin:0 auto;
+    height: auto;
+    display: none;
+    padding-top:125px;
+}
+
+    .tabcontent h2 {
+        font-size:30px;
+    }
+
+    .tabcontent.on {
+        display: block;
+    }
+
+    .tabcontent img {
+        width: 100%;
+    }
+
+.tab-content {
+    width: 1256px;
+    height: auto;
+    overflow: auto;
+}
+
+.root_daum_roughmap .wrap_btn_zoom {
+    display: none;
+}
+
+/*로딩패널*/
+.wrap-loading-wrap {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255,.65);
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+    .wrap-loading-wrap .wrap-loading {
+        text-align: center;
+        top: 35%;
+        position: relative;
+    }
+
+        .wrap-loading-wrap .wrap-loading img {
+            width: 80px;
+            height: 80px
+        }
+/*로딩패널*/
+
+
+.bt-align-div {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

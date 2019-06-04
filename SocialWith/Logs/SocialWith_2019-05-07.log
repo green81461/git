@@ -1,0 +1,288 @@
+2019-05-07 10:58:51.3691 | 16292 | iisexpress | ERROR | SocialWith.Data.Dao.DAO | SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor : 193 | ErrorMessage | Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04063: package body "C##SOCIALW.PKG_TYPE"에 오류가 있습니다
+ORA-06508: PL/SQL: 호출 중인 프로그램 단위를 찾을 수 없습니다(: "C##SOCIALW.PKG_TYPE").
+ORA-06512:  1행
+   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 187   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 187
+2019-05-07 10:58:51.4229 | 16292 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : 'System.Web.HttpUnhandledException' 형식의 예외가 Throw되었습니다.
+ Stack Trace    :    위치: System.Web.UI.Page.HandleError(Exception e)
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest()
+   위치: System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   위치: System.Web.UI.Page.ProcessRequest(HttpContext context)
+   위치: ASP.admin_company_bordertypemain_aspx.ProcessRequest(HttpContext context) 파일 c:\Users\user\AppData\Local\Temp\Temporary ASP.NET Files\vs\2e97ac09\d872c0e4\App_Web_z0xaa3wc.10.cs:줄 0
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04063: package body "C##SOCIALW.PKG_TYPE"에 오류가 있습니다
+ORA-06508: PL/SQL: 호출 중인 프로그램 단위를 찾을 수 없습니다(: "C##SOCIALW.PKG_TYPE").
+ORA-06512:  1행
+   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 195
+   위치: SocialWith.Biz.Comapny.CompanyService.GetBorderTypeList(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Company\CompanyService.cs:줄 696
+   위치: Admin_Company_BorderTypeMain.BorderTypeDataBind(Int32 page) 파일 d:\Svn\SocialWith\Admin\Company\BorderTypeMain.aspx.cs:줄 55
+   위치: Admin_Company_BorderTypeMain.DefaultDataBind() 파일 d:\Svn\SocialWith\Admin\Company\BorderTypeMain.aspx.cs:줄 41
+   위치: Admin_Company_BorderTypeMain.Page_Load(Object sender, EventArgs e) 파일 d:\Svn\SocialWith\Admin\Company\BorderTypeMain.aspx.cs:줄 24
+   위치: System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   위치: System.EventHandler.Invoke(Object sender, EventArgs e)
+   위치: System.Web.UI.Control.OnLoad(EventArgs e)
+   위치: System.Web.UI.Control.LoadRecursive()
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) | 
+2019-05-07 13:11:30.2452 | 16292 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : d:\Svn\SocialWith\Handler\ExcelHandler.ashx(591): error CS1061: 'SocialWith.Biz.Excel.ExcelService'에 'GetProfitListExcel'에 대한 정의가 없고 'SocialWith.Biz.Excel.ExcelService' 형식의 첫 번째 인수를 허용하는 확장 메서드 'GetProfitListExcel'이(가) 없습니다. using 지시문 또는 어셈블리 참조가 있는지 확인하십시오.
+ Stack Trace    :    위치: System.Web.Compilation.AssemblyBuilder.Compile()
+   위치: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   위치: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-05-07 13:13:18.4414 | 16292 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : d:\Svn\SocialWith\Handler\ExcelHandler.ashx(591): error CS1061: 'SocialWith.Biz.Excel.ExcelService'에 'GetProfitListExcel'에 대한 정의가 없고 'SocialWith.Biz.Excel.ExcelService' 형식의 첫 번째 인수를 허용하는 확장 메서드 'GetProfitListExcel'이(가) 없습니다. using 지시문 또는 어셈블리 참조가 있는지 확인하십시오.
+ Stack Trace    :    위치: System.Web.Compilation.AssemblyBuilder.Compile()
+   위치: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   위치: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-05-07 13:27:29.4601 | 16292 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : d:\Svn\SocialWith\Handler\ExcelHandler.ashx(590): error CS1061: 'SocialWith.Biz.Excel.ExcelService'에 'GetProfitListExcel'에 대한 정의가 없고 'SocialWith.Biz.Excel.ExcelService' 형식의 첫 번째 인수를 허용하는 확장 메서드 'GetProfitListExcel'이(가) 없습니다. using 지시문 또는 어셈블리 참조가 있는지 확인하십시오.
+ Stack Trace    :    위치: System.Web.Compilation.AssemblyBuilder.Compile()
+   위치: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   위치: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-05-07 14:42:26.7645 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:42:26.8173 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:42:26.8173 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:42:26.8173 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:42:26.8173 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:42:26.8173 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:42:26.8173 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:42:26.8173 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:42:26.8173 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:42:26.8173 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:42:26.8173 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:42:26.8173 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:43:10.0839 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 591 |  | 
+2019-05-07 14:44:13.1243 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:44:13.1278 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:44:13.1278 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:44:13.1278 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:44:13.1278 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:44:13.1278 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:44:13.1278 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:44:13.1278 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:44:13.1278 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:44:13.1278 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:44:13.1278 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:44:13.1278 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | System.Data.DataRow | 
+2019-05-07 14:45:35.9642 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | 무한상사 사회적협동조합 | 
+2019-05-07 14:45:35.9642 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | 무한상사 사회적협동조합 | 
+2019-05-07 14:45:35.9642 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | 무한상사 사회적협동조합 | 
+2019-05-07 14:45:35.9642 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | 무한상사 사회적협동조합 | 
+2019-05-07 14:45:35.9642 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | 무한상사 사회적협동조합 | 
+2019-05-07 14:45:35.9709 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | 무한상사 사회적협동조합 | 
+2019-05-07 14:45:35.9709 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | 무한상사 사회적협동조합 | 
+2019-05-07 14:45:35.9709 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | 무한상사 사회적협동조합 | 
+2019-05-07 14:45:35.9709 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | 무한상사 사회적협동조합 | 
+2019-05-07 14:45:35.9709 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | 무한상사 사회적협동조합 | 
+2019-05-07 14:45:35.9709 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | 무한상사 사회적협동조합 | 
+2019-05-07 14:45:35.9709 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 593 | 무한상사 사회적협동조합 | 
+2019-05-07 15:11:29.1664 | 16292 | iisexpress | ERROR | SocialWith.Data.Dao.DAO | SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor : 193 | ErrorMessage | Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04063: package body "C##SOCIALW.PKG_TYPE"에 오류가 있습니다
+ORA-06508: PL/SQL: 호출 중인 프로그램 단위를 찾을 수 없습니다(: "C##SOCIALW.PKG_TYPE").
+ORA-06512:  1행
+   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 187   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 187
+2019-05-07 15:11:29.2033 | 16292 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : 'System.Web.HttpUnhandledException' 형식의 예외가 Throw되었습니다.
+ Stack Trace    :    위치: System.Web.UI.Page.HandleError(Exception e)
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest()
+   위치: System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   위치: System.Web.UI.Page.ProcessRequest(HttpContext context)
+   위치: ASP.admin_company_bordertypemain_aspx.ProcessRequest(HttpContext context) 파일 c:\Users\user\AppData\Local\Temp\Temporary ASP.NET Files\vs\2e97ac09\d872c0e4\App_Web_qcwgsobb.20.cs:줄 0
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04063: package body "C##SOCIALW.PKG_TYPE"에 오류가 있습니다
+ORA-06508: PL/SQL: 호출 중인 프로그램 단위를 찾을 수 없습니다(: "C##SOCIALW.PKG_TYPE").
+ORA-06512:  1행
+   위치: OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   위치: OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   위치: Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   위치: Oracle.ManagedDataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   위치: System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   위치: SocialWith.Data.DB_Helper.ExecuteDataTableByProcedureCursor(String Query, String cursor, OracleParameter[] values) 파일 D:\Svn\SocialWith.Data\DB_Helper.cs:줄 368
+   위치: SocialWith.Data.Dao.DAO.GetDataTableByProcedureCursor(String proc, Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Data\Dao\Dao.cs:줄 195
+   위치: SocialWith.Biz.Comapny.CompanyService.GetBorderTypeList(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Company\CompanyService.cs:줄 696
+   위치: Admin_Company_BorderTypeMain.BorderTypeDataBind(Int32 page) 파일 d:\Svn\SocialWith\Admin\Company\BorderTypeMain.aspx.cs:줄 55
+   위치: Admin_Company_BorderTypeMain.DefaultDataBind() 파일 d:\Svn\SocialWith\Admin\Company\BorderTypeMain.aspx.cs:줄 41
+   위치: Admin_Company_BorderTypeMain.Page_Load(Object sender, EventArgs e) 파일 d:\Svn\SocialWith\Admin\Company\BorderTypeMain.aspx.cs:줄 24
+   위치: System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   위치: System.EventHandler.Invoke(Object sender, EventArgs e)
+   위치: System.Web.UI.Control.OnLoad(EventArgs e)
+   위치: System.Web.UI.Control.LoadRecursive()
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) | 
+2019-05-07 15:31:02.2844 | 16292 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Data
+ 에러 메시지    : 입력 문자열의 형식이 잘못되었습니다.<32840
+(가상계좌(유동))>을(를) GOODSSALEPRICEVAT 열에 저장할 수 없습니다. Int64 형식이 필요합니다.
+ Stack Trace    :    위치: System.Data.DataColumn.set_Item(Int32 record, Object value)
+   위치: System.Data.DataRow.set_Item(DataColumn column, Object value)
+   위치: System.Data.DataRow.set_Item(String columnName, Object value)
+   위치: FileDownload.ProfitListExcelDownLoad(HttpContext context) 파일 d:\Svn\SocialWith\Handler\ExcelHandler.ashx:줄 595
+   위치: FileDownload.ProcessRequest(HttpContext context) 파일 d:\Svn\SocialWith\Handler\ExcelHandler.ashx:줄 46
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : System.FormatException: 입력 문자열의 형식이 잘못되었습니다.
+   위치: System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   위치: System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   위치: System.String.System.IConvertible.ToInt64(IFormatProvider provider)
+   위치: System.Data.Common.Int64Storage.Set(Int32 record, Object value)
+   위치: System.Data.DataColumn.set_Item(Int32 record, Object value) | 
+2019-05-07 15:32:32.8234 | 16292 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Data
+ 에러 메시지    : 입력 문자열의 형식이 잘못되었습니다.<32840
+(가상계좌(유동))>을(를) GOODSSALEPRICEVAT 열에 저장할 수 없습니다. Int64 형식이 필요합니다.
+ Stack Trace    :    위치: System.Data.DataColumn.set_Item(Int32 record, Object value)
+   위치: System.Data.DataRow.set_Item(DataColumn column, Object value)
+   위치: System.Data.DataRow.set_Item(String columnName, Object value)
+   위치: FileDownload.ProfitListExcelDownLoad(HttpContext context) 파일 d:\Svn\SocialWith\Handler\ExcelHandler.ashx:줄 595
+   위치: FileDownload.ProcessRequest(HttpContext context) 파일 d:\Svn\SocialWith\Handler\ExcelHandler.ashx:줄 46
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : System.FormatException: 입력 문자열의 형식이 잘못되었습니다.
+   위치: System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   위치: System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   위치: System.String.System.IConvertible.ToInt64(IFormatProvider provider)
+   위치: System.Data.Common.Int64Storage.Set(Int32 record, Object value)
+   위치: System.Data.DataColumn.set_Item(Int32 record, Object value) | 
+2019-05-07 17:00:09.2694 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 594 | Y | 
+2019-05-07 17:00:09.2973 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 594 | Y | 
+2019-05-07 17:00:09.2973 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 594 | Y | 
+2019-05-07 17:00:09.2973 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 594 | Y | 
+2019-05-07 17:00:09.2993 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 594 | Y | 
+2019-05-07 17:00:09.2993 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 594 | Y | 
+2019-05-07 17:00:09.2993 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 594 | Y | 
+2019-05-07 17:00:09.2993 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 594 | Y | 
+2019-05-07 17:00:09.2993 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 594 | Y | 
+2019-05-07 17:00:09.2993 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 594 | Y | 
+2019-05-07 17:00:09.2993 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 594 | Y | 
+2019-05-07 17:00:09.2993 | 16292 | iisexpress | DEBUG | FileDownload | FileDownload.ProfitListExcelDownLoad : 594 | Y | 
+2019-05-07 17:15:56.0209 | 16292 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Data
+ 에러 메시지    : Column 'GOODSRMPPRICEVAT'을(를) null로 설정할 수 없습니다. 대신 DBNull을 사용하십시오.
+ Stack Trace    :    위치: System.Data.DataRow.set_Item(DataColumn column, Object value)
+   위치: System.Data.DataRow.set_Item(String columnName, Object value)
+   위치: FileDownload.ProfitListExcelDownLoad(HttpContext context) 파일 d:\Svn\SocialWith\Handler\ExcelHandler.ashx:줄 604
+   위치: FileDownload.ProcessRequest(HttpContext context) 파일 d:\Svn\SocialWith\Handler\ExcelHandler.ashx:줄 46
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-05-07 17:16:32.9219 | 16292 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Web
+ 에러 메시지    : d:\Svn\SocialWith\Handler\ExcelHandler.ashx(604): error CS0118: 'System.DBNull'은(는) '형식'이지만 '변수'처럼 사용됩니다.
+ Stack Trace    :    위치: System.Web.Compilation.AssemblyBuilder.Compile()
+   위치: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   위치: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   위치: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   위치: System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   위치: System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   위치: System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 
+2019-05-07 17:18:06.4504 | 16292 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Data
+ 에러 메시지    : 입력 문자열의 형식이 잘못되었습니다.<>을(를) GOODSRMPPRICEVAT 열에 저장할 수 없습니다. Decimal 형식이 필요합니다.
+ Stack Trace    :    위치: System.Data.DataColumn.set_Item(Int32 record, Object value)
+   위치: System.Data.DataRow.set_Item(DataColumn column, Object value)
+   위치: System.Data.DataRow.set_Item(String columnName, Object value)
+   위치: FileDownload.ProfitListExcelDownLoad(HttpContext context) 파일 d:\Svn\SocialWith\Handler\ExcelHandler.ashx:줄 604
+   위치: FileDownload.ProcessRequest(HttpContext context) 파일 d:\Svn\SocialWith\Handler\ExcelHandler.ashx:줄 46
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : System.FormatException: 입력 문자열의 형식이 잘못되었습니다.
+   위치: System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   위치: System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   위치: System.Convert.ToDecimal(String value, IFormatProvider provider)
+   위치: System.String.System.IConvertible.ToDecimal(IFormatProvider provider)
+   위치: System.Data.Common.DecimalStorage.Set(Int32 record, Object value)
+   위치: System.Data.DataColumn.set_Item(Int32 record, Object value) | 
+2019-05-07 17:21:37.5573 | 16292 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : System.Data
+ 에러 메시지    : 입력 문자열의 형식이 잘못되었습니다.<>을(를) GOODSRMPPRICEVAT 열에 저장할 수 없습니다. Decimal 형식이 필요합니다.
+ Stack Trace    :    위치: System.Data.DataColumn.set_Item(Int32 record, Object value)
+   위치: System.Data.DataRow.set_Item(DataColumn column, Object value)
+   위치: System.Data.DataRow.set_Item(String columnName, Object value)
+   위치: FileDownload.ProfitListExcelDownLoad(HttpContext context) 파일 d:\Svn\SocialWith\Handler\ExcelHandler.ashx:줄 604
+   위치: FileDownload.ProcessRequest(HttpContext context) 파일 d:\Svn\SocialWith\Handler\ExcelHandler.ashx:줄 46
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      : System.FormatException: 입력 문자열의 형식이 잘못되었습니다.
+   위치: System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   위치: System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   위치: System.Convert.ToDecimal(String value, IFormatProvider provider)
+   위치: System.String.System.IConvertible.ToDecimal(IFormatProvider provider)
+   위치: System.Data.Common.DecimalStorage.Set(Int32 record, Object value)
+   위치: System.Data.DataColumn.set_Item(Int32 record, Object value) | 

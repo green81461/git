@@ -1,0 +1,104 @@
+﻿
+/*btnTab-div, left-money-div ,totalCost-div 포함하는 전체 div*/
+    .menuTab-div {
+        width:100%;
+        height:50px;
+        margin-bottom:7px;
+        margin-top:35px;
+    
+
+  
+}
+
+
+ /*장바구니 상단 5개 버튼 탭*/
+    .btnTab-div {
+        margin-left:-40px;
+        float:left;		
+		margin-top:9px;
+		height:30px;
+}
+
+	.btnTab-div ul{float:left}
+
+	.btnTab-div ul li{float:left; margin-right:1px;}
+
+@media screen and (-webkit-min-device-pixel-ratio:1)  
+{
+	.menuTab-div .btnTab-div {margin-left:-40px; float:left; margin-top:-6px;height:30px;}
+	.menuTab-div .btnTab-div ul{float:left}
+	
+} 
+
+
+/* 잔여예상, 총주문금액 div*/
+    .left-money-div {
+         height:20px; width:auto; font-size:14px; font-weight:bold; color:#626363 
+}
+
+.left-money-div2 {
+       height:20px; width:auto; font-size:14px; font-weight:bold; color:#626363; margin-top:5px;
+}
+
+
+ .totalCost-div{
+		height:25px; width:auto; margin-top:12px; text-align:right; font-size:16px; float:right;
+	
+ }
+
+
+
+.droplist{ height:25px;}
+
+
+/*총주문금액 미니 div*/
+.totalCost-div {
+    color: #ee2248;
+    margin-top: 2px;
+    border-bottom:1px solid #aaa;
+    padding-bottom:34px;
+}
+
+/*장바구니 테이블 th 전경색지정*/
+.cart-table th {
+    border-left: none;
+    border-bottom: 1px solid #aaa;
+    background: #eef7fb;
+    padding: 10px 0;
+    font-weight: 600;
+    color: #333333;
+}
+
+/*텍스트박스 수량*/
+    .unit-textbox {
+        border:1px solid #a2a2a2;
+        height:25px;
+        text-align:center;
+}
+    
+
+/*다음 버튼 div*/
+    .bottom-btn-div {
+        margin-top:30px;
+        text-align:right;    
+
+}
+
+/*다음버튼 */
+     .bottom-btn-div a {
+        text-decoration:none;
+        cursor:pointer;
+ }
+
+
+.cart-goodscompareprice-popuptext {
+    font-size: 13px;
+    font-weight: bold;
+    color: red;
+    padding-left: 10px
+}
+
+.currentPay {
+    color: #ee2248;
+    padding-bottom:8px;
+}

@@ -1,0 +1,88 @@
+2019-05-02 13:53:13.7683 | 11308 | iisexpress | DEBUG | OrderHandler | OrderHandler.GetOrderDtlInfo_AllUser : 1256 | odrCodeNo : ON-190321-1 | 
+2019-05-02 13:53:13.8041 | 11308 | iisexpress | DEBUG | OrderHandler | OrderHandler.GetOrderDtlInfo_AllUser : 1257 | odrStat : 422 | 
+2019-05-02 14:13:33.9354 | 11308 | iisexpress | ERROR | SocialWith.Biz.Pay.PayService | SocialWith.Biz.Pay.PayService.GetSalesExactcal : 2053 | ErrorMessage | System.ArgumentException: 'SUPPLYJUNGI' 열은  테이블에 속하지 않습니다.
+   위치: System.Data.DataRow.GetDataColumn(String columnName)
+   위치: System.Data.DataRow.get_Item(String columnName)
+   위치: SocialWith.Biz.Pay.PayService.<>c.<GetSalesExactcal>b__60_0(DataRow dr) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2019
+   위치: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   위치: System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   위치: System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   위치: SocialWith.Biz.Pay.PayService.GetSalesExactcal(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2018   위치: System.Data.DataRow.GetDataColumn(String columnName)
+   위치: System.Data.DataRow.get_Item(String columnName)
+   위치: SocialWith.Biz.Pay.PayService.<>c.<GetSalesExactcal>b__60_0(DataRow dr) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2019
+   위치: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   위치: System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   위치: System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   위치: SocialWith.Biz.Pay.PayService.GetSalesExactcal(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2018
+2019-05-02 14:13:40.1938 | 11308 | iisexpress | ERROR | SocialWith.Biz.Pay.PayService | SocialWith.Biz.Pay.PayService.GetSalesExactcal : 2053 | ErrorMessage | System.ArgumentException: 'SUPPLYJUNGI' 열은  테이블에 속하지 않습니다.
+   위치: System.Data.DataRow.GetDataColumn(String columnName)
+   위치: System.Data.DataRow.get_Item(String columnName)
+   위치: SocialWith.Biz.Pay.PayService.<>c.<GetSalesExactcal>b__60_0(DataRow dr) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2019
+   위치: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   위치: System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   위치: System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   위치: SocialWith.Biz.Pay.PayService.GetSalesExactcal(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2018   위치: System.Data.DataRow.GetDataColumn(String columnName)
+   위치: System.Data.DataRow.get_Item(String columnName)
+   위치: SocialWith.Biz.Pay.PayService.<>c.<GetSalesExactcal>b__60_0(DataRow dr) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2019
+   위치: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   위치: System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   위치: System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   위치: SocialWith.Biz.Pay.PayService.GetSalesExactcal(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2018
+2019-05-02 14:14:03.3048 | 11308 | iisexpress | ERROR | SocialWith.Biz.Pay.PayService | SocialWith.Biz.Pay.PayService.GetSalesExactcal : 2053 | ErrorMessage | System.ArgumentException: 'SUPPLYJUNGI' 열은  테이블에 속하지 않습니다.
+   위치: System.Data.DataRow.GetDataColumn(String columnName)
+   위치: System.Data.DataRow.get_Item(String columnName)
+   위치: SocialWith.Biz.Pay.PayService.<>c.<GetSalesExactcal>b__60_0(DataRow dr) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2019
+   위치: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   위치: System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   위치: System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   위치: SocialWith.Biz.Pay.PayService.GetSalesExactcal(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2018   위치: System.Data.DataRow.GetDataColumn(String columnName)
+   위치: System.Data.DataRow.get_Item(String columnName)
+   위치: SocialWith.Biz.Pay.PayService.<>c.<GetSalesExactcal>b__60_0(DataRow dr) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2019
+   위치: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   위치: System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   위치: System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   위치: SocialWith.Biz.Pay.PayService.GetSalesExactcal(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2018
+2019-05-02 14:14:03.8231 | 11308 | iisexpress | ERROR | SocialWith.Biz.Pay.PayService | SocialWith.Biz.Pay.PayService.GetSalesExactcal : 2053 | ErrorMessage | System.ArgumentException: 'SUPPLYJUNGI' 열은  테이블에 속하지 않습니다.
+   위치: System.Data.DataRow.GetDataColumn(String columnName)
+   위치: System.Data.DataRow.get_Item(String columnName)
+   위치: SocialWith.Biz.Pay.PayService.<>c.<GetSalesExactcal>b__60_0(DataRow dr) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2019
+   위치: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   위치: System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   위치: System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   위치: SocialWith.Biz.Pay.PayService.GetSalesExactcal(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2018   위치: System.Data.DataRow.GetDataColumn(String columnName)
+   위치: System.Data.DataRow.get_Item(String columnName)
+   위치: SocialWith.Biz.Pay.PayService.<>c.<GetSalesExactcal>b__60_0(DataRow dr) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2019
+   위치: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   위치: System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   위치: System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   위치: SocialWith.Biz.Pay.PayService.GetSalesExactcal(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2018
+2019-05-02 14:14:24.5072 | 11308 | iisexpress | ERROR | SocialWith.Biz.Pay.PayService | SocialWith.Biz.Pay.PayService.GetSalesExactcal : 2053 | ErrorMessage | System.ArgumentException: 'SUPPLYJUNGI' 열은  테이블에 속하지 않습니다.
+   위치: System.Data.DataRow.GetDataColumn(String columnName)
+   위치: System.Data.DataRow.get_Item(String columnName)
+   위치: SocialWith.Biz.Pay.PayService.<>c.<GetSalesExactcal>b__60_0(DataRow dr) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2019
+   위치: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   위치: System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   위치: System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   위치: SocialWith.Biz.Pay.PayService.GetSalesExactcal(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2018   위치: System.Data.DataRow.GetDataColumn(String columnName)
+   위치: System.Data.DataRow.get_Item(String columnName)
+   위치: SocialWith.Biz.Pay.PayService.<>c.<GetSalesExactcal>b__60_0(DataRow dr) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2019
+   위치: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   위치: System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   위치: System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   위치: SocialWith.Biz.Pay.PayService.GetSalesExactcal(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2018
+2019-05-02 14:14:26.7660 | 11308 | iisexpress | ERROR | SocialWith.Biz.Pay.PayService | SocialWith.Biz.Pay.PayService.GetSalesExactcal : 2053 | ErrorMessage | System.ArgumentException: 'SUPPLYJUNGI' 열은  테이블에 속하지 않습니다.
+   위치: System.Data.DataRow.GetDataColumn(String columnName)
+   위치: System.Data.DataRow.get_Item(String columnName)
+   위치: SocialWith.Biz.Pay.PayService.<>c.<GetSalesExactcal>b__60_0(DataRow dr) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2019
+   위치: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   위치: System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   위치: System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   위치: SocialWith.Biz.Pay.PayService.GetSalesExactcal(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2018   위치: System.Data.DataRow.GetDataColumn(String columnName)
+   위치: System.Data.DataRow.get_Item(String columnName)
+   위치: SocialWith.Biz.Pay.PayService.<>c.<GetSalesExactcal>b__60_0(DataRow dr) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2019
+   위치: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   위치: System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   위치: System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   위치: SocialWith.Biz.Pay.PayService.GetSalesExactcal(Dictionary`2 paramList) 파일 D:\Svn\SocialWith.Biz\Pay\PayService.cs:줄 2018
+2019-05-02 14:51:25.9619 | 11308 | iisexpress | DEBUG | OrderHandler | OrderHandler.GetOrderDtlInfo_AllUser : 1256 | odrCodeNo : ON-190416-2 | 
+2019-05-02 14:51:25.9838 | 11308 | iisexpress | DEBUG | OrderHandler | OrderHandler.GetOrderDtlInfo_AllUser : 1257 | odrStat : 205 | 

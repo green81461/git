@@ -1,0 +1,521 @@
+﻿a{
+    cursor:pointer;
+    text-decoration:none;
+    color:#000000;
+}
+    a:hover {
+        color: #000000;
+        text-decoration: none;
+        font-weight:bold;
+    }
+
+
+
+
+
+    /*as신청및 조회페이지 첫번째 테이블*/
+    .asApply-table {
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+
+    /*.asApply-table th, td {
+        border: 1px solid #a2a2a2;
+        height: 25px;
+    }*/
+
+    .asApply-table th {
+        text-align: center;
+        background-color: #ececec;
+        border:1px solid #a2a2a2;
+    }
+
+    .asApply-table td {
+        padding-left: 5px;
+        height: 24px;
+        border:1px solid #a2a2a2;
+    }
+
+
+/* as신청 및 조회 첫번째 테이블 우편번호 텍스트박스 */
+.zipcode {
+    border: 1px solid #a2a2a2;
+    height: 24px;
+    padding-left: 5px;
+}
+
+/* a/s 신청 및 조회 첫번째 테이블 주소1, 주소2 텍스트박스*/
+.addr1, .addr2 {
+    border: 1px solid #a2a2a2;
+    width: 30px;
+    height: 24px;
+    padding-left: 5px;
+}
+
+/*배송방법 드랍다운리스트*/
+.delivery-select {
+    width: 100%;
+    /*height: 24px;*/
+    border: 1px solid #a2a2a2;
+}
+
+/*배송일 텍스트박스 */
+.deliveryDate {
+    width: 95%;
+    height: 24px;
+    border: 1px solid #a2a2a2;
+    text-align: center;
+    margin-right:5px;
+}
+
+/* as신청및 조회페이지 2번째 테입즐*/
+.asApply-table1 {
+    width: 100%;
+    height: 220px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+	
+}
+
+    /*.asApply-table1 th, td {
+        border: 1px solid #a2a2a2;
+    }*/
+
+    .asApply-table1 th {
+        text-align: center;
+        background-color: #ececec;
+        border:1px solid #a2a2a2;
+    }
+
+    .asApply-table1 td {
+        padding-left: 5px;
+        border:1px solid #a2a2a2;
+    }
+
+/* 수량입력 텍스트박스*/
+.unit {
+    border: 1px solid #a2a2a2;
+    width: 250px;
+    height: 90%;
+}
+
+/* 첨부파일 td*/
+.file {
+    width: 100%;
+    height: 25px;
+    float: right;
+}
+
+/*증상 텍스트박스*/
+.symptom {
+    border: 1px solid #a2a2a2;
+}
+
+/*하단 취소, 신청하기 버튼*/
+.bt {
+    text-align: right;
+    margin-top: 40px;
+}
+
+.as-div{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+#tblASList{
+    width:100%;
+}
+
+#tblASList th{
+    border:1px solid #a2a2a2;
+    background-color:#ececec;
+    height:30px;
+}
+
+#tblASList td{
+    height:30px;
+    border:1px solid #a2a2a2;
+    text-align:center;
+}
+
+.input-drop{
+    width:200px;
+    height:26px;
+    padding-left:5px;
+}
+/*********************상품검색 팝업창  1200 X 600*********************************/
+/*팝업창 보더 제거*/
+.divpopup-layer {
+    border: none;
+}
+
+
+/* 상품검색 팝업창 1번째 테이블과 2번째 테이블 감싸는 div*/
+#searchGoodsDiv {
+    margin-top: 20px;
+}
+/* 상품검색 팝업창 1번째 테이블*/
+#tblOrderSearch {
+    margin-bottom: 20px;
+}
+
+/* 상품검색, 브랜드, 상품코드, 상품명, 모델명 텍스트박스*/
+.inputContents {
+    border: 1px solid #a2a2a2;
+    width: 98%;
+    height: 90%;
+}
+/* 조회기간 td의 날짜 검색 */
+.searchDate {
+    width: 100px;
+    border: 1px solid #a2a2a2;
+    height: 90%;
+    margin-right:5px;
+    text-align:center;
+}
+
+
+/* 상품검색 팝업창 1번째 테이블 td*/
+#tblOrderSearch td {
+    height: 30px;
+}
+
+/*상단 검색버튼*/
+.search-bt {
+    text-align: right;
+    padding-right: 1%;
+    margin-bottom: 5%;
+}
+
+/* 상품검색 팝업창 2번째 테이블*/
+#tblOrderList {
+    border: 1px solid #a2a2a2;
+}
+
+    /* 상품검색 팝업창 2번째 테이블 th*/
+    #tblOrderList th {
+        background-color: #ececec;
+        height: 30px;
+    }
+
+
+    /* 상품검색 팝업창 2번째 테이블 th, td*/
+    #tblOrderList td, #tblOrderList th {
+        border: 1px solid #a2a2a2;
+    }
+
+
+/* 하단 취소, 확인버튼*/
+.btn1 {
+    text-align: right;
+    margin-top: 20px;
+}
+
+
+/**********************배송지 검색 팝업창************************************/
+
+/*배송지 검색 팝업창 테이블 */
+.scroll {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+    .scroll th {
+        border: 1px solid #a2a2a2;
+        background-color: #ececec;
+        height: 40px;
+    }
+
+    .scroll td {
+        height: 30px;
+    }
+
+    #tblDeliveryList td{
+        border:1px solid #a2a2a2;
+}
+/**********************AS 조회 페이지 ************************************/
+#tblSearch {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #a2a2a2;
+    width: 100%;
+}
+
+    #tblSearch th, #tblSearch td {
+        border: 1px solid #a2a2a2;
+    }
+
+    #tblSearch td {
+        height: 30px;
+        padding-left: 5px;
+    }
+
+    #tblSearch th {
+        height: 30px;
+        text-align: center;
+        background-color: #ececec;
+        font-size: 12px;
+    }
+
+
+#tblHeader {
+    border: 1px solid #a2a2a2;
+}
+
+    #tblHeader th {
+        border: 1px solid #a2a2a2;
+    }
+
+#text-center {
+    border: 1px solid #a2a2a2;
+}
+/********************as리스트 a/s 신청내용 팝업창******************/
+/* a/s 신청내용 첫번째 테이블*/
+.asList-table1 {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+    margin-bottom: 20px;
+}
+
+    .asList-table1 td{
+        border: 1px solid #a2a2a2;
+        
+        text-align: center;
+    }
+
+    .asList-table1 th {
+        background-color: #ececec;
+        border:1px solid #a2a2a2;
+        text-align:center;
+        height:40px;
+    }
+
+
+/* a/s 신청내용 두번째 테이블*/
+.asList-table2 {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+    margin-bottom: 20px;
+}
+
+
+    .asList-table2 th {
+        background-color: #ececec;
+        text-align: center;
+        border:1px solid #a2a2a2;
+    }
+
+    .asList-table2 td {
+        padding-left: 10px;
+        border:1px solid #a2a2a2;
+    }
+
+/* a/s 신청내용 세번째 테이블*/
+.asList-table3 {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+    margin-bottom: 20px;
+}
+
+    .asList-table3 td, .asList-table3 th {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+    }
+
+    .asList-table3 th {
+        background-color: #ececec;
+        text-align: center;
+    }
+
+    .asList-table3 td {
+        padding-left: 10px;
+    }
+
+.asList-table4 {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+  
+}
+
+    .asList-table4 td, .asList-table3 th {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+    }
+
+    .asList-table4 th {
+        background-color: #ececec;
+        text-align: center;
+    }
+
+    .asList-table4 td {
+        padding-left: 10px;
+    }
+
+/********************as리스트 a/s 결제내용 팝업창******************/
+/*as 결제 첫번째 테이블*/
+.asPay-table1 {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+
+}
+
+
+
+    .asPay-table1 th {
+        background-color: #ececec;
+        border:1px solid #a2a2a2;
+        height:40px;
+        text-align:center;
+        }
+
+    .asPay-table1 td {
+        border:1px solid #a2a2a2;
+        height:30px;
+        text-align:center;
+    }
+
+/*as 결제 두번째 테이블*/
+.asPay-table2 {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+   
+}
+
+    .asPay-table2 th {
+        background-color: #ececec;
+        text-align: center;
+        border:1px solid #a2a2a2;
+        height:40px;
+    }
+
+    .asPay-table2 td {
+        padding-left: 10px;
+        border:1px solid #a2a2a2;
+    }
+
+
+
+/********************as리스트 조회하기 팝업창******************/
+
+/*추후 올릴꺼임 아직 기능구현 안됐음*/
+
+
+
+.divOrderList {
+    overflow: auto;
+    min-height: 250px;
+}
+
+
+
+#tblHeader {
+    border: 1px solid #a2a2a2;
+}
+
+    #tblHeader th {
+        border: 1px solid #a2a2a2;
+    }
+
+    #tblHeader td {
+        /*border:1px solid #a3a2a2;*/
+    }
+
+.date2 {
+    border: 1px solid #a2a2a2;
+    height: 90%;
+    text-align: center;
+    margin-right:5px;
+}
+
+
+#tblOrderSearch {
+    border: 1px solid #a2a2a2;
+}
+
+    #tblOrderSearch th {
+        border: 1px solid #a2a2a2;
+    }
+
+    #tblOrderSearch td {
+        border: 1px solid #a2a2a2;
+    }
+
+    .btn-a{
+        margin-top:5px;
+        text-align:right;
+    }
+
+/******배송지선택**********/
+#destinationDiv {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 100;
+    widows: 50%;
+}
+
+
+.destinationWrapper {
+    width: 1200px;
+    height: auto;
+    margin: 200px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.destinationContent {
+    background-color: #ffffff;
+    height: 500px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+
+
+/******상품검색**********/
+#goodSearchDiv {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 100;
+    widows: 50%;
+}
+
+
+.goodSearchWrapper {
+    width: 1200px;
+    height: auto;
+    margin: 70px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.goodSearchContent {
+    background-color: #ffffff;
+    height: 750px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}

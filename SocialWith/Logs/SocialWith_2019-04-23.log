@@ -1,0 +1,14 @@
+2019-04-23 13:53:29.8192 | 6076 | iisexpress | ERROR | ASP.global_asax | ASP.global_asax.Application_Error : 41 | Error Url=localhost,  Message=
+ 에러 발생 원인 : mscorlib
+ 에러 메시지    : 입력 문자열의 형식이 잘못되었습니다.
+ Stack Trace    :    위치: System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   위치: System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   위치: System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   위치: System.Convert.ToInt32(Object value)
+   위치: Urian.Core.TypeConvert.AsInt(Object value)
+   위치: SocialCompanyHandler.UpdateSocialCompanySeq(HttpContext context) 파일 d:\Svn\SocialWith\Handler\Admin\SocialCompanyHandler.ashx:줄 370
+   위치: SocialCompanyHandler.ProcessRequest(HttpContext context) 파일 d:\Svn\SocialWith\Handler\Admin\SocialCompanyHandler.ashx:줄 67
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 내부 오류      :  | 

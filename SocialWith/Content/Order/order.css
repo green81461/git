@@ -1,0 +1,939 @@
+﻿
+
+
+
+
+
+
+/************주문페이지*********************/
+
+
+/*주문상품 div, 주문자정보div, 배송지div*/
+.order1-div, .order2-div, .order3-div {
+    
+    
+    margin-bottom:40px;
+
+}
+
+/*주문상품테이블, 주문자정보 테이블, 배송지테이블*/
+.order1-table, .order2-table, .order3-table, .order4-table, .order5-table {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+}
+
+/*th*/
+        .order1-table th, .order2-table th, .order3-table th, .order4-table th, .order5-table th {
+            border: 1px solid #a2a2a2;
+            height: 10px;
+            background-color: #ececec;
+            text-align: center;
+        }
+
+        .order1-table td {
+        text-align:center;
+         border: 1px solid #a2a2a2;
+         height: 30px;
+         padding-left:5px;
+
+        }
+
+/*td*/
+    .order2-table td, .order3-table td, .order4-table td, .order5-table td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        padding-left: 5px;
+        text-align: left;
+    }
+
+
+/* 주문상품 테이블 주문합계금액*/
+    .price {
+    
+        text-align:right;
+        font-size:15px;
+        font-weight:bold;
+        color:#eb1f28;
+        margin-top:10px;
+
+    }
+
+/*배송지 주소 텍스트박스*/
+.addr-textbox1 {
+    width: 10%;
+    height: 25px;
+    border: 1px solid #a2a2a2;
+    position: relative;
+    /*top: -3px;*/
+    padding-left:5px;
+}
+
+
+/*배송지 주소 텍스트박스*/
+    .addr-textbox{
+        width:30%;
+        height:25px;
+        border:1px solid #a2a2a2;
+        position:relative;
+        /*top:-3px;*/
+        padding-left:5px;
+}
+
+/*배송지선택 버튼*/
+    .destination-btn{
+        position:relative;
+        top:4px;
+
+    }
+
+#selectGroup, #selectRegion, #selectCompany {
+    width:100%;
+    height:100%;
+    text-align:center;
+
+}
+
+    .bottom-btn {
+    margin-top:20px;
+    text-align:right;
+	margin-bottom:30px;
+
+
+}
+
+/***********배송지선택 팝업창*/
+
+.divpopup-layer {
+border:none;
+}
+.divpopup-layer-conts{
+    width:100%;
+    overflow:auto;
+}
+/*.tblDeliveryList {
+    width: 100%;
+    height:350px;
+}*/
+.scroll {
+    width: 1020px;
+    /* Optional */
+    /* border-collapse: collapse; */
+    
+}
+
+#tblDeliveryList{
+    width:99.5%;
+}
+
+.scroll tbody,
+.scroll thead {
+    display: block;
+}
+
+.table-div{
+    height:350px;
+}
+
+    .scroll th {
+        width: 100%;
+        height: 30px;
+        /*text-align: left;*/
+        background-color:#ececec;
+        border:1px solid #a2a2a2;
+    }
+
+    .scroll td {
+        width: 100%;
+        height: 100px;
+        /*text-align: left;*/
+        border:1px solid #a2a2a2;
+    }
+
+    .scroll tbody {
+    height: 350px;
+   
+   
+}
+
+.destination-span {
+    padding: 200px;
+}
+
+
+
+/*********주문완료 페이지***************/
+.orderSuccess-table {
+    border-spacing: 0px;
+    border-bottom-style: none;
+    padding: 0px;
+    margin: 0;
+    margin-left: 223px;
+    width: 818px;
+    height: 500px;
+    border: 1px solid #a2a2a2;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+    .line1 {
+    color:#e9172f;
+}
+
+    .line1 span {
+    font-size:35px;
+    font-weight:bold;
+}
+
+
+.line2 {
+    font-weight: bold;
+    font-size: 19px;
+    color: #777676;
+}
+
+.line3 {
+    font-weight: bold;
+    font-size: 21px;
+    color: #777676;
+}
+
+
+     /**********간편주문***********/
+
+      #tblQuick{
+          border:1px solid #a2a2a2;
+
+      }
+
+      #tblQuick th{
+          border:1px solid #a2a2a2;
+          height:40px;
+      }
+
+      #tblQuick td{
+            border:1px solid #a2a2a2;
+            height:30px;
+      }
+
+    .textbox-css {
+        border: 1px solid #a2a2a2;
+        height:24px;
+        margin-top:4px;
+		width:70px;
+		text-align:center;
+		line-height:20px;
+
+    }
+
+
+    /************주문내역조회***************/
+
+
+
+    .report-table {
+        border: 1px solid #a2a2a2;
+        width:100%;
+        margin-bottom:30px
+}
+
+        .report-table th {
+            border: 1px solid #a2a2a2;
+            height:30px;
+            background-color:#ececec;
+            text-align:center;
+            }
+
+
+        .report-table td {
+        border:1px solid #a2a2a2;
+        height:30px;
+
+        }
+
+
+        .input-textbox{
+            width:100%;
+            height:95%;
+      
+            }
+
+
+
+/*#tblHistoryList {
+    border: 1px solid #a2a2a2;
+    width: 100%;
+}
+
+    #tblHistoryList th {
+        border: 1px solid #a2a2a2;
+        background-color: #f5f5f5 ;
+        text-align: center;
+        height: 30px;
+        width: 250px;
+        width: 150px;
+        color:#333333;
+    }
+
+    #tblHistoryList td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        padding-left: 5px;
+    }
+
+    #tblHistoryList thead {
+        height: 40px;
+    }*/
+
+
+
+.board-table {
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+.sub-title-div {
+   
+}
+
+ .board-table th{
+     border:1px solid #a2a2a2;
+     height:30px;
+     text-align:center;
+  }
+     .board-table td {
+        border:1px solid #a2a2a2;       
+        height:30px;
+        padding-left:5px;
+        text-align:center;
+        }
+
+
+
+
+.board-table1 {
+    width: 400px;
+  
+    margin-top:5px;
+   
+}
+
+
+    .board-table1 th {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        text-align: center;
+        background-color:#ececec;
+    }
+
+    .board-table1 td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        padding-left:10px;
+    }
+
+    .btn-align{
+    float:right;
+    margin-bottom:20px;
+    margin-top:20px;
+    }
+
+    /*.divpopup-layer{
+        overflow:auto;
+        padding-left:2.5%;
+        padding-right:2.5%;
+}*/
+
+
+
+
+.board-table2 {
+    width: 400px;
+
+    margin-top: 5px;
+}
+
+
+    .board-table2 th {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        text-align: center;
+        background-color: #ececec;
+    }
+
+    .board-table2 td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        text-align:center;
+    }
+
+
+
+
+    /**************************************/
+
+
+.orderR-title-div {
+    margin: 0 auto;
+    width: 600px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+    .orderRqs-table{
+        border:1px solid #a2a2a2;
+        margin:0 auto;
+        border-collapse:collapse;
+        border-spacing:0;
+        font-size:12px;
+        font-family:Gulim;
+        font-weight:bold;
+        color:#454141;
+        width:600px;
+        height:auto;
+        
+    }
+
+.orderRqs-table2 {
+    border: 1px solid #a2a2a2;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #CF6E36;
+    border-width: thin medium;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    width: 600px;
+    height: auto;
+}
+
+.orderRqs-table  th{
+    border:1px solid #a2a2a2;
+    background-color:#ececec;
+}
+
+
+  .orderRqs-table td{
+        border:1px solid #a2a2a2;
+        height:30px;
+        padding-left:5px;
+    }
+
+        .orderRqs-table tr td:nth-child(1) {
+            background-color: #ececec;
+            text-align: center;
+        }
+
+         .orderRqs-table tr td:nth-child(2){
+            padding-left:10px;
+         }
+            
+         .orderRqs-bt-align {
+           
+            width:600px;
+            padding-top:40px;
+            text-align:center;
+            margin:0 auto;
+
+         }
+
+.orderRqs-bt-align1 {
+    width: 600px;
+    padding-top: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+input {
+    border: none;
+}
+
+
+    /*.payfin_area{
+        border:8px solid #e91730;
+        width:626px;
+        height:543px;
+		box-sizing:border-box
+}*/
+.canclefin_area {
+    /*border: 8px solid #e91730;*/
+    width: 640px;
+    height: 570px;
+    /*box-sizing: border-box;*/
+    padding:0;
+    margin:0;
+}
+
+/*.payfin_area {
+    border: 1px solid #a2a2a2;
+    width: 640px;
+    height: 640px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}*/
+
+/*.payffin_area {
+    border: 8px solid #e91730;
+    width: 620px;
+    height: 550px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}*/
+
+
+    .tbl-td{
+        background-color:#ececec;
+        text-align:center;
+     
+    }
+
+    .addr, goodN{
+        width:100%;
+    }
+
+
+.searchDate {
+    text-align: center;
+    margin-right: 5px;
+    width: 150px;
+    height: 26px;
+    border:1px solid #a2a2a2;
+}
+.align-div {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+
+/*달력*/
+.calendar {
+    border: 1px solid #a2a2a2;
+    height: 90%;
+    text-align: center;
+    margin-right: 5px;
+    /*width: 220px;*/
+}
+/*조회하기,엑셀저장 버튼*/
+.bt-align-div {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*드랍다운리스트*/
+.input-drop {
+    width: 99%;
+    height: 24px;
+    border: 1px solid #a2a2a2;
+}
+
+
+/*상단 영역 */
+.search-div {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.cancleRqs-table {
+    border: 1px solid #a2a2a2;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 12px;
+    font-family: Gulim;
+    font-weight: bold;
+    color: #454141;
+    width: 600px;
+    height: 300px;
+}
+
+    .cancleRqs-table th {
+        border: 1px solid #a2a2a2;
+        background-color: #ececec;
+        text-align:center;
+    }
+
+    .cancleRqs-table td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        padding-left: 5px;
+    }
+
+    .cancleRqs-table tr td:nth-child(1) {
+        background-color: #ececec;
+        text-align: center;
+    }
+
+    .cancleRqs-table tr td:nth-child(2) {
+        padding-left: 10px;
+    }
+
+
+
+   #tblOrder{
+       width:100%;
+       border:1px solid #a2a2a2;
+       margin-bottom:0;
+   }
+
+   #tblOrder th{
+       border:1px solid #a2a2a2;
+       background-color:#ececec;
+       height:30px;
+       text-align:center;
+   }
+
+   #tblOrder td{
+       border:1px solid #a2a2a2;
+       height:30px;
+       text-align:center;
+   }
+
+   #tblOrder td:nth-child(3){
+       text-align:left;
+       padding-left:5px;
+   }
+
+#divPopup_check{
+    padding-left:1%;
+    padding-right:1%;
+    padding-bottom:1%;
+}
+
+#tbl_dtlPop_pay {
+    width: 480px;
+    border: 1px solid #a2a2a2;
+    float:left;   
+}
+
+    #tbl_dtlPop_pay th {
+        border: 1px solid #a2a2a2;
+        background-color: #ececec;
+        height: 30px;
+      text-align:center;
+        width:150px;
+    }
+
+    #tbl_dtlPop_pay td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        padding-left:10px;
+    }
+
+
+#tblPopupDocument {
+    width: 500px;
+    border: 1px solid #a2a2a2;
+   margin-left:20px;
+   float:right;
+}
+
+    #tblPopupDocument th {
+        border: 1px solid #a2a2a2;
+        background-color: #ececec;
+        height: 30px;
+      
+        width:120px;
+        text-align:center;
+    }
+
+    #tblPopupDocument td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        
+    }
+    
+    
+    
+    
+    #printDocument {
+        width: 500px;
+        border: 1px solid #a2a2a2;
+        margin-top:30px;
+        float:right;
+    }
+
+    #printDocument th {
+        border: 1px solid #a2a2a2;
+        background-color: #ececec;
+        height: 30px;
+        text-align:center;
+        width: 190px;
+    }
+
+    #printDocument td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        padding-left: 5px;
+        text-align:center;
+    }
+
+#printDocument thead{
+    text-align:center;
+}
+
+
+#divDtlPop_1{
+    float:left;
+    width:100%;
+    margin-bottom:15px;
+    margin-top:10px;
+}
+
+#divDtlPop_2 {
+    float: right;
+}
+
+.align-div{
+    margin-top:10px;
+}
+
+a{
+    cursor:pointer;
+}
+
+
+/******배송지선택**********/
+/*#destinationDiv {
+    margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 100;
+    widows: 50%;
+}
+
+
+.destinationWrapper {
+    width: 1050px;
+    height: auto;
+    margin: 200px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.destinationContent {
+    background-color: #ffffff;
+    height: 550px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}*/
+
+
+/*분할배송팝업*/
+#ordDlvrConfirmDiv {
+    font-family:Dotum;
+    /*margin: 10px 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;*/
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    /*display: none;
+    z-index: 100;
+    widows: 50%;*/
+}
+.splitWrapper {
+    width: 400px;
+    height: auto;
+    margin: 200px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.splitContent {
+    background-color: #ffffff;
+    height: 200px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+.yesPop-align {
+    margin-top: 35px;
+    margin-left: 25%;
+}
+
+/******주문상품팝업**********/
+#productDiv {
+    margin: 0 0 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    z-index: 2000;
+    widows: 50%;
+ 
+}
+
+
+.productWrapper {
+    width: 1200px;
+    height: auto;
+    margin: 10px auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.productContent {
+    background-color: #ffffff;
+    height: 780px;
+    padding: 15px;
+    clear: both;
+    z-index: 300;
+    transition: ease-in;
+    transition-delay: 1s;
+    -webkit-transition: ease-in;
+}
+
+
+.cancleList-table {
+    border: 1px solid #a2a2a2;
+    
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 12px;
+    font-family: Gulim;
+    font-weight: bold;
+    color: #454141;
+    width: 580px;
+    margin:auto;
+    height: auto;
+}
+
+    .cancleList-table th {
+        border: 1px solid #a2a2a2;
+        background-color: #ececec;
+        text-align:center;
+    }
+
+    .cancleList-table td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        padding-left: 5px;
+    }
+
+    .top{
+        margin-left:10px;
+    }
+
+
+
+#tblOrder td:nth-child(7){
+    text-align:right;
+    padding-right:5px;
+}
+
+#tblOrder td:nth-child(10) {
+    text-align: right;
+    padding-right: 5px;
+}
+
+
+
+
+    /*class이름으로 테이블 */
+    .CommonList-tbl {
+        border: 1px solid #a2a2a2;
+        width: 100%;
+    }
+
+    .CommonList-tbl th {
+        border: 1px solid #a2a2a2;
+        background-color: #ececec;
+        text-align: center;
+        height: 30px;
+        width: 250px;
+        width: 150px;
+    }
+
+    .CommonList-tbl td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        padding-left: 5px;
+    }
+
+    .CommonList-tbl thead {
+        height: 40px;
+    }
+
+
+
+
+/*class이름으로 테이블 */
+.CommonRow-tbl {
+    border: 1px solid #a2a2a2;
+    width: 100%;
+}
+
+    .CommonRow-tbl th {
+        border: 1px solid #a2a2a2;
+        background-color: #ececec;
+        text-align: center;
+        height: 30px;
+        width: 250px;
+        width: 150px;
+    }
+
+    .CommonRow-tbl td {
+        border: 1px solid #a2a2a2;
+        height: 30px;
+        padding-left: 5px;
+    }
+
+    .CommonRow-tbl thead {
+        height: 40px;
+    }
+
+
+.orderPrinticonBtn {
+    line-height: 25px;
+    text-decoration: none;
+    font-family: Dotum;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #69696c;
+}
+
+    .orderPrinticonBtn img {
+        margin-right: 5px;
+        margin-bottom: 3px
+    }
+
+    .orderPrinticonBtn:active {
+        /*position: relative;
+        top: 3px*/
+    }
+
+
+.mini-title img {
+    vertical-align:baseline;
+}
